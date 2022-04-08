@@ -1,0 +1,508 @@
+.d {
+  fill: #363f33;
+}
+
+@keyframes bounce-one {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(5px, -25px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes bounce-two {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(25px, -10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes bounce-three {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(40px, 15px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes bounce-four {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(10px, 25px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes bounce-five {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-5px, 25px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes bounce-six {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-25px, 15px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes bounce-seven {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-40px, -8px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes bounce-eight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-15px, -40px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.button_container:hover .one-petal {
+  animation: bounce-one 0.75s;
+  animation-timing-function: cubic-bezier(1, 0.02, 1, 0.23);
+}
+
+.button_container:hover .two-petal {
+  animation: bounce-two 0.75s;
+  animation-delay: 25ms;
+}
+
+.button_container:hover .three-petal {
+  animation: bounce-three 0.75s;
+  animation-delay: 50ms;
+}
+
+.button_container:hover .four-petal {
+  animation: bounce-four 0.75s;
+  animation-delay: 100ms;
+}
+
+.button_container:hover .five-petal {
+  animation: bounce-five 0.75s;
+  animation-delay: 200ms;
+}
+
+.button_container:hover .six-petal {
+  animation: bounce-six 0.75s;
+  animation-delay: 250ms;
+}
+
+.button_container:hover .seven-petal {
+  animation: bounce-seven 0.75s;
+  animation-delay: 300ms;
+}
+
+.button_container:hover .eight-petal {
+  animation: bounce-eight 0.75s;
+  animation-delay: 350ms;
+}
+
+@keyframes middle-one {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(0px, -40px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes middle-two {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(30px, -35px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes middle-three {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(40px, 0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes middle-four {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(30px, 35px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes middle-five {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(0px, 40px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes middle-six {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-30px, 35px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes middle-seven {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-40px, 0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes middle-eight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-30px, -35px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.button_container:hover .one-middle {
+  animation: middle-one 1.25s;
+  animation-delay: 25ms;
+}
+
+.button_container:hover .two-middle {
+  animation: middle-two 0.75s;
+  animation-delay: 50ms;
+}
+
+.button_container:hover .three-middle {
+  animation: middle-three 0.75s;
+  animation-delay: 100ms;
+}
+
+.button_container:hover .four-middle {
+  animation: middle-four 0.75s;
+  animation-delay: 200ms;
+}
+
+.button_container:hover .five-middle {
+  animation: middle-five 0.75s;
+  animation-delay: 250ms;
+}
+
+.button_container:hover .six-middle {
+  animation: middle-six 0.75s;
+  animation-delay: 300ms;
+}
+
+.button_container:hover .seven-middle {
+  animation: middle-seven 0.75s;
+  animation-delay: 350ms;
+}
+
+.button_container:hover .eight-middle {
+  animation: middle-eight 0.75s;
+  animation-delay: 400ms;
+}
+
+@keyframes one-outer {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(10px, -35px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes two-outer {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(35px, -10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes three-outer {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(35px, 10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes four-outer {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(10px, 35px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes five-outer {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-10px, 35px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes six-outer {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-35px, 15px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes seven-outer {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-35px, -5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes eight-outer {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-15px, -35px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.button_container:hover .one-outer {
+  animation: one-outer 1.25s;
+  animation-delay: 25ms;
+}
+.button_container:hover .two-outer {
+  animation: two-outer 0.75s;
+  animation-delay: 50ms;
+}
+.button_container:hover .three-outer {
+  animation: three-outer 0.75s;
+  animation-delay: 100ms;
+}
+.button_container:hover .four-outer {
+  animation: four-outer 0.75s;
+  animation-delay: 200ms;
+}
+.button_container:hover .five-outer {
+  animation: five-outer 0.75s;
+  animation-delay: 250ms;
+}
+.button_container:hover .six-outer {
+  animation: six-outer 0.75s;
+  animation-delay: 300ms;
+}
+.button_container:hover .seven-outer {
+  animation: seven-outer 0.75s;
+  animation-delay: 350ms;
+}
+.button_container:hover .eight-outer {
+  animation: eight-outer 1.25s;
+  animation-delay: 0ms;
+}
+
+@keyframes one-outest {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(0px, -40px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes two-outest {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(40px, -40px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes three-outest {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(40px, 0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes four-outest {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(35px, 35px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes five-outest {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(0px, 40px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes six-outest {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-30px, 35px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes seven-outest {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-40px, 0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes eight-outest {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translate(-30px, -35px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.button_container:hover .one-outest {
+  animation: one-outest 1.5s;
+}
+.button_container:hover .two-outest {
+  animation: two-outest 1s;
+  animation-delay: 25ms;
+}
+.button_container:hover .three-outest {
+  animation: three-outest 1s;
+  animation-delay: 50ms;
+}
+.button_container:hover .four-outest {
+  animation: four-outest 1s;
+  animation-delay: 100ms;
+}
+.button_container:hover .five-outest {
+  animation: five-outest 1s;
+  animation-delay: 200ms;
+}
+.button_container:hover .six-outest {
+  animation: six-outest 1s;
+  animation-delay: 250ms;
+}
+.button_container:hover .seven-outest {
+  animation: seven-outest 1s;
+  animation-delay: 300ms;
+}
+.button_container:hover .eight-outest {
+  animation: eight-outest 1s;
+  animation-delay: 300ms;
+}
+
+.button_container:hover .d {
+  animation-timing-function: cubic-bezier(0.44, -0.01, 0.57, 0.99);
+}
