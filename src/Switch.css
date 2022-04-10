@@ -1,0 +1,65 @@
+.Switch {
+  position: relative;
+  display: inline-block;
+  width: 84px;
+  height: 44px;
+}
+
+.Switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.Switch__slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  background-color: white;
+  transition: 250ms ease-in-out;
+  font-size: .25em;
+  box-shadow: inset 0px 0px 2px var(--black);
+}
+
+.Switch__slider:before {
+  position: absolute;
+  border-radius: 4px;
+  top: 2px;
+  left: 2px;
+  content: '';
+  width: 50px;
+  height: 40px;
+  background-color: var(--black);
+  transition: 250ms ease-in-out;
+  background-image: url('./Assets/sunset-13.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: -.5px .5px 2px rgba(0, 0, 0, .25);
+}
+
+input:checked + .Switch__slider:before {
+  transform: translateX(30px);
+  content: '';
+  background-image: url('./Assets/moon-14.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input:checked + .Switch__slider {
+  background-color: rgb(44, 34, 47);
+}
+
+.theme__icon {
+  position: relative;
+  z-index: 5;
+  width: 50px;
+}
+
+.st17 {
+  fill: var(or);
+}

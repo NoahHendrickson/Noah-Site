@@ -14,6 +14,7 @@
 }
 
 .flower__container {
+  margin-top: 50px;
   width: 250px;
 }
 
@@ -27,7 +28,38 @@
   margin-top: 25px;
 }
 
-button {
+h1 {
+  color: var(--darkGreen);
+}
+
+.button__bg {
+  color: var(--darkGreen);
+  background-color: white;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  position: relative;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 5px 25px;
+}
+
+.button__list {
+  margin: 15px 0px;
+}
+
+.code__list {
+  width: 125px;
+  padding: 5px 0px;
+}
+
+a {
+  position: relative;
   font-size: 1em;
   margin: 15px;
   border: none;
@@ -36,29 +68,13 @@ button {
   border-radius: 5px;
   color: white;
   font-weight: 400;
-  position: relative;
   z-index: 1;
 }
 
-button:hover {
-  color: var(--darkGreen);
-  background-color: white;
-}
-
-ul {
-  display: flex;
-  padding: 5px 20px;
-}
-
-li {
-  margin: 0px 15px;
-  list-style: none;
-}
-
 .SlideOutMenu {
-  z-index: -1;
-  background-color: white;
+  border-radius: 5px;
+  background-color: lightgrey;
   position: absolute;
-  top: 0px;
-  left: -200px;
+  bottom: 0px;
+  right: 115px;
 }

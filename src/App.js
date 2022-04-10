@@ -2,29 +2,29 @@ import './App.css';
 import './FlowerLogo.css'
 import FlowerLogo from './FlowerLogo';
 import {ReactComponent as NoahLogo} from './Assets/NoahLogo-10.svg'
+import ButtonList from './ButtonList';
+import Switch from './Switch';
+import { useState, useContext } from 'react'
+import React from 'react'
+
+export const ThemeContext = React.createContext('light');
 
 function App() {
+  const [theme, setTheme] = useState('light')
+
   return (
-    <div className="App">
-      <div className="splash__page">
-        <FlowerLogo />
-        <NoahLogo className='NoahLogo'/>
-        <div className='splash__page--buttons button_container'>
-          <button>
-            <p>Design</p>
-            <div className='SlideOutMenu'>
-              <ul>
-                <li>UX</li>
-                <li>Graphic</li>
-                <li>Logo</li>
-              </ul>
-            </div>
-          </button>
-          <button>Code</button>
-          <button>Story</button>
+    <ThemeContext.Provider value={{theme, setTheme}}>
+      <div className="App">
+        <div className="splash__page">
+          <Switch />
+          <h1>The theme is {theme}</h1>
+          <h1>👋 I'm Noah and I am a designer and aspiring developer</h1>
+          <FlowerLogo />
+          <NoahLogo className='NoahLogo'/>
+          <ButtonList />
         </div>
-     </div>
-    </div>
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
