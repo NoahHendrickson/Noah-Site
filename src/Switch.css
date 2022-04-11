@@ -1,8 +1,8 @@
 .Switch {
   position: relative;
   display: inline-block;
-  width: 84px;
-  height: 44px;
+  width: 4em;
+  height: 2em;
 }
 
 .Switch input {
@@ -11,47 +11,49 @@
   height: 0;
 }
 
+
 .Switch__slider {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  border-radius: 5px;
-  background-color: white;
+  border-radius: .6em;
+  background-color: #c8d1ca;
   transition: 250ms ease-in-out;
-  font-size: .25em;
-  box-shadow: inset 0px 0px 2px var(--black);
+  /* box-shadow: inset 0px 0px 3px var(--black); */
 }
 
 .Switch__slider:before {
   position: absolute;
-  border-radius: 4px;
-  top: 2px;
-  left: 2px;
+  border-radius: .5em;
+  top: .125em;
+  left: .125em;
   content: '';
-  width: 50px;
-  height: 40px;
-  background-color: var(--black);
+  width: 2em;
+  height: 1.75em;
+  background-color: white;
   transition: 250ms ease-in-out;
-  background-image: url('./Assets/sunset-13.svg');
+  background-image: url('./Assets/Light-mode-icon-11.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: -.5px .5px 2px rgba(0, 0, 0, .25);
+  background-size: 1em;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .45);
 }
 
 input:checked + .Switch__slider:before {
-  transform: translateX(30px);
+  transform: translateX(1.75em);
   content: '';
-  background-image: url('./Assets/moon-14.svg');
+  background-image: url('./Assets/Dark-mode-icon-12.svg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: .75em;
+  background-color: white;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, .45);
 }
 
 input:checked + .Switch__slider {
-  background-color: rgb(44, 34, 47);
+  background-color: var(--black);
 }
 
 .theme__icon {

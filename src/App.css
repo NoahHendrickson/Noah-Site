@@ -11,6 +11,17 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
+}
+
+.Switch__container {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+  font-size: 1em;
 }
 
 .flower__container {

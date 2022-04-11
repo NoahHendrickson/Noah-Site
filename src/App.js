@@ -15,8 +15,10 @@ function App() {
   return (
     <ThemeContext.Provider value={{theme, setTheme}}>
       <div className="App">
-        <div className="splash__page">
+        <div className='Switch__container'>
           <Switch />
+        </div>
+        <div className="splash__page">
           <h1>The theme is {theme}</h1>
           <h1>👋 I'm Noah and I am a designer and aspiring developer</h1>
           <FlowerLogo />
