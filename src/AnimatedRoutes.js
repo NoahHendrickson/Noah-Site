@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import LogoDesign from './LogoDesign';
 import Navigation from './Navigation';
 import { AnimatePresence, motion } from 'framer-motion';
+import Home from './Home';
 
 const AnimatedRoutes = ({ theme }) => {
 
@@ -11,7 +12,7 @@ const AnimatedRoutes = ({ theme }) => {
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Navigation theme={theme} />} />
+        <Route path="/" element={<Home theme={theme} />} />
         <Route path="/logo_design" element={<LogoDesign /> } />
       </Routes>
     </AnimatePresence>
