@@ -1,5 +1,6 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import LogoSquare from './LogoSquare'
 import Hyperglide from "./Assets/Logos/hyperglides-25.svg"
 import TLH from "./Assets/Logos/TLH.svg"
@@ -8,7 +9,11 @@ import DORO from "./Assets/Logos/Doro-02.svg"
 
 const LogoDesign = () => {
   return (
-    <div className='logo__page'>
+    <motion.div className='logo__page'
+     initial={{width: 0}}
+      animate={{width: '100%'}}
+      exit={{width: 0, transition:{duration: .1}}} 
+    >
       <h1>These are my Logos</h1>
       <Link to="/">
         <button>Back to Home</button>
@@ -20,7 +25,7 @@ const LogoDesign = () => {
         <LogoSquare src={DORO} />
         <LogoSquare src={Beamen} />
       </div>
-    </div>
+    </motion.div>
   )
 }
 

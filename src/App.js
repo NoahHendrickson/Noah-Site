@@ -9,6 +9,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LogoDesign from './LogoDesign';
 import Navigation from './Navigation';
+import AnimatedRoutes from './AnimatedRoutes';
 
 export const ThemeContext = React.createContext('light');
 
@@ -19,11 +20,8 @@ function App() {
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <div className='App'>
         <Router>
-          <Routes>
-            <Route path="/" element={<Navigation theme={theme} />} />
-            <Route path="/logo_design" element={<LogoDesign /> } />
-            </Routes>
-          </Router>
+          <AnimatedRoutes theme={theme} />
+        </Router>
       </div>
     </ThemeContext.Provider>
   );

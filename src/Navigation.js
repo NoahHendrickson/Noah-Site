@@ -2,6 +2,7 @@ import React from 'react'
 import ButtonList from './ButtonList'
 import FlowerLogo from './FlowerLogo'
 import Switch from './Switch';
+import { motion } from 'framer-motion';
 
 import { ReactComponent as NoahLogo } from './Assets/NoahLogo-10.svg'
 import './FlowerLogo.css'
@@ -10,7 +11,11 @@ import './FlowerLogo.css'
 
 const Navigation = ({theme}) => {
   return (
-    <div className="Navigation">
+    <motion.div className="Navigation"
+      initial={{width: 0}}
+      animate={{width: '100%'}}
+      exit={{width: 0, transition:{duration: .1}}} 
+    >
       <div className='Switch__container'>
         <Switch />
       </div>
@@ -21,7 +26,7 @@ const Navigation = ({theme}) => {
         <NoahLogo className='NoahLogo'/>
         <ButtonList />
       </div>
-    </div>
+    </motion.div>
   )
 }
 
