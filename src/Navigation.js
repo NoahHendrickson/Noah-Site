@@ -12,9 +12,9 @@ import './FlowerLogo.css'
 const Navigation = ({theme}) => {
   return (
     <motion.div className="Navigation"
-      initial={{width: 0}}
-      animate={{width: '100%'}}
-      exit={{width: 0, transition:{duration: .1}}} 
+      initial={{y: '-100vh'}}
+      animate={{y: '0'}}
+      exit={{y: '-100vh', transition:{duration: .2}}} 
     >
       <div className='Switch__container'>
         <Switch />
