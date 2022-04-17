@@ -1,6 +1,6 @@
 .App {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   background-color: var(--orange);
 }
@@ -70,6 +70,7 @@ li {
 }
 
 a {
+  cursor: pointer;
   position: relative;
   font-size: 1em;
   margin: 15px;
@@ -80,6 +81,13 @@ a {
   color: white;
   font-weight: 400;
   z-index: 1;
+  user-select: none;
+}
+
+.path__button {
+  text-decoration: none;
+  padding: 0px;
+  color: var(--darkGreen);
 }
 
 .SlideOutMenu {
@@ -87,5 +95,37 @@ a {
   background-color: lightgrey;
   position: absolute;
   bottom: 0px;
-  right: 115px;
+  right: 120px;
+}
+
+.logo__page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__design {
+  padding: 5em 20em;
+  display: grid;
+  gap: 5em;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 250px 250px 250px;
+}
+
+.logo__square {
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+img {
+  width: 100%;
+  padding: 4em;
+}
+
+.hyperglide__square {
+  background-color: pink;
 }

@@ -2,14 +2,14 @@ import React, { useState, useRef, useEffect } from 'react'
 import SlideoutMenuDesign from './SlideoutMenuDesign'
 import SlideoutMenuCode from './SlideoutMenuCode'
 
-const ButtonList = ({text, toggle}) => {
+const ButtonList = ({text}) => {
   return (
     <ul className='splash__page--buttons button_container'>
       <NavButton text="Design">
         <SlideoutMenuDesign />
       </NavButton>
       <NavButton text="Code">
-        <SlideoutMenuCode toggle={toggle} />
+        <SlideoutMenuCode />
       </NavButton>
       <NavButton text="Story" />
     </ul>
@@ -27,15 +27,15 @@ const NavButton = (props) => {
     if (open === false) {
       button.current.classList.remove('button__bg')
     }
-  },[open])
+  }, [open]);
 
   function toggle() {
     setOpen(!open)
-  }
+  };
 
   return (
     <li  className='button__list'>
-      <a ref={button} onMouseOver={toggle}>
+      <a ref={button} onClick={toggle} >
         {props.text}
       </a>
       {open && props.children}

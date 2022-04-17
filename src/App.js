@@ -6,6 +6,9 @@ import ButtonList from './ButtonList';
 import Switch from './Switch';
 import { useState, useContext } from 'react'
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LogoDesign from './LogoDesign';
+import Navigation from './Navigation';
 
 export const ThemeContext = React.createContext('light');
 
@@ -13,18 +16,14 @@ function App() {
   const [theme, setTheme] = useState('light')
 
   return (
-    <ThemeContext.Provider value={{theme, setTheme}}>
-      <div className="App">
-        <div className='Switch__container'>
-          <Switch />
-        </div>
-        <div className="splash__page">
-          <h1>The theme is {theme}</h1>
-          <h1>👋 I'm Noah and I am a designer and aspiring developer</h1>
-          <FlowerLogo />
-          <NoahLogo className='NoahLogo'/>
-          <ButtonList />
-        </div>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <div className='App'>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Navigation theme={theme} />} />
+            <Route path="/logo_design" element={<LogoDesign /> } />
+            </Routes>
+          </Router>
       </div>
     </ThemeContext.Provider>
   );

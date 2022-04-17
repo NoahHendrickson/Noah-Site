@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import {Link} from "react-router-dom"
 
-const SlideoutMenuDesign = () => {
+const SlideoutMenuDesign = ({ toggle, open, setOpen }) => {
+  
+
   return (
     <div className='SlideOutMenu'>
       <ul>
-        <li>UX</li>
+        <li><Link className="path__button" to="logo_design">UX</Link></li>
         <li>Graphic</li>
         <li>Logo</li>
       </ul>
