@@ -7,9 +7,9 @@ const SlideoutMenuDesign = ({ toggle, open, setOpen }) => {
   return (
     <div className='SlideOutMenu'>
       <ul>
-        <li><Link className="path__button" to="logo_design">UX</Link></li>
+        <li><Link  className="path__button" to="logo_design">Logo</Link></li>
         <li>Graphic</li>
-        <li>Logo</li>
+        <li>UX</li>
       </ul>
     </div>
   )

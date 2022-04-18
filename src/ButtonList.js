@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import SlideoutMenuDesign from './SlideoutMenuDesign'
 import SlideoutMenuCode from './SlideoutMenuCode'
 
-const ButtonList = ({text}) => {
+const ButtonList = ({ text }) => {
   return (
     <ul className='splash__page--buttons button_container'>
       <NavButton text="Design">
@@ -16,7 +16,7 @@ const ButtonList = ({text}) => {
   );
 };
 
-const NavButton = (props) => {
+export const NavButton = (props) => {
   const [open, setOpen] = useState(false);
   const button = useRef()
 

@@ -1,17 +1,19 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import LogoDesign from './LogoDesign';
 import Navigation from './Navigation';
 import { AnimatePresence, motion } from 'framer-motion';
+import { ThemeContext } from './App';
 
-const AnimatedRoutes = ({ theme }) => {
+const AnimatedRoutes = () => {
 
   const location = useLocation();
+  const {theme, setTheme } = useContext(ThemeContext)
 
   return (
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Navigation theme={theme} />} />
+        <Route path="/" element={<Navigation />} />
         <Route path="/logo_design" element={<LogoDesign /> } />
       </Routes>
     </AnimatePresence>

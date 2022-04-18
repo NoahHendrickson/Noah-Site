@@ -10,22 +10,30 @@ import Navbar from './Navbar'
 
 const LogoDesign = () => {
   return (
-    <motion.div className='logo__page'
-     initial={{y: '100vh'}}
+    <motion.div
+      className='LogoDesign'
+      initial={{y: '100vh'}}
       animate={{y: '0'}}
-      exit={{y: '100vh', transition:{duration: .2}}} 
+      exit={{y: '100vh', transition:{duration: .1}}} 
     >
+      <div className='header'>
+        <Navbar />
+      </div>
+      <div className='logo__page'>
         <h1>These are my Logos</h1>
-        <Link to="/">
-          <button>Back to Home</button>
-        </Link>
-        <div className='logo__design'>
+        <div className='logo__designs'>
           <LogoSquare src={Hyperglide}/>
+          <LogoSquare src={Hyperglide}/>
+          <LogoSquare src={Hyperglide}/>
+          <LogoSquare src={Hyperglide}/>
+          <LogoSquare src={TLH} />
           <LogoSquare src={TLH} />
           <LogoSquare src={Beamen} />
           <LogoSquare src={DORO} />
+          <LogoSquare src={DORO} />
           <LogoSquare src={Beamen} />
         </div>
+      </div>
     </motion.div>
   )
 }

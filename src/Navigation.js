@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import ButtonList from './ButtonList'
 import FlowerLogo from './FlowerLogo'
 import Switch from './Switch';
@@ -6,10 +6,13 @@ import { motion } from 'framer-motion';
 
 import { ReactComponent as NoahLogo } from './Assets/NoahLogo-10.svg'
 import './FlowerLogo.css'
+import { ThemeContext } from './App';
 
 
 
-const Navigation = ({theme}) => {
+const Navigation = () => {
+
+  const {theme, setTheme } = useContext(ThemeContext)
   return (
     <motion.div className="Navigation"
       initial={{y: '-100vh'}}

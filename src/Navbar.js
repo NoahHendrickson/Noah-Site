@@ -1,9 +1,13 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom';
 import ButtonList from './ButtonList'
-import FlowerLogo from './FlowerLogo'
 import Switch from './Switch';
 import { ThemeContext } from './App'
 import { ReactComponent as NoahLogo } from './Assets/NoahLogo-10.svg'
+import { NavButton } from './ButtonList';
+import SlideoutMenuCode from './SlideoutMenuCode';
+import SlideoutMenuDesign from './SlideoutMenuDesign';
+
 
 
 const Navbar = () => {
@@ -11,13 +15,24 @@ const Navbar = () => {
 
   return (
     <div className="Navbar">
-      <div className='Switch__container'>
-      <Switch />
+      <div>
+
       </div>
-        <FlowerLogo />
+      <div>
         <NoahLogo className='NoahLogo'/>
-        <ButtonList />
       </div>
+      <div className='navbar__buttons'>
+        <NavButton text='Design'>
+          <SlideoutMenuDesign />
+        </NavButton>
+        <NavButton text='Code'>
+          <SlideoutMenuCode />
+        </NavButton>
+        <Link className="path__button" to='/'>
+          <NavButton text='Home' />
+        </Link>
+      </div>
+    </div>
   )
 }
 
