@@ -26,6 +26,19 @@
   background-color: var(--orange);
 }
 
+.dropdownMenuDesign {
+  right: 0;
+  top: 25px;
+  border-radius: 15px;
+  background-color: white;
+  position: absolute;
+  box-shadow: 3px 3px 9px rgba(25, 25, 25, .25);
+}
+
+.dropdownMenuDesign__item {
+  margin: 15px;
+}
+
 .navbar__buttons {
   display: flex;
   align-items: center;
@@ -74,10 +87,6 @@ h1 {
   color: var(--darkGreen);
 }
 
-.button__bg {
-  color: var(--darkGreen);
-  background-color: rgb(255, 255, 255);
-}
 
 ul {
   display: flex;
@@ -100,14 +109,14 @@ li {
   padding: 5px 0px;
 }
 
-a {
+.button {
   cursor: pointer;
   position: relative;
   font-size: 1em;
   margin: 15px;
   border: none;
   background: none;
-  padding: 5px 22.5px;
+  padding: 5px 20px;
   border-radius: 5px;
   color: white;
   font-weight: 400;
@@ -115,7 +124,13 @@ a {
   user-select: none;
 }
 
+.button__bg {
+  color: var(--darkGreen);
+  background-color: rgb(255, 255, 255);
+}
+
 .path__button {
+  font-weight: 500;
   text-decoration: none;
   padding: 0px;
   color: var(--darkGreen);
@@ -125,12 +140,12 @@ a {
   border-radius: 5px;
   background-color: lightgrey;
   position: absolute;
-  bottom: 0px;
+  top: 0px;
   right: 120px;
 }
 
 .LogoDesign {
-  background-color: wheat;
+  background-color: rgb(246, 239, 217);
 }
 
 .logo__page {
@@ -141,30 +156,88 @@ a {
   align-items: center;
 }
 
-.logo__page--content {
-  margin-top: 125px;
-}
-
 .logo__designs {
   display: grid;
-  gap: 1em;
-  grid-template-columns: 250px 250px 250px;
-  grid-template-rows: 250px 250px 250px;
+  gap: 2em;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 300px);
 }
+
+.logoPatches {
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+  transition: 100ms ease-in-out;
+}
+
+.BC {
+  background-image: url('./Assets/Logos/BCLogo.svg');
+  grid-row: span 2;
+}
+
+.BC:hover {
+  background-size: 80%;
+}
+
+.hyperglide {
+  background-image: url("./Assets/Logos/hyperglides-25.svg");
+}
+
+.hyperglide:hover {
+  background-size: 80%;
+}
+
+.dlt8 {
+  background-image: url("./Assets/Logos/DLT8-01.svg");
+}
+
+.dlt8:hover {
+  background-size: 80%;
+}
+
+.doro {
+  background-image: url("./Assets/Logos/Doro-02.svg");
+  grid-column: span 2;
+}
+
+.doro:hover {
+  background-size: 80%;
+}
+
+.dcl2 {
+  background-image: url("./Assets/Logos/dcl2-01.svg");
+}
+
+.dcl2:hover {
+  background-size: 80%;
+}
+
+.beamen {
+  background-image: url("./Assets/Logos/BeamenLogo-21.svg");
+  grid-row: span 2;
+}
+
+.beamen:hover {
+  background-size: 80%;
+}
+
+
+
+
 
 .logo__square {
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
 }
 
 img {
-  width: 100%;
+  width: 50%;
   padding: 4em;
 }
 
-.hyperglide__square {
-  background-color: pink;
+.span2 {
+  grid-row: span 2;
 }

@@ -35,7 +35,7 @@ export const NavButton = (props) => {
 
   return (
     <li  className='button__list'>
-      <a ref={button} onClick={toggle} >
+      <a className="button" ref={button} onClick={toggle} >
         {props.text}
       </a>
       {open && props.children}

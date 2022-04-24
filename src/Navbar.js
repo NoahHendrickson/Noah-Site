@@ -23,7 +23,17 @@ const Navbar = () => {
       </div>
       <div className='navbar__buttons'>
         <NavButton text='Design'>
-          <SlideoutMenuDesign />
+          <div className="dropdownMenuDesign">
+            <li className='dropdownMenuDesign__item'>
+              <a>UX</a>
+            </li>
+            <li className='dropdownMenuDesign__item'>
+              <a>Graphic</a>
+            </li>
+            <li className='dropdownMenuDesign__item'>
+              <a>Logo</a>
+            </li>
+          </div>
         </NavButton>
         <NavButton text='Code'>
           <SlideoutMenuCode />

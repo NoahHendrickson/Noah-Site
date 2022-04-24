@@ -11,7 +11,11 @@ const AnimatedRoutes = () => {
   const {theme, setTheme } = useContext(ThemeContext)
 
   return (
-    <AnimatePresence>
+    <AnimatePresence
+      initial={false}
+      exitBeforeEnter={true}
+      onExitComplete={() => null}
+    >
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Navigation />} />
         <Route path="/logo_design" element={<LogoDesign /> } />
