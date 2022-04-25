@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import LogoSquare from './LogoSquare'
@@ -13,6 +13,11 @@ import DCL2 from "./Assets/Logos/dcl2-01.svg"
 import Navbar from './Navbar'
 
 const LogoDesign = () => {
+  const [modal, setModal] = useState(false)
+
+  function openModal() {
+    setModal(!modal)
+  }
   return (
     <motion.div
       className='LogoDesign'
@@ -26,7 +31,14 @@ const LogoDesign = () => {
       <div className='logo__page'>
         <div className='logo__designs'>
           <div className='hyperglide logoPatches'></div>
-          <div className='bosciaRose logoPatches'></div>
+          <div onClick={openModal} className='bosciaRose logoPatches'>
+            {/* <Link className="imglink" to="/boscia">hey</Link> */}
+            {modal && <div className='modalBG'>
+              <div className='bosciaModal'>
+
+              </div>
+            </div>}
+          </div>
           <div className='tlh logoPatches'></div>
           <div className='darkMatter logoPatches'></div>
           <div className='springside logoPatches'></div>

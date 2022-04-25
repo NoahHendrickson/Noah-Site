@@ -25,21 +25,21 @@ const Navbar = () => {
         <NavButton text='Design'>
           <div className="dropdownMenuDesign">
             <li className='dropdownMenuDesign__item'>
-              <a>UX</a>
+              <Link className="path__button" to="/">UX</Link>
             </li>
             <li className='dropdownMenuDesign__item'>
-              <a>Graphic</a>
+              <Link className="path__button" to="/">Graphic</Link>
             </li>
             <li className='dropdownMenuDesign__item'>
-              <a>Logo</a>
+              <Link className="path__button" to="/logo_design">Logo</Link>
             </li>
           </div>
         </NavButton>
         <NavButton text='Code'>
           <SlideoutMenuCode />
         </NavButton>
-        <Link className="path__button" to='/'>
-          <NavButton text='Home' />
+        <Link className="button path__button" to='/'>
+          Home
         </Link>
       </div>
     </div>
