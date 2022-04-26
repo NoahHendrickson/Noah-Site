@@ -13,6 +13,46 @@
   z-index: 2;
 }
 
+.story {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 50px 50px 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100%;
+  /* background-color: var(--darkGreen); */
+  color: white;
+  align-items: center;
+  box-shadow: 3px 3px 15px 6px rgba(66, 35, 27, .25);
+}
+
+.pfpTitle {
+  margin: 25px;
+  font-size: 1em;
+  color: white;
+  font-weight: 400;
+}
+
+.pfpText {
+  margin: 25px;
+  font-size: .75em;
+  font-weight: 400;
+
+}
+
+.pfp {
+  border-radius: 50%;
+  margin: 25px;
+  width: 200px;
+  height: 200px;
+  background-image: url("./Assets/186E11C1-E78D-4C8A-9CE0-90B116AB1E3E_1_201_a.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .Navbar {
   font-size: 1em;
   display: grid;
