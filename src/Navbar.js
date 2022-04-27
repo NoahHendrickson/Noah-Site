@@ -16,7 +16,10 @@ const Navbar = () => {
   return (
     <div className="Navbar">
       <div>
-
+        something
+      </div>
+      <div>
+        <button className="general__button">Contact</button>
       </div>
       <div>
         <NoahLogo className='NoahLogo'/>
@@ -38,9 +41,12 @@ const Navbar = () => {
         <NavButton text='Code'>
           <SlideoutMenuCode />
         </NavButton>
-        <Link className="button path__button" to='/'>
+        <Link className="button" to='/'>
           Home
         </Link>
+      </div>
+      <div>
+        <Switch />
       </div>
     </div>
   )

@@ -10,7 +10,7 @@ const Switch = () => {
 
   return (
     <label className='Switch'>
-      <input onChange={handleToggle} type="checkbox" />
+      <input onChange={handleToggle} type="checkbox" checked={theme === 'dark' ? true : false}/>
       <span className='Switch__slider'>
         <div className='theme__icon'>
           {/* {theme === 'light' ? 'light' : 'dark'} */}

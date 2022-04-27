@@ -25,7 +25,7 @@
   /* background-color: var(--darkGreen); */
   color: white;
   align-items: center;
-  box-shadow: 3px 3px 15px 6px rgba(66, 35, 27, .25);
+  box-shadow: 3px 3px 15px 6px rgba(66, 35, 27, .15);
 }
 
 .pfpTitle {
@@ -56,7 +56,7 @@
 .Navbar {
   font-size: 1em;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   align-items: center;
   margin: 20px;
@@ -95,7 +95,7 @@
   align-items: center;
   height: 100vh;
   position: relative;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .socials__container {
@@ -123,15 +123,15 @@
 }
 
 .flower__container {
-  width: 10em;
+  width: 15em;
 }
 
 .NoahLogo {
-  width: 6em;
+  width: 9em;
 }
 
 .splash__page--buttons {
-  font-size: .65em;
+  font-size: 1em;
   display: flex;
   flex-direction: column;
   margin-top: 25px;
@@ -163,14 +163,27 @@ li {
   padding: 5px 0px;
 }
 
+.general__button {
+  margin: 15px;
+  background: none;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+
 .button {
+  text-decoration: none;
   cursor: pointer;
   position: relative;
   font-size: 1em;
   margin: 15px;
   border: none;
   background: none;
-  padding: 5px 20px;
+  padding: 5px 10px;
   border-radius: 5px;
   color: white;
   font-weight: 400;
@@ -184,7 +197,7 @@ li {
 }
 
 .path__button {
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   padding: 0px;
   color: var(--darkGreen);

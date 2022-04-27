@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import ButtonList from './ButtonList'
 import FlowerLogo from './FlowerLogo'
 import Switch from './Switch';
@@ -16,9 +16,14 @@ const Navigation = () => {
 
   const { theme, setTheme } = useContext(ThemeContext)
   const [storyOpen, setStoryOpen] = useState(false)
+
   function showStory() {
     setStoryOpen(!storyOpen)
   }
+
+  useEffect(() => {
+
+  })
 
   return (
     <motion.div className="Navigation"
@@ -36,7 +41,7 @@ const Navigation = () => {
         <FlowerLogo />
         <NoahLogo className='NoahLogo'/>
         <ButtonList showStory={showStory} />
-        <button onClick={showStory}>Story</button>
+        <button className={storyOpen ? "general__button button__bg" : 'general__button'} onClick={showStory}>Story</button>
       </div>
     </motion.div>
   )
