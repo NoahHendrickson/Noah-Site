@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom';
 import ButtonList from './ButtonList'
 import Switch from './Switch';
@@ -7,22 +7,31 @@ import { ReactComponent as NoahLogo } from './Assets/NoahLogo-10.svg'
 import { NavButton } from './ButtonList';
 import SlideoutMenuCode from './SlideoutMenuCode';
 import SlideoutMenuDesign from './SlideoutMenuDesign';
+import Socials from './Socials';
+import ContactDropdown from './ContactDropdown';
 
 
 
 const Navbar = () => {
   const { theme, setTheme } = useContext(ThemeContext);
+  const [contactMenu, setContactMenu] = useState(false);
+
+  function toggleContact() {
+    setContactMenu(!contactMenu)
+  }
 
   return (
     <div className="Navbar">
       <div>
-        something
+        <Socials />
       </div>
       <div>
-        <button className="general__button">Contact</button>
+        <a onClick={toggleContact} className="general__button contactButton">Contact
+        {contactMenu && <ContactDropdown />}
+        </a>
       </div>
       <div>
-        <NoahLogo className='NoahLogo'/>
+        <NoahLogo className='NoahLogo__smaller'/>
       </div>
       <div className='navbar__buttons'>
         <NavButton text='Design'>
@@ -45,7 +54,7 @@ const Navbar = () => {
           Home
         </Link>
       </div>
-      <div>
+      <div className='horizontal__switch'>
         <Switch />
       </div>
     </div>

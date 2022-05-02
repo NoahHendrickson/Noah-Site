@@ -1,8 +1,21 @@
 import React, { useState, useRef, useEffect } from 'react'
 import SlideoutMenuDesign from './SlideoutMenuDesign'
 import SlideoutMenuCode from './SlideoutMenuCode'
+import ContactDropdown from './ContactDropdown';
 
-const ButtonList = ({ text, showStory }) => {
+const ButtonList = ({ text, toggleStory }) => {
+
+  const [contactOpen, setContactOpen] = useState(false);
+  const NavButtonImitate = useRef()
+
+  function toggleBG() {
+    NavButtonImitate.current.classList.toggle('button__bg')
+  }
+
+  function openContact() {
+    setContactOpen(!contactOpen)
+  };
+  
   return (
     <ul className='splash__page--buttons button_container'>
       <NavButton text="Design">
@@ -10,6 +23,12 @@ const ButtonList = ({ text, showStory }) => {
       </NavButton>
       <NavButton text="Code">
         <SlideoutMenuCode />
+      </NavButton>
+      <li className='button__list'>
+        <a onClick={() => {toggleBG(); toggleStory();}} ref={NavButtonImitate} className='NavButton__imitation'>Story</a>
+      </li>
+      <NavButton text="Contact">
+        <ContactDropdown />
       </NavButton>
     </ul>
   );
@@ -34,7 +53,7 @@ export const NavButton = (props) => {
 
   return (
     <li  className='button__list'>
-      <a className="button" ref={button} onClick={toggle} >
+      <a className="button" ref={button} onClick={toggle}>
         {props.text}
       </a>
       {open && props.children}

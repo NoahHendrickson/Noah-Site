@@ -5,7 +5,7 @@
   background-color: var(--orange);
 }
 
-.header {
+.Nav {
   position: sticky;
   top: 0;
   display: flex;
@@ -16,38 +16,37 @@
 .story {
   display: flex;
   flex-direction: column;
-  border-radius: 0px 50px 50px 0px;
   position: absolute;
   top: 0;
   left: 0;
   width: 400px;
   height: 100%;
-  /* background-color: var(--darkGreen); */
   color: white;
   align-items: center;
-  box-shadow: 3px 3px 15px 6px rgba(66, 35, 27, .15);
+  background:  rgb(246, 107, 52);
 }
 
 .pfpTitle {
   margin: 25px;
-  font-size: 1em;
+  font-size: 1.5em;
   color: white;
   font-weight: 400;
 }
 
 .pfpText {
   margin: 25px;
-  font-size: .75em;
+  font-size: 1em;
   font-weight: 400;
 
 }
 
 .pfp {
-  border-radius: 50%;
+  border-radius: 50px;
+  box-shadow: 0px 0px 12px var(--darkGreen);
   margin: 25px;
   width: 200px;
   height: 200px;
-  background-image: url("./Assets/186E11C1-E78D-4C8A-9CE0-90B116AB1E3E_1_201_a.jpeg");
+  background-image: url("./Assets/profilepic.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -66,6 +65,43 @@
   background-color: var(--orange);
 }
 
+.contactTitle {
+  color: var(--oranges);
+}
+
+.ContactDropdown {
+  position: absolute;
+  left: 120px;
+  bottom: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--cream);
+  color: var(--orange);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.contactButton {
+  position: relative;
+}
+
+.contact__label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.contact__inputField {
+  border: solid var(--darkGreen) 3px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.longField {
+  height: 75px;
+}
+
 .dropdownMenuDesign {
   right: 0;
   top: 25px;
@@ -77,6 +113,7 @@
 
 .dropdownMenuDesign__item {
   margin: 15px;
+  color: var(--darkGreen);
 }
 
 .navbar__buttons {
@@ -102,10 +139,7 @@
  display: flex;
  justify-content: space-between;
  width: 200px;
-}
-
-.socails__icon {
-  fill: #fff
+ font-size: 16px;
 }
 
 .svg__color {
@@ -130,11 +164,20 @@
   width: 9em;
 }
 
+.NoahLogo__smaller {
+  width: 6em;
+}
+
 .splash__page--buttons {
   font-size: 1em;
   display: flex;
   flex-direction: column;
   margin-top: 25px;
+}
+
+.dropdown__button {
+  position: relative;
+  margin: 20px;
 }
 
 h1 {
@@ -151,7 +194,18 @@ li {
   position: relative;
   font-size: 1em;
   font-weight: 400;
-  padding: 5px 25px;
+  padding: 5px 5px;
+}
+
+.horizontal__menu {
+  padding-left: 15px; 
+  padding-right: 15px; 
+  color: var(--cream);
+}
+
+.horizontal__menu--button {
+  color: var(--cream);
+  text-decoration: none;
 }
 
 .button__list {
@@ -161,10 +215,11 @@ li {
 .code__list {
   width: 125px;
   padding: 5px 0px;
+  color: var(--cream);
 }
 
 .general__button {
-  margin: 15px;
+  margin: 15px 0px;
   background: none;
   padding: 5px 10px;
   border: none;
@@ -172,8 +227,24 @@ li {
   font-size: 1em;
   font-weight: 400;
   border-radius: 5px;
+  position: relative;
 }
 
+.NavButton__imitation {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  font-size: 1em;
+  margin: 15px;
+  border: none;
+  background: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+  z-index: 1;
+  user-select: none;
+}
 
 .button {
   text-decoration: none;
@@ -193,7 +264,7 @@ li {
 
 .button__bg {
   color: var(--darkGreen);
-  background-color: rgb(255, 255, 255);
+  background-color: var(--cream);
 }
 
 .path__button {
@@ -205,10 +276,11 @@ li {
 
 .SlideOutMenu {
   border-radius: 5px;
-  background-color: lightgrey;
+  background-color: var(--darkGreen);
   position: absolute;
   top: 0px;
   right: 120px;
+  box-shadow: 2px 2px 12px rgba(25, 25, 25, .25);
 }
 
 .LogoDesign {

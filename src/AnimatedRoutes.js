@@ -1,10 +1,9 @@
 import React, {useContext} from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import LogoDesign from './LogoDesign';
-import Navigation from './Navigation';
+import LogoPage from './LogoPage';
+import Navigation from './SplashPage/Navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ThemeContext } from './App';
-import Carasol from './Carasol';
 
 const AnimatedRoutes = () => {
 
@@ -19,8 +18,7 @@ const AnimatedRoutes = () => {
     >
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Navigation />} />
-        <Route path="/logo_design" element={<LogoDesign />} />
-        {/* <Route path="/boscia" element={<Carasol />} /> */}
+        <Route path="/logo_design" element={<LogoPage />} />
       </Routes>
     </AnimatePresence>
   )

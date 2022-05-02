@@ -25,7 +25,7 @@ const LogoDesign = () => {
       animate={{y: '0'}}
       exit={{y: '100vh', transition:{duration: .1}}} 
     >
-      <div className='header'>
+      <div className='Nav'>
         <Navbar />
       </div>
       <div className='logo__page'>
