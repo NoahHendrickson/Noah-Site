@@ -42,7 +42,7 @@
 }
 
 input:checked + .Switch__slider:before {
-  transform: translateX(1.75em);
+  transform: translateX(1.7em);
   content: '';
   background-image: url('./Assets/Dark-mode-icon-12.svg');
   background-position: center;
