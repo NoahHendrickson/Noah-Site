@@ -13,7 +13,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <div className='App'>
+      <div className={theme === 'light' ? 'App' : 'AppDark'}>
         <Router>
           <AnimatedRoutes theme={theme} />
         </Router>

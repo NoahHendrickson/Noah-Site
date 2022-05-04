@@ -10,6 +10,7 @@ import Socials from '../Socials';
 import Story from '../Story';
 import ContactDropdown from '../ContactDropdown';
 import NoahPFP from '../NoahPFP';
+import StoryCarousel from '../StoryCarousel';
 
 
 
@@ -31,12 +32,15 @@ const Navigation = () => {
         <Switch />
       </div>
       <div className="splash__page">
-        <h1>The theme is {theme}</h1>
         <Socials />
-        {story ? <NoahPFP /> : <FlowerLogo />}
+        <div className='splash__page--me'>
+          {story ? <StoryCarousel /> : <FlowerLogo />}
+        </div>
         <NoahLogo className='NoahLogo'/>
         <ButtonList toggleStory={toggleStory} />
-        <p>{story}</p>
+      </div>
+      <div className='footer'>
+        <p>All Rights Reserved 2022 ©️</p>
       </div>
     </motion.div>
   )

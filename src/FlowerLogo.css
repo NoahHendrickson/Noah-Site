@@ -1,5 +1,5 @@
 .d {
-  fill: #363f33;
+  fill: var(--lime);
 }
 
 @keyframes bounce-one {

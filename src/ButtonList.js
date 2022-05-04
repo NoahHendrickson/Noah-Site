@@ -25,7 +25,7 @@ const ButtonList = ({ text, toggleStory }) => {
         <SlideoutMenuCode />
       </NavButton>
       <li className='button__list'>
-        <a onClick={() => {toggleBG(); toggleStory();}} ref={NavButtonImitate} className='NavButton__imitation'>Story</a>
+        <a onClick={() => {toggleBG(); toggleStory();}} ref={NavButtonImitate} className='NavButton__imitation'>About Me</a>
       </li>
       <NavButton text="Contact">
         <ContactDropdown />

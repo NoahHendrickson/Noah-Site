@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { ThemeContext } from './App';
 import LogoSquare from './LogoSquare'
 import Hyperglide from "./Assets/Logos/hyperglides-25.svg"
 import TLH from "./Assets/Logos/TLH.svg"
@@ -14,13 +15,14 @@ import Navbar from './Navbar'
 
 const LogoDesign = () => {
   const [modal, setModal] = useState(false)
+  const {theme} = useContext(ThemeContext)
 
   function openModal() {
     setModal(!modal)
   }
   return (
     <motion.div
-      className='LogoDesign'
+      className={theme === 'light' ? 'LogoDesign' : 'LogoDesignDark'}
       initial={{y: '100vh'}}
       animate={{y: '0'}}
       exit={{y: '100vh', transition:{duration: .1}}} 

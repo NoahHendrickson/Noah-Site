@@ -8,9 +8,12 @@
 
 :root {
   --black: #373e3e;
-  --orange: rgb(249, 91, 28);
+  --orange: #f95b1c;
   --darkGreen: #363f33;
   --lime: #B2D235;
   --forest: #2A6649;
   --cream: #F9F2BD;
+  --olive: #5A563A;
+  --rose: #BC6054;
+  --kelly: #00904C;
 }

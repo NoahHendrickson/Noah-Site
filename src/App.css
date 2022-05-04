@@ -2,7 +2,26 @@
   width: 100%;
   height: 100vh;
   text-align: center;
-  background-color: var(--orange);
+  background-color: var(--kelly);
+}
+
+.Navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 98%;
+}
+
+.footer {
+  height: 2%;
+}
+
+.AppDark {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: var(--darkGreen);
 }
 
 .Nav {
@@ -14,35 +33,63 @@
 }
 
 .story {
+  margin: 25px 15px;
+  width: 75%;
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 400px;
-  height: 100%;
   color: white;
   align-items: center;
-  background:  rgb(246, 107, 52);
+  justify-content: center;
+  text-align: left;
+  background-color: var(--lime);
+  box-shadow: 0px 0px 16px rgba(18, 91, 17, 0.25);
+  position: relative;
+  border-radius: 25px;
+}
+
+.storyCarousel {
+  display: flex;
+}
+
+.splash__page--me {
+  height: 300px;
+}
+
+.fullStory__button {
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--cream);
+  border-radius: 5px;
+  color: var(--orange);
+  width: 150px;
 }
 
 .pfpTitle {
-  margin: 25px;
-  font-size: 1.5em;
-  color: white;
+  font-size: 1.25em;
+  color: var(--darkGreen);
   font-weight: 400;
+  width: 300px;
+}
+
+.quickBio {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  text-align: right;
 }
 
 .pfpText {
-  margin: 25px;
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: 400;
-
+  width: 300px;
+  color: var(--cream);
 }
 
 .pfp {
   border-radius: 50px;
-  box-shadow: 0px 0px 12px var(--darkGreen);
+  /* box-shadow: 0px 0px 12px var(--darkGreen); */
   margin: 25px;
   width: 200px;
   height: 200px;
@@ -62,7 +109,7 @@
   width: 100%;
   border-radius: 15px;
   height: 100px;
-  background-color: var(--orange);
+  background-color: var(--kelly);
 }
 
 .contactTitle {
@@ -131,8 +178,10 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
   position: relative;
   font-size: 1em;
+  overflow: hidden;
 }
 
 .socials__container {
@@ -157,11 +206,19 @@
 }
 
 .flower__container {
-  width: 15em;
+  width: 18em;
 }
 
 .NoahLogo {
   width: 9em;
+}
+
+.st10 {
+  fill: var(--cream)
+}
+
+.st15 {
+  fill: var(--orange)
 }
 
 .NoahLogo__smaller {
@@ -264,7 +321,7 @@ li {
 
 .button__bg {
   color: var(--darkGreen);
-  background-color: var(--cream);
+  background-color: var(--lime);
 }
 
 .path__button {
@@ -276,7 +333,7 @@ li {
 
 .SlideOutMenu {
   border-radius: 5px;
-  background-color: var(--darkGreen);
+  background-color: var(--rose);
   position: absolute;
   top: 0px;
   right: 120px;
@@ -285,7 +342,10 @@ li {
 
 .LogoDesign {
   background-color: rgb(246, 239, 217);
+}
 
+.LogoDesignDark {
+  background-color: var(--darkGreen);
 }
 
 .logo__page {
@@ -469,4 +529,28 @@ img {
   height: 500px;
   background-color: green;
   opacity: 1;
+}
+
+.leftArrow {
+  fill: white;
+}
+
+.rightArrow {
+  fill: white;
+  stroke-width: 2px;
+  stroke: var(--orange)
+}
+.arrows:hover .leftArrow {
+  transform: translateX(15px);
+  transition: 200ms;
+}
+
+.arrows:hover .rightArrow {
+  transform: translateX(15px);
+  transition: 750ms;
+}
+
+.arrows {
+  width: 100px;
+  border: solid white 3px;
 }

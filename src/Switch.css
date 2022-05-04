@@ -19,7 +19,7 @@
   left: 0;
   right: 0;
   border-radius: .6em;
-  background-color: #c8d1ca;
+  background-color: var(--olive);
   transition: 250ms ease-in-out;
   /* box-shadow: inset 0px 0px 3px var(--black); */
 }
@@ -53,7 +53,7 @@ input:checked + .Switch__slider:before {
 }
 
 input:checked + .Switch__slider {
-  background-color: var(--black);
+  background-color: var(--lime);
 }
 
 .theme__icon {
