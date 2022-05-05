@@ -2,15 +2,16 @@ import React, { useState, useRef, useEffect } from 'react'
 import SlideoutMenuDesign from './SlideoutMenuDesign'
 import SlideoutMenuCode from './SlideoutMenuCode'
 import ContactDropdown from './ContactDropdown';
+import { motion } from 'framer-motion';
 
 const ButtonList = ({ text, toggleStory }) => {
 
   const [contactOpen, setContactOpen] = useState(false);
   const NavButtonImitate = useRef()
 
-  function toggleBG() {
-    NavButtonImitate.current.classList.toggle('button__bg')
-  }
+  // function toggleBG() {
+  //   NavButtonImitate.current.classList.toggle('button__bg')
+  // }
 
   function openContact() {
     setContactOpen(!contactOpen)
@@ -25,7 +26,11 @@ const ButtonList = ({ text, toggleStory }) => {
         <SlideoutMenuCode />
       </NavButton>
       <li className='button__list'>
-        <a onClick={() => {toggleBG(); toggleStory();}} ref={NavButtonImitate} className='NavButton__imitation'>About Me</a>
+        <motion.div whileTap={{scale: .95}} whileHover={{scale: 1.1}} className='behind customBttn'>
+          <div className='front customBttn'>
+            <a onClick={toggleStory} ref={NavButtonImitate} className='NavButton__imitation'>About Me</a>
+          </div>
+        </motion.div>
       </li>
       <NavButton text="Contact">
         <ContactDropdown />
@@ -38,25 +43,32 @@ export const NavButton = (props) => {
   const [open, setOpen] = useState(false);
   const button = useRef()
 
-  useEffect(() => {
-    if (open === true) {
-      button.current.classList.add('button__bg')
-    }
-    if (open === false) {
-      button.current.classList.remove('button__bg')
-    }
-  }, [open]);
+  // useEffect(() => {
+  //   if (open === true) {
+  //     button.current.classList.add('button__bg')
+  //   }
+  //   if (open === false) {
+  //     button.current.classList.remove('button__bg')
+  //   }
+  // }, [open]);
 
   function toggle() {
     setOpen(!open)
   };
 
   return (
-    <li  className='button__list'>
-      <a className="button" ref={button} onClick={toggle}>
-        {props.text}
-      </a>
-      {open && props.children}
+    <li className='button__list'>
+      <motion.div
+        whileTap={{scale: 1}}
+        whileHover={{ scale: 1.1 }}
+        className='behind customBttn'>
+          <div className='front customBttn'>
+            <a className="button" ref={button} onClick={toggle}>
+              {props.text}
+            </a>
+              {open && props.children}
+          </div>
+      </motion.div>
     </li>
   );
 };

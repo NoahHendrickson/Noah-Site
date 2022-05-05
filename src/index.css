@@ -9,6 +9,9 @@
 :root {
   --black: #373e3e;
   --orange: #f95b1c;
+  --lightOrange: #ffa60d;
+  --darkOrange: #bb3a07;
+  --darkestOrange: #7f2602;
   --darkGreen: #363f33;
   --lime: #B2D235;
   --forest: #2A6649;
@@ -16,4 +19,6 @@
   --olive: #5A563A;
   --rose: #BC6054;
   --kelly: #00904C;
+  --brightKelly: #098825;
+  --darkKelly: #108C21;
 }

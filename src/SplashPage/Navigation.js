@@ -11,6 +11,7 @@ import Story from '../Story';
 import ContactDropdown from '../ContactDropdown';
 import NoahPFP from '../NoahPFP';
 import StoryCarousel from '../StoryCarousel';
+import Button from '../Button';
 
 
 
@@ -36,11 +37,11 @@ const Navigation = () => {
         <div className='splash__page--me'>
           {story ? <StoryCarousel /> : <FlowerLogo />}
         </div>
-        <NoahLogo className='NoahLogo'/>
+        <NoahLogo className='NoahLogo' />
         <ButtonList toggleStory={toggleStory} />
       </div>
       <div className='footer'>
-        <p>All Rights Reserved 2022 ©️</p>
+        <p>All Rights Reserved 2022 Bullshit text for now ©️</p>
       </div>
     </motion.div>
   )
