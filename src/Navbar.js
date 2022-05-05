@@ -40,7 +40,7 @@ const Navbar = () => {
               <Link className="path__button" to="/">UX</Link>
             </li>
             <li className='dropdownMenuDesign__item'>
-              <Link className="path__button" to="/">Graphic</Link>
+              <Link className="path__button" to="/GraphicPage">Graphic</Link>
             </li>
             <li className='dropdownMenuDesign__item'>
               <Link className="path__button" to="/logo_design">Logo</Link>

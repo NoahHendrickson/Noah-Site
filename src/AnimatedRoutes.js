@@ -4,6 +4,7 @@ import LogoPage from './LogoPage';
 import Navigation from './SplashPage/Navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ThemeContext } from './App';
+import GraphicPage from './GraphicPage';
 
 const AnimatedRoutes = () => {
 
@@ -19,6 +20,7 @@ const AnimatedRoutes = () => {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Navigation />} />
         <Route path="/logo_design" element={<LogoPage />} />
+        <Route path="/GraphicPage" element={<GraphicPage />} />
       </Routes>
     </AnimatePresence>
   )
