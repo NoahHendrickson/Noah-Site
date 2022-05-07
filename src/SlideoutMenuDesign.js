@@ -10,7 +10,7 @@ const SlideoutMenuDesign = ({ toggle, open, setOpen }) => {
         <li className="horizontal__menu"><Link className="horizontal__menu--button" to="logo_design">Logo</Link></li>
         <li className="horizontal__menu"><Link className="horizontal__menu--button" to="GraphicPage">Graphic</Link></li>
         <li className="horizontal__menu"><Link className="horizontal__menu--button" to="logo_design">UX</Link></li>
-      </ul>
+        </ul>
     </div>
   )
 }

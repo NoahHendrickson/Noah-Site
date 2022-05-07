@@ -32,7 +32,7 @@ const LogoDesign = () => {
       </div>
       <div className='logo__page'>
         <div className='logo__designs'>
-          <div className='hyperglide logoPatches'></div>
+          {/* <div className='hyperglide logoPatches'></div> */}
           <div onClick={openModal} className='bosciaRose logoPatches'>
             {/* <Link className="imglink" to="/boscia">hey</Link> */}
             {modal && <div className='modalBG'>
@@ -44,9 +44,9 @@ const LogoDesign = () => {
           <div className='tlh logoPatches'></div>
           <div className='darkMatter logoPatches'></div>
           <div className='springside logoPatches'></div>
+          <div className='dlt8 logoPatches'></div>
           <div className='doro logoPatches'></div>
           <div className='BC logoPatches'></div>
-          <div className='dlt8 logoPatches'></div>
           <div className='dcl2 logoPatches'></div>
           <div className='beamen logoPatches'></div>
           <div className='absurdUni logoPatches'></div>

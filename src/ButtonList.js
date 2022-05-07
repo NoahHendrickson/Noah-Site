@@ -26,7 +26,7 @@ const ButtonList = ({ text, toggleStory }) => {
         <SlideoutMenuCode />
       </NavButton>
       <li className='button__list'>
-        <motion.div whileTap={{scale: .95}} whileHover={{scale: 1.1}} className='behind customBttn'>
+        <motion.div whileTap={{scale: .98}} whileHover={{scale: 1.1}} className='behind customBttn'>
           <div className='front customBttn'>
             <a onClick={toggleStory} ref={NavButtonImitate} className='NavButton__imitation'>About Me</a>
           </div>
@@ -41,16 +41,8 @@ const ButtonList = ({ text, toggleStory }) => {
 
 export const NavButton = (props) => {
   const [open, setOpen] = useState(false);
-  const button = useRef()
+  const button = useRef();
 
-  // useEffect(() => {
-  //   if (open === true) {
-  //     button.current.classList.add('button__bg')
-  //   }
-  //   if (open === false) {
-  //     button.current.classList.remove('button__bg')
-  //   }
-  // }, [open]);
 
   function toggle() {
     setOpen(!open)
@@ -59,7 +51,7 @@ export const NavButton = (props) => {
   return (
     <li className='button__list'>
       <motion.div
-        whileTap={{scale: 1}}
+        whileTap={{scale: .98}}
         whileHover={{ scale: 1.1 }}
         className='behind customBttn'>
           <div className='front customBttn'>

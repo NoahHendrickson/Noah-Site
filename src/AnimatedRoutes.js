@@ -5,6 +5,7 @@ import Navigation from './SplashPage/Navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ThemeContext } from './App';
 import GraphicPage from './GraphicPage';
+import NachoBox from './NachoBox';
 
 const AnimatedRoutes = () => {
 
@@ -21,6 +22,7 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<Navigation />} />
         <Route path="/logo_design" element={<LogoPage />} />
         <Route path="/GraphicPage" element={<GraphicPage />} />
+        <Route path='NachoBox' element={<NachoBox />} />
       </Routes>
     </AnimatePresence>
   )

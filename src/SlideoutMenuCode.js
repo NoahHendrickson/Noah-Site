@@ -9,7 +9,6 @@ const SlideoutMenuCode = () => {
         <li className='code__list'>SVG Animation</li>
         <li className='code__list'>JS Calc</li>
         <li className='code__list'>Rate My Chipotle</li>
-        <li className='code__list'>Overview</li>
       </ul>
     </div>
   )

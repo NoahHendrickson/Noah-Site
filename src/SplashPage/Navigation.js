@@ -12,6 +12,7 @@ import ContactDropdown from '../ContactDropdown';
 import NoahPFP from '../NoahPFP';
 import StoryCarousel from '../StoryCarousel';
 import Button from '../Button';
+import Footer from '../Footer';
 
 
 
@@ -40,9 +41,7 @@ const Navigation = () => {
         <NoahLogo className='NoahLogo' />
         <ButtonList toggleStory={toggleStory} />
       </div>
-      <div className='footer'>
-        <p>All Rights Reserved 2022 Bullshit text for now ©️</p>
-      </div>
+      <Footer />
     </motion.div>
   )
 }
