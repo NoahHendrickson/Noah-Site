@@ -4,6 +4,7 @@
   font-family: basic-sans,sans-serif;
   font-weight: 400;
   font-style: normal;
+  box-sizing: border-box;
 }
 
 :root {
@@ -21,4 +22,5 @@
   --kelly: #00904C;
   --brightKelly: #098825;
   --darkKelly: #108C21;
+  --nachoblue: #23E2CB
 }

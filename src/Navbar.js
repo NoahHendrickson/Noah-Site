@@ -21,6 +21,7 @@ const Navbar = () => {
   }
 
   return (
+    <div className='Nav'>
     <div className="Navbar">
       <div>
         <Socials />
@@ -56,6 +57,7 @@ const Navbar = () => {
       </div>
       <div className='horizontal__switch'>
         <Switch />
+      </div>
       </div>
     </div>
   )

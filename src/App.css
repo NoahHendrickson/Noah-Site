@@ -30,7 +30,7 @@
   align-items: center;
   position: absolute;
   background-color: var(--orange);
-  width: 100%;
+  width: calc(100% + 4px);
   height: 100%;
   border: solid var(--lightOrange) 2px;
   bottom: 3px;
@@ -42,8 +42,8 @@
 
 .behind {
   position: relative;
-  width: 5em;
-  height: 2em;
+  width: 5.75em;
+  height: 2.25em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,10 +405,8 @@ li {
 
 .logo__designs {
   display: grid;
-  gap: .5em;
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: repeat(5, 300px);
-
 }
 
 .logoPatches {
@@ -666,9 +664,9 @@ img {
   background-size: cover;
 }
 
-.nachobox:hover > .lime {
-  background-image: url("./Assets/Graphics/graphicThumbnail-04.svg");
+.nachobox:hover .lime {
   background-size: 50%;
+  transition: 100ms;
 }
 
 
@@ -690,4 +688,154 @@ img {
 .gear {
   background-image: url("./Assets/Graphics/graphicThumbnail-03.svg");
   background-size: 80%;
+}
+
+.NachoBox__page {
+  background-color: var(--cream);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleCard {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.titleCard__one {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.projectTitle {
+  font-size: 3em;
+  font-weight: 600;
+  text-align: right;
+  width: 500px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 15px;
+}
+
+.projectText {
+  text-align: left;
+  width: 500px;
+  margin-left: 10px;
+}
+
+.subTitle {
+  font-size: .35em;
+  color: var(--kelly);
+  position: relative;
+  bottom: 8px;
+}
+
+.images {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title__image {
+  background-image: url("./Assets/Graphics/graphicThumbnail-04.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  width: 70%;
+  background-color: #CEF982;
+  height: 500px;
+}
+
+.caption {
+  font-size: 2.75em;
+  font-weight: 800;
+  text-align: center;
+  grid-column: span 2;
+  width: 70%;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  border-radius: 15px;
+  color: black;
+}
+
+.process__images {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+}
+
+.process__image {
+  width: 50%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+.process__image--left {
+  background-image: url("./Assets/NachoBoxPics/IMG_0095.jpg");
+}
+
+.process__image--right {
+  background-image: url("./Assets/NachoBoxPics/Letters.jpg");
+}
+
+.sketch {
+  width: 25%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 100px 0px;
+}
+
+.sketch--one {
+  background-image: url("./Assets/NachoBoxPics/IMG_0116.jpg");
+}
+.sketch--two {
+  background-image: url("./Assets/NachoBoxPics/IMG_0118.jpg");
+}
+
+.sketch--three {
+  background-image: url("./Assets/NachoBoxPics/IMG_0114\ \(1\).jpg");
+}
+
+.sketch--four {
+  background-image: url("./Assets/NachoBoxPics/c006.jpg");
+}
+
+.hero__image {
+  width: 100%;
+  /* background-color: var(--nachoblue); */
+}
+
+.hero__image--fonts {
+  width: 70%;
+}
+
+.process__images--package {
+  width: 100%;
+}
+
+.process__image--package {
+  width: 50%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.package__left {
+  background-image: url("./Assets/NachoBoxPics/packageleft-10-10.svg");
+  background-color: #F78263;
+}
+
+.package__right {
+  background-image: url("./Assets/NachoBoxPics/packageright-11-11.svg");
+  background-color: #CEF982;
 }

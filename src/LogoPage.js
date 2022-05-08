@@ -25,11 +25,8 @@ const LogoDesign = () => {
       className={theme === 'light' ? 'LogoDesign' : 'LogoDesignDark'}
       initial={{y: '100vh'}}
       animate={{y: '0'}}
-      exit={{y: '100vh', transition:{duration: .1}}} 
-    >
-      <div className='Nav'>
-        <Navbar />
-      </div>
+      exit={{y: '100vh', transition:{duration: .1}}}>
+      <Navbar />
       <div className='logo__page'>
         <div className='logo__designs'>
           {/* <div className='hyperglide logoPatches'></div> */}

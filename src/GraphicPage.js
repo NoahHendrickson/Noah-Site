@@ -13,9 +13,7 @@ const GraphicPage = () => {
       animate={{y: '0'}}
       exit={{y: '100vh', transition:{duration: .1}}} 
       className='GraphicPage'>
-      <div className='Nav'>
-        <Navbar />
-      </div>
+      <Navbar />
       <div className='graphics'>
         <div className='graphic howto'>
           <Link to="/">
@@ -23,7 +21,9 @@ const GraphicPage = () => {
           </Link>
         </div>
         <div className='graphic nachobox'>
-          <div className='hero__icon lime'></div>
+          <Link to="/NachoBox">
+            <div className='hero__icon lime'></div>
+          </Link>
         </div>
         <div className='graphic hyperglide'>
           <div className='hero__icon squiggle'></div>
