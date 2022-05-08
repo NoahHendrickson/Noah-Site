@@ -22,7 +22,7 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<Navigation />} />
         <Route path="/logo_design" element={<LogoPage />} />
         <Route path="/GraphicPage" element={<GraphicPage />} />
-        <Route path='NachoBox' element={<NachoBox />} />
+        <Route path='/NachoBox' element={<NachoBox />} />
       </Routes>
     </AnimatePresence>
   )
