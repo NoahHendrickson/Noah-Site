@@ -16,7 +16,7 @@ const GraphicPage = () => {
       <Navbar />
       <div className='graphics'>
         <div className='graphic howto'>
-          <Link to="/">
+          <Link to="/HowToPC">
             <div className='hero__icon gpu'></div>
           </Link>
         </div>

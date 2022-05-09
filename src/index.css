@@ -8,7 +8,7 @@
 }
 
 :root {
-  --black: #373e3e;
+  --black: #272828;
   --orange: #f95b1c;
   --lightOrange: #ffa60d;
   --darkOrange: #bb3a07;
@@ -17,6 +17,7 @@
   --lime: #B2D235;
   --forest: #2A6649;
   --cream: #F9F2BD;
+  --creamy: #f9f5d5;
   --olive: #5A563A;
   --rose: #BC6054;
   --kelly: #00904C;

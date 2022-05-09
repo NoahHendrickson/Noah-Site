@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import ButtonList from './ButtonList'
 import Switch from './Switch';
 import { ThemeContext } from './App'
@@ -50,10 +51,16 @@ const Navbar = () => {
         </NavButton>
         <NavButton text='Code'>
           <SlideoutMenuCode />
-        </NavButton>
-        <Link className="button" to='/'>
-          Home
-        </Link>
+          </NavButton>
+          <li className='button__list'>
+          <motion.div whileTap={{scale: .98}} whileHover={{scale: 1.1}} className='behind customBttn'>
+            <div className='front customBttn'>    
+              <Link className="button" to='/'>
+              Home
+              </Link>
+            </div>
+          </motion.div>
+        </li>
       </div>
       <div className='horizontal__switch'>
         <Switch />

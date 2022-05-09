@@ -305,6 +305,7 @@ li {
 .horizontal__menu--button {
   color: var(--cream);
   text-decoration: none;
+  width: 100%;
 }
 
 .button__list {
@@ -384,7 +385,6 @@ li {
   top: 0px;
   right: 120px;
   box-shadow: 2px 2px 12px rgba(25, 25, 25, .25);
-  height: 28px;
 }
 
 .LogoDesign {
@@ -691,7 +691,11 @@ img {
 }
 
 .NachoBox__page {
-  background-color: var(--cream);
+  background-color: var(--creamy);
+}
+
+.NachoBox__page--dark {
+  background-color: var(--black);
 }
 
 .content {
@@ -838,4 +842,49 @@ img {
 .package__right {
   background-image: url("./Assets/NachoBoxPics/packageright-11-11.svg");
   background-color: #CEF982;
+}
+
+.HowToPage {
+  background-color: var(--cream);
+}
+
+.process__images--howto {
+  width: 100%;
+  display: flex;
+}
+
+.process__images--six {
+  width: 20%;
+  height: 300px;
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.iconRam {
+  background-image: url("./Assets/HowToPC/HowToIcons-03.svg");
+  background-color: #DB69F7;
+}
+
+.iconCooler {
+  background-image: url("./Assets/HowToPC/HowToIcons-02.svg");
+  background-color: #FFDE17;
+}
+
+.iconMobo {
+  background-image: url("./Assets/HowToPC/HowToIcons-01.svg");
+  background-size: 70%;
+  background-color: #31C9C5;
+}
+
+.iconGpu {
+  background-image: url("./Assets/Graphics/graphicThumbnail-01.svg");
+  background-color: #EA658E;
+  background-size: 90%;
+}
+
+.iconCpu {
+  background-image: url("./Assets/HowToPC/HowToIcons-04.svg");
+  background-color: #5CF779;
+  background-size: 50%;
 }

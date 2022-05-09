@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from './App'
 import Navbar from './Navbar'
 import PicOne from "./Assets/NachoBoxPics/IMG_0095.jpg"
 import PicTwo from "./Assets/NachoBoxPics/Letters.jpg"
@@ -6,19 +7,16 @@ import PicThree from "./Assets/NachoBoxPics/fontImage-05-05.svg"
 import icons from "./Assets/NachoBoxPics/icons-04.svg"
 import iconsBanner from "./Assets/NachoBoxPics/iconsBanner-10.svg"
 import nachoCovers from "./Assets/NachoBoxPics/nachoboxcovers-02.svg"
+import ProjectTitle from './ProjectTitle'
 
 const NachoBox = () => {
+  const {theme} = useContext(ThemeContext)
+
   return (
-    <div className='NachoBox__page'>
+    <div className={theme === 'light' ? 'NachoBox__page' : 'NachoBox__page--dark'}>
       <Navbar />
       <div className='content'>
-        <div className='titleCard'>
-          <div className='titleCard__one'>
-            <div className='projectTitle'>Nacho Box <p className='subTitle'>Package & Pattern Design</p></div>
-            <div className='projectText'>This is a packaging project I created in College. My goal was to concept out a conveinant Chips and Salsa container for parties or get togethers.</div>
-          </div>
-          <div className='titleCard__two'></div>
-        </div>
+        <ProjectTitle title='Nacho Box' subtitle='Package & Pattern Design' text="This is a packaging project I created in College. My goal was to concept out a conveinant Chips and Salsa container for parties or get togethers." />
         <div className='images'>
           <div className='title__image'></div>
           <h1 className='caption'>To achieve an organic vibe I hand drew all the lettering and icons with pen and paper and then scanned them into Illustrator and cleaned them up.</h1>

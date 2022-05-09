@@ -51,7 +51,7 @@ export const NavButton = (props) => {
   return (
     <li className='button__list'>
       <motion.div
-        whileTap={{scale: .98}}
+        whileTap={{scale: 1.05}}
         whileHover={{ scale: 1.1 }}
         className='behind customBttn'>
           <div className='front customBttn'>

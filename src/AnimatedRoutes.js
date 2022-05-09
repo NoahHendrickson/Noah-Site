@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { ThemeContext } from './App';
 import GraphicPage from './GraphicPage';
 import NachoBox from './NachoBox';
+import HowToPage from './HowToPage';
 
 const AnimatedRoutes = () => {
 
@@ -23,6 +24,7 @@ const AnimatedRoutes = () => {
         <Route path="/logo_design" element={<LogoPage />} />
         <Route path="/GraphicPage" element={<GraphicPage />} />
         <Route path='/NachoBox' element={<NachoBox />} />
+        <Route path='/HowToPC' element={<HowToPage />} />
       </Routes>
     </AnimatePresence>
   )
