@@ -47,6 +47,7 @@ const LogoDesign = () => {
           <div className='dcl2 logoPatches'></div>
           <div className='beamen logoPatches'></div>
           <div className='absurdUni logoPatches'></div>
+          <div className='cercek logoPatches'></div>
           {/* <LogoSquare src={DCL2}/>
           <LogoSquare src={Hyperglide}/>
           <LogoSquare src={TLH} />

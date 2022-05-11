@@ -1,18 +1,13 @@
 import React from 'react'
-import Noah from "./Assets/profilepic.jpeg"
 import { motion } from 'framer-motion'
 
 const NoahPFP = (props) => {
   return (
     <div className='story'>
-      <h1 className='pfpTitle left'>My name is Noah</h1>
-      <div className='pfp'></div>
-      <div className='quickBio'>
-        <p className='pfpText'>{props.bio}
+      <h1 className='story__title'>{props.Title}</h1>
+        <p className='story__text'>
+          {props.Text}
         </p>
-        <motion.button whileHover={{scale: 1.1}} className='fullStory__button'>How I got here ➡️ </motion.button>
-      </div>
-      
     </div>
   )
 }

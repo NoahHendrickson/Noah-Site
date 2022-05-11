@@ -13,6 +13,8 @@ import NoahPFP from '../NoahPFP';
 import StoryCarousel from '../StoryCarousel';
 import Button from '../Button';
 import Footer from '../Footer';
+import Noah from "../Assets/profilepic.jpeg"
+
 
 
 
@@ -38,7 +40,7 @@ const Navigation = () => {
         <div className='splash__page--me'>
           {story ? <StoryCarousel /> : <FlowerLogo />}
         </div>
-        <NoahLogo className='NoahLogo' />
+        {story ? <div className="NoahHeadShot"></div> : <NoahLogo className='NoahLogo' />}
         <ButtonList toggleStory={toggleStory} />
       </div>
       <Footer />

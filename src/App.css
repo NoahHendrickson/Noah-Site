@@ -40,6 +40,19 @@
   border: solid var(--lightOrange) 2px;
 }
 
+.NoahHeadShot {
+  position: relative;
+  top: 50px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  background-image: url("./Assets/profilepic.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .behind {
   position: relative;
   width: 5.75em;
@@ -67,25 +80,37 @@
 }
 
 .story {
+  padding: 25px;
   margin: 25px 15px;
-  width: 75%;
+  max-width: 30%;
   display: flex;
+  flex-direction: column;
   color: white;
   align-items: center;
   justify-content: center;
   text-align: left;
-  background-color: var(--lime);
-  box-shadow: 0px 0px 16px rgba(18, 91, 17, 0.25);
   position: relative;
   border-radius: 25px;
 }
 
+.story__title {
+  color: var(--creamy);
+  font-size: 3em;
+}
+
+.story__text {
+  color: var(--creamy);
+  font-size: 1.5em;
+  text-align: center;
+}
+
 .storyCarousel {
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .splash__page--me {
-  height: 300px;
   display: flex;
   align-items: center;
 }
@@ -486,7 +511,7 @@ li {
 
 .dcl2 {
   background-image: url("./Assets/Logos/newdcl2-07.svg");
-  background-color: #FF9100;
+  background-color: var(--lightOrange);
 }
 
 .dcl2:hover {
@@ -509,6 +534,17 @@ li {
 
 .absurdUni:hover {
   background-size: 55%;
+}
+
+.cercek {
+  background-image: url("./Assets/Logos/Cercek\ Timbercraft\ Logo-01.svg");
+  background-size: 85%;
+  background-color: var(--creamy);
+  grid-column: span 2;
+}
+
+.cercek:hover {
+  background-size: 90%; 
 }
 
 .imglink {
@@ -822,6 +858,10 @@ img {
   width: 70%;
 }
 
+.white {
+  background-color: white;
+}
+
 .process__images--package {
   width: 100%;
 }
@@ -845,7 +885,7 @@ img {
 }
 
 .HowToPage {
-  background-color: var(--cream);
+  background-color: var(--creamy);
 }
 
 .process__images--howto {
@@ -856,35 +896,34 @@ img {
 .process__images--six {
   width: 20%;
   height: 300px;
-  background-size: 90%;
+  background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .iconRam {
   background-image: url("./Assets/HowToPC/HowToIcons-03.svg");
-  background-color: #DB69F7;
+  /* background-color: #DB69F7; */
+  background-size: 80%;
 }
 
 .iconCooler {
   background-image: url("./Assets/HowToPC/HowToIcons-02.svg");
-  background-color: #FFDE17;
+  /* background-color: #FFDE17; */
 }
 
 .iconMobo {
   background-image: url("./Assets/HowToPC/HowToIcons-01.svg");
-  background-size: 70%;
-  background-color: #31C9C5;
+  /* background-color: #31C9C5; */
 }
 
 .iconGpu {
   background-image: url("./Assets/Graphics/graphicThumbnail-01.svg");
-  background-color: #EA658E;
-  background-size: 90%;
+  background-size: 80%;
 }
 
 .iconCpu {
   background-image: url("./Assets/HowToPC/HowToIcons-04.svg");
-  background-color: #5CF779;
-  background-size: 50%;
+  /* background-color: #5CF779; */
+  background-size: 40%;
 }
