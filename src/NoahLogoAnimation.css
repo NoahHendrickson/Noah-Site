@@ -1,0 +1,35 @@
+.NoahAnimation__container {
+  border: solid white 5px;
+  width: 100%;
+  /* transform: translateX(-50%); */
+}
+
+.letter {
+  fill: var(--orange);
+  stroke: var(--orange);
+  stroke-width: 3px;
+  animation: slide 1s forwards;
+}
+
+/* .h1 {
+  animation-delay: 100ms;
+}
+.h2 {
+  animation-delay: 200ms;
+}
+.h3 {
+  animation-delay: 450ms;
+}
+.h4 {
+  animation-delay: 300ms;
+}
+.h5 {
+  animation-delay: 150ms;
+} */
+
+@keyframes slide {
+  100% {
+    transform: translateX(28%);
+  }
+}
+

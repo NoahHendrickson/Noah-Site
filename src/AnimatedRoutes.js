@@ -7,6 +7,7 @@ import { ThemeContext } from './App';
 import GraphicPage from './GraphicPage';
 import NachoBox from './NachoBox';
 import HowToPage from './HowToPage';
+import NoahLogoAnimated from './NoahLogoAnimated';
 
 const AnimatedRoutes = () => {
 
@@ -25,6 +26,7 @@ const AnimatedRoutes = () => {
         <Route path="/GraphicPage" element={<GraphicPage />} />
         <Route path='/NachoBox' element={<NachoBox />} />
         <Route path='/HowToPC' element={<HowToPage />} />
+        <Route path='/NoahAni' element={<NoahLogoAnimated />} />
       </Routes>
     </AnimatePresence>
   )

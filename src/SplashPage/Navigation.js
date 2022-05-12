@@ -14,6 +14,7 @@ import StoryCarousel from '../StoryCarousel';
 import Button from '../Button';
 import Footer from '../Footer';
 import Noah from "../Assets/profilepic.jpeg"
+import NoahLogoAnimated from '../NoahLogoAnimated';
 
 
 
