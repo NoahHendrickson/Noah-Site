@@ -37,11 +37,12 @@ const Navigation = () => {
         <Switch />
       </div>
       <div className="splash__page">
+        {/* <NoahLogoAnimated /> */}
         <Socials />
         <div className='splash__page--me'>
           {story ? <StoryCarousel /> : <FlowerLogo />}
         </div>
-        {story ? <div className="NoahHeadShot"></div> : <NoahLogo className='NoahLogo' />}
+        {story ? <div className="NoahHeadShot"></div> : <NoahLogoAnimated />}
         <ButtonList toggleStory={toggleStory} />
       </div>
       <Footer />

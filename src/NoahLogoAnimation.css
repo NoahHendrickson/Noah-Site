@@ -1,35 +1,47 @@
 .NoahAnimation__container {
-  border: solid white 5px;
+  position: absolute;
   width: 100%;
   /* transform: translateX(-50%); */
+  pointer-events: none;
 }
 
 .letter {
   fill: var(--orange);
-  stroke: var(--orange);
-  stroke-width: 3px;
-  animation: slide 1s forwards;
+  stroke: var(--lightOrange);
+  stroke-width: 10px;
+  animation: slide 1.5s ease-in-out forwards;
+  transition: skew;
 }
 
-/* .h1 {
-  animation-delay: 100ms;
+.letterBG {
+  animation: shift 1.5s forwards;
 }
-.h2 {
-  animation-delay: 200ms;
-}
-.h3 {
-  animation-delay: 450ms;
-}
-.h4 {
-  animation-delay: 300ms;
-}
-.h5 {
-  animation-delay: 150ms;
-} */
+
+
+/* @keyframes shift {
+  80% {
+    transform: translate(44.5%, 40%) scale(.25);
+  }
+  90% {
+    transform: translate(44.5%, 40%) scale(.25);
+  }
+  100% {
+    transform: translate(45.5%, 40%) scale(.25) skew(-15deg);
+  }
+}; */
 
 @keyframes slide {
-  100% {
-    transform: translateX(28%);
+  80% {
+    transform: translate(44.5%, 40%) scale(.25);
+    stroke: var(--orange);
   }
-}
+  90% {
+    transform: translate(44.5%, 40%) scale(.25);
+    stroke: var(--orange);
+  }
+  100% {
+    transform: translate(45.5%, 40%) scale(.25) skew(-15deg);
+    stroke: var(--orange);
+  }
+};
 
