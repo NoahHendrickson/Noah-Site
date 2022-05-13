@@ -39,7 +39,7 @@ const Navbar = () => {
         <NavButton text='Design'>
           <div className="dropdownMenuDesign">
             <li className='dropdownMenuDesign__item'>
-              <Link className="path__button" to="/">UX</Link>
+              <Link className="path__button" to="/UXPage">UX</Link>
             </li>
             <li className='dropdownMenuDesign__item'>
               <Link className="path__button" to="/GraphicPage">Graphic</Link>

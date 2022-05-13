@@ -1,0 +1,36 @@
+.UXPage {
+  background-color: var(--creamy);
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__Link {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: black;
+}
+
+.project {
+  width: 75%;
+}
+
+.hero__images--UX {
+  width: 100%;
+}
+
+.homely__logo {
+  width: 20%;
+}
+
+.project__Link--homely {
+  background-color: #0F5AEF;
+}

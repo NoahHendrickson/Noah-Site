@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { ThemeContext } from './App'
+import { motion } from 'framer-motion'
 import Navbar from './Navbar'
 import PicOne from "./Assets/NachoBoxPics/IMG_0095.jpg"
 import PicTwo from "./Assets/NachoBoxPics/Letters.jpg"
@@ -13,7 +14,11 @@ const NachoBox = () => {
   const {theme} = useContext(ThemeContext)
 
   return (
-    <div className={theme === 'light' ? 'NachoBox__page' : 'NachoBox__page--dark'}>
+    <motion.div className={theme === 'light' ? 'NachoBox__page' : 'NachoBox__page--dark'}
+      initial={{y: '-100vh'}}
+      animate={{y: '0'}}
+      exit={{y: '-100vh', transition:{duration: .2}}} 
+    >
       <Navbar />
       <div className='content'>
         <ProjectTitle title='Nacho Box' subtitle='Package & Pattern Design' text="This is a packaging project I created in College. My goal was to concept out a conveinant Chips and Salsa container for parties or get togethers." />
@@ -44,7 +49,7 @@ const NachoBox = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

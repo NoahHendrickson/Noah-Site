@@ -4,10 +4,15 @@ import ProjectTitle from './ProjectTitle'
 import Infographic from "./Assets/HowToPC/infpgraphic-06.svg"
 import Process from "./Assets/HowToPC/processpic-01.png"
 import ProcessTwo from "./Assets/HowToPC/processpic-02.svg"
+import { motion } from 'framer-motion'
 
 const HowToPage = () => {
   return (
-    <div className='HowToPage'>
+    <motion.div className='HowToPage'
+    initial={{y: '-100vh'}}
+      animate={{y: '0'}}
+      exit={{y: '-100vh', transition:{duration: .2}}} 
+    >
       <Navbar />
       <div className='content'>
         <ProjectTitle title="How To Build a PC" subtitle="Graphic Design" text="I am a tech enthusiast so of course I build my own computers. I wanted to create a supplemental infograph for building a custom PC. The goal of this guide isn't to get into detail about each step but rather give an overview and suggest an order of process to make the experience easier." />
@@ -28,7 +33,7 @@ const HowToPage = () => {
           <img className='hero__image' src={Infographic} />
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

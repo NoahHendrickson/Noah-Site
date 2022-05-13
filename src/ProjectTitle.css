@@ -1,0 +1,54 @@
+.titleCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.titleCard__one {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.projectTitle {
+  font-size: 3em;
+  font-weight: 600;
+  text-align: right;
+  width: 500px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 15px;
+}
+
+.projectText {
+  text-align: left;
+  width: 500px;
+  margin-left: 10px;
+}
+
+.subTitle {
+  font-size: .35em;
+  color: var(--kelly);
+  position: relative;
+  bottom: 8px;
+}
+
+.roleCard {
+  display: flex;
+}
+
+.role {
+  font-size: 1.5em;
+  width: 500px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.role__text {
+  width: 500px;
+  text-align: left;
+  margin-left: 10px;
+}

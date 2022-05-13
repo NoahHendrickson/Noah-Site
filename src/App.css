@@ -214,14 +214,15 @@
   right: 0;
   top: 40px;
   border-radius: 15px;
-  background-color: white;
+  background-color: var(--orange);
+  border: solid var(--lightOrange) 3px;
   position: absolute;
   box-shadow: 3px 3px 9px rgba(25, 25, 25, .25);
 }
 
 .dropdownMenuDesign__item {
   margin: 15px;
-  color: var(--darkGreen);
+  color: var(--creamy);
 }
 
 .navbar__buttons {
@@ -399,7 +400,7 @@ li {
   font-weight: 400;
   text-decoration: none;
   padding: 0px;
-  color: var(--darkGreen);
+  color: var(--creamy);
 }
 
 .SlideOutMenu {
@@ -738,42 +739,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.titleCard {
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
-}
-
-.titleCard__one {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.projectTitle {
-  font-size: 3em;
-  font-weight: 600;
-  text-align: right;
-  width: 500px;
-  margin-right: 10px;
-  position: relative;
-  bottom: 15px;
-}
-
-.projectText {
-  text-align: left;
-  width: 500px;
-  margin-left: 10px;
-}
-
-.subTitle {
-  font-size: .35em;
-  color: var(--kelly);
-  position: relative;
-  bottom: 8px;
 }
 
 .images {
