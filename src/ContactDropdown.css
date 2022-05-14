@@ -1,0 +1,54 @@
+.contactTitle {
+  color: var(--creamy);
+}
+
+.ContactDropdown__nav {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--orange);
+  color: var(--creamy);
+  padding: 25px;
+  border-radius: 15px;
+  border: solid var(--lightOrange) 3px;
+}
+
+.ContactDropdown {
+  position: absolute;
+  left: 120px;
+  bottom: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--orange);
+  color: var(--creamy);
+  padding: 25px;
+  border-radius: 15px;
+  border: solid var(--lightOrange) 3px;
+}
+
+
+
+.contactButton {
+  position: relative;
+}
+
+.contact__label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.contact__inputField {
+  border: solid var(--darkOrange) 3px;
+  background-color: var(--creamy);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.longField {
+  height: 75px;
+}

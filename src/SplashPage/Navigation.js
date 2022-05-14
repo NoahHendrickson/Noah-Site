@@ -31,7 +31,7 @@ const Navigation = () => {
     <motion.div className="Navigation"
       initial={{y: '-100vh'}}
       animate={{y: '0'}}
-      exit={{y: '-100vh', transition:{duration: .2}}} 
+      exit={{y: '-100vh', transition:{duration: .3}}} 
     >
       <div className='Switch__container'>
         <Switch />
@@ -42,7 +42,7 @@ const Navigation = () => {
         <div className='splash__page--me'>
           {story ? <StoryCarousel /> : <FlowerLogo />}
         </div>
-        {story ? <div className="NoahHeadShot"></div> : <NoahLogoAnimated />}
+        <NoahLogo className='NoahLogo' />
         <ButtonList toggleStory={toggleStory} />
       </div>
       <Footer />

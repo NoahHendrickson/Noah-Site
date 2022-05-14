@@ -1,8 +1,10 @@
 import React from 'react'
+import "./ContactDropdown.css"
 
-const ContactDropdown = () => {
+
+const ContactDropdown = ({nav}) => {
   return (
-    <div className='ContactDropdown'>
+    <div className={nav === "nav" ? 'ContactDropdown__nav' : 'ContactDropdown'}>
       <h1 className='contactTitle'>Reach Out 😄</h1>
       <label className='contact__label'>Subject</label>
       <input className='contact__inputField' placeholder='Whats this inquiry bout' />

@@ -24,6 +24,10 @@
   border-radius: 5px;
 }
 
+.homeBttn {
+  margin-left: 50px;
+}
+
 .front {
   display: flex;
   justify-content: center;
@@ -59,7 +63,7 @@
 
 .NoahHeadShot {
   position: relative;
-  top: 50px;
+  top: 100px;
   flex-shrink: 0;
   border-radius: 100px;
   width: 200px;
@@ -89,7 +93,7 @@
 .story {
   padding: 25px;
   margin: 25px 15px;
-  max-width: 25%;
+  max-width: 30%;
   display: flex;
   flex-direction: column;
   color: white;
@@ -107,8 +111,20 @@
 
 .story__text {
   color: var(--creamy);
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: center;
+}
+
+.skills {
+  width: 35px;
+  margin: 0px 10px;
+}
+
+.skills__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
 }
 
 .storyCarousel {
@@ -120,6 +136,7 @@
 .splash__page--me {
   display: flex;
   align-items: center;
+  height: 35%;
 }
 
 .fullStory__button {
@@ -178,43 +195,6 @@
   border-radius: 15px;
   height: 100px;
   background-color: var(--kelly);
-}
-
-.contactTitle {
-  color: var(--oranges);
-}
-
-.ContactDropdown {
-  position: absolute;
-  left: 120px;
-  bottom: -100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: var(--cream);
-  color: var(--orange);
-  padding: 25px;
-  border-radius: 15px;
-}
-
-.contactButton {
-  position: relative;
-}
-
-.contact__label {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-.contact__inputField {
-  border: solid var(--darkGreen) 3px;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.longField {
-  height: 75px;
 }
 
 .dropdownMenuDesign {
@@ -293,31 +273,30 @@
 }
 
 .flower__container {
-  width: 16em;
+  width: 18em;
 }
 
 .NoahLogo {
   width: 12em;
-  margin: 0px 0px 25px 0px;
 }
 
 .st10 {
-  fill: var(--cream)
+  fill: var(--lime)
 }
 
 .st15 {
-  fill: var(--orange)
+  fill: var(--creamy)
 }
 
 .NoahLogo__smaller {
-  width: 6em;
+  width: 8em;
 }
 
 .splash__page--buttons {
   font-size: 1em;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .dropdown__button {
@@ -342,6 +321,10 @@ li {
   padding: 5px 5px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .horizontal__menu {
   padding-left: 15px; 
   padding-right: 15px; 
@@ -359,9 +342,11 @@ li {
 }
 
 .code__list {
-  width: 125px;
-  padding: 5px 0px;
   color: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
 }
 
 .general__button {
@@ -437,11 +422,11 @@ li {
 }
 
 .LogoDesign {
-  background-color: rgb(246, 239, 217);
+  background-color: var(--cream);
 }
 
 .LogoDesignDark {
-  background-color: var(--darkGreen);
+  background-color: var(--black);
 }
 
 .logo__page {
@@ -609,7 +594,13 @@ img {
 .GraphicPage {
   display: flex;
   flex-direction: column;
-  background-color: var(--cream);
+  background-color: var(--creamy);
+}
+
+.GraphicPage__dark {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
 }
 
 .graphics {

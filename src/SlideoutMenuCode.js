@@ -1,14 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SlideoutMenuCode = () => {
 
   return (
     <div className='SlideOutMenu'>
       <ul>
-        <li className='code__list'>CRPO</li>
+        <Link to="/CrpoPage" ><li className='code__list'>CRPO</li></Link>
         <li className='code__list'>SVG Animation</li>
-        <li className='code__list'>JS Calc</li>
-        <li className='code__list'>Rate My Chipotle</li>
+        <a target="_blank" href='https://noahhendrickson.github.io/calculator/'><li className='code__list'>JS Calc</li></a>
       </ul>
     </div>
   )

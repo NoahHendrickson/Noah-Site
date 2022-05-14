@@ -1,0 +1,22 @@
+.CrpoPage {
+  background-color: var(--creamy);
+}
+
+.hero__image--50 {
+  width: 60%;
+  margin: 50px;
+}
+
+.crpo__preview {
+  display: flex;
+  justify-content: center;
+}
+
+.caption__inline {
+  width: 40%;
+  margin-top: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
