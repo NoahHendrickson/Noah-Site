@@ -1,0 +1,38 @@
+.FitPage {
+  background-color: var(--creamy);
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgGrid {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  margin: 25px 0px 50px 0px;
+}
+
+.fit__images {
+  padding: 50px;
+}
+
+.topRight {
+  background-color: #daf79e;
+}
+
+.bottomLeft {
+  background-color: #FCB086;
+}
+
+.hero__image--70 {
+  width: 75%;
+  margin: 50px;
+}

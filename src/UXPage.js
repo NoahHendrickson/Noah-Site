@@ -15,7 +15,7 @@ const UXPage = () => {
       exit={{y: '-100vh', transition:{duration: .2}}} >
       <Navbar />
       <div className='projects'>
-        <Link className="project__Link project__Link--homely" to="/DarkMatter">
+        <Link className="project__Link project__Link--homely" to="/HomelyPage">
           <div className="project">
             <img className="hero__images--UX homely__logo" src={HomelyLogo} />
           </div>

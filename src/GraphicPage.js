@@ -25,11 +25,10 @@ const GraphicPage = () => {
             <div className='hero__icon lime'></div>
           </Link>
         </div>
-        <div className='graphic hyperglide'>
-          <div className='hero__icon squiggle'></div>
-        </div>
         <div className='graphic fit'>
-          <div className='hero__icon gear'></div>
+          <Link to="/FitPage">
+            <div className='hero__icon gear'></div>
+          </Link>
         </div>
       </div>
       <Footer />

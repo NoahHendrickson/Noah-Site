@@ -55,7 +55,7 @@
 
 .behind {
   position: relative;
-  width: 5.75em;
+  width: 5em;
   height: 2.25em;
   display: flex;
   justify-content: center;
@@ -230,6 +230,12 @@
   align-items: center;
 }
 
+@media (max-width: 400px) {
+  .navbar__buttons {
+    flex-direction: column;
+  }
+}
+
 .Navbar > div {
   display: flex;
 }
@@ -251,6 +257,12 @@
  justify-content: space-between;
  width: 200px;
  font-size: 16px;
+}
+
+@media (max-width: 400px) {
+  .socials__container {
+    display: none;
+  }
 }
 
 .socials__icon {
@@ -357,14 +369,17 @@ li {
 }
 
 .NavButton__imitation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   position: relative;
   font-size: .9em;
-  margin: 15px;
   border: none;
   background: none;
-  padding: 5px 10px;
   border-radius: 5px;
   color: var(--cream);
   font-weight: 400;
@@ -586,52 +601,6 @@ img {
   border: solid white 5px;
 }
 
-.modalBG {
-  top: 0;
-  right: 0;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bosciaModal {
-  position: relative;
-  z-index: 2;
-  width: 1000px;
-  height: 500px;
-  background-color: green;
-  opacity: 1;
-}
-
-.leftArrow {
-  fill: white;
-}
-
-.rightArrow {
-  fill: white;
-  stroke-width: 2px;
-  stroke: var(--orange)
-}
-.arrows:hover .leftArrow {
-  transform: translateX(15px);
-  transition: 200ms;
-}
-
-.arrows:hover .rightArrow {
-  transform: translateX(15px);
-  transition: 750ms;
-}
-
-.arrows {
-  width: 100px;
-  border: solid white 3px;
-}
-
 .GraphicPage {
   display: flex;
   flex-direction: column;
@@ -689,11 +658,12 @@ img {
 .nachobox {
   background-size: 40%;
   background-color: #CEF982;
+  grid-column: span 2;
 }
 
 .lime {
   background-image: url("./Assets/Graphics/graphicThumbnail-04.svg");
-  background-size: 45%;
+  background-size: 35%;
 }
 
 .nachobox:hover {
@@ -720,6 +690,15 @@ img {
 .fit {
   background-color: #fbcc8d;
   grid-column: span 2;
+}
+
+.fit:hover {
+  background-image: url("./Assets/Fit/patternOpacity-15.svg");
+}
+
+.fit:hover .gear {
+  background-size: 85%;
+  transition: 100ms;
 }
 
 .gear {

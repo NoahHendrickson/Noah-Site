@@ -10,6 +10,8 @@ import HowToPage from './HowToPage';
 import NoahLogoAnimated from './NoahLogoAnimated';
 import UXPage from './UXPage';
 import DarkMatterPage from './DarkMatterPage';
+import FitPage from './FitPage';
+import HomelyAppPage from './HomelyAppPage';
 
 const AnimatedRoutes = () => {
 
@@ -31,6 +33,8 @@ const AnimatedRoutes = () => {
         <Route path='/NoahAni' element={<NoahLogoAnimated />} />
         <Route path="/UXPage" element={<UXPage />} />
         <Route path="/DarkMatter" element={<DarkMatterPage />} />
+        <Route path='/FitPage' element={<FitPage />} />
+        <Route path='/HomelyPage' element={<HomelyAppPage />} />
       </Routes>
     </AnimatePresence>
   )

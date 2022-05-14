@@ -28,7 +28,7 @@ const ButtonList = ({ text, toggleStory }) => {
       <li className='button__list'>
         <motion.div whileTap={{scale: .98}} whileHover={{scale: 1.1}} className='behind customBttn'>
           <div className='front customBttn'>
-            <a onClick={toggleStory} ref={NavButtonImitate} className='NavButton__imitation'>About Me</a>
+            <a onClick={toggleStory} ref={NavButtonImitate} className='NavButton__imitation'>Me</a>
           </div>
         </motion.div>
       </li>
