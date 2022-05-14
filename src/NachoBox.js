@@ -19,7 +19,7 @@ const NachoBox = () => {
       animate={{y: '0'}}
       exit={{y: '-100vh', transition:{duration: .2}}} 
     >
-      <Navbar />
+      <Navbar page="nachoNav" />
       <div className='content'>
         <ProjectTitle title='Nacho Box' subtitle='Package & Pattern Design' text="This is a packaging project I created in College. My goal was to concept out a conveinant Chips and Salsa container for parties or get togethers." />
         <div className='images'>

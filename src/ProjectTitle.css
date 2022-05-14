@@ -38,6 +38,7 @@
 
 .roleCard {
   display: flex;
+  justify-content: center;
 }
 
 .role {

@@ -36,6 +36,23 @@
   bottom: 3px;
 }
 
+.behind {
+  position: relative;
+  width: 5em;
+  height: 2.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--darkOrange);
+  border: solid var(--darkestOrange) 2px;
+}
+
+@media (max-width: 400px) {
+  .behind {
+    width: 3em;
+  }
+}
+
 .customBttn:hover {
   border: solid var(--lightOrange) 2px;
 }
@@ -53,16 +70,6 @@
   background-repeat: no-repeat;
 }
 
-.behind {
-  position: relative;
-  width: 5em;
-  height: 2.25em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--darkOrange);
-  border: solid var(--darkestOrange) 2px;
-}
 
 .AppDark {
   width: 100%;
@@ -232,7 +239,8 @@
 
 @media (max-width: 400px) {
   .navbar__buttons {
-    flex-direction: column;
+    display: none;
+    /* flex-direction: column; */
   }
 }
 
@@ -571,9 +579,6 @@ li {
   pointer-events: all;
 }
 
-
-
-
 .logo__square {
   border-radius: 25px;
   display: flex;
@@ -708,6 +713,10 @@ img {
 
 .NachoBox__page {
   background-color: var(--creamy);
+}
+
+.nachoNav {
+  background-color: var(--nachoblue);
 }
 
 .NachoBox__page--dark {

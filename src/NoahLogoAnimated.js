@@ -18,7 +18,7 @@ const NoahLogoAnimated = () => {
       const direction = options[selection]
       console.log(direction)
 
-      element.style.transform = `translateX(${direction}${number}%)`
+      element.style.transform = `translateX(${direction}${number}%) scale(.25)`
       // element.style.animationDelay = `${delay}ms`
     });
 

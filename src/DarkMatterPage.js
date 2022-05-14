@@ -14,7 +14,7 @@ const DarkMatterPage = () => {
       animate={{y: '0'}}
       exit={{y: '-100vh', transition:{duration: .2}}}
     >
-      <Navbar />
+      <Navbar page="DarkMatterNav" />
       <ProjectTitle title="Dark Matter" subtitle="UX Design" text="Dark Matter Network is an Art Piece and Art Gallery hosting app." role="Lead Designer" roleText="I was the lead designer for this project. I worked with the founder to create all the necessary screens and with the developer to streamline the design to implement process." />
       <Mocks className='mocks' />
       <img className="screens__DM" src={screens}/>

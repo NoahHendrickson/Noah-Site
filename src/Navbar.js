@@ -13,7 +13,7 @@ import ContactDropdown from './ContactDropdown';
 
 
 
-const Navbar = () => {
+const Navbar = (props) => {
   const { theme, setTheme } = useContext(ThemeContext);
   const [contactMenu, setContactMenu] = useState(false);
 
@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <div className='Nav'>
-    <div className="Navbar">
+    <div className={props.page ? `Navbar ${props.page}` : "Navbar"}>
       <div>
         <Socials />
       </div>
