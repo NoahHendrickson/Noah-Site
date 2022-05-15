@@ -22,13 +22,16 @@ const Navbar = (props) => {
 
   return (
     <div className='Nav'>
-    <div className={props.page ? `Navbar ${props.page}` : "Navbar"}>
-      <div>
-          {screenSize > 500 ? <Socials /> : null}
-      </div>
+      <div className={props.page ? `Navbar ${props.page}` : "Navbar"}>
+        {screenSize > 500 ?
+          <div>
+            <Socials />
+          </div> : null}
+          {screenSize > 500 ?
         <div>
          
-      </div>
+      </div> : null}
+
       <div>
         <NoahLogo className='NoahLogo__smaller'/>
       </div>
