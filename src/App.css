@@ -97,6 +97,7 @@
   display: flex;
   justify-content: center;
   z-index: 2;
+  border: solid black 5px;
 }
 
 .fullStory__button {
@@ -155,6 +156,7 @@
   border-radius: 15px;
   height: 100px;
   background-color: var(--kelly);
+  border: solid black 5px;
 }
 
 @media (max-width: 500px) {
@@ -191,6 +193,7 @@
 @media (max-width: 400px) {
   .navbar__buttons {
     font-size: 12px;
+    border: solid black 5px;
   }
 }
 

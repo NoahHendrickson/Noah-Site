@@ -30,60 +30,60 @@ const Navbar = (props) => {
           {screenSize > 500 ?
         <div>
          
-      </div> : null}
+        </div> : null}
 
-      <div>
-        <NoahLogo className='NoahLogo__smaller'/>
-      </div>
-      <div className='navbar__buttons'>
-        <NavButton text='Design'>
-          <div className="dropdownMenuDesign">
-            <li className='dropdownMenuDesign__item'>
-              <Link className="path__button" to="/UXPage">UX</Link>
+        <div>
+          <NoahLogo className='NoahLogo__smaller'/>
+        </div>
+        <div className='navbar__buttons'>
+         <NavButton text='Design'>
+            <div className="dropdownMenuDesign">
+              <li className='dropdownMenuDesign__item'>
+                <Link className="path__button" to="/UXPage">UX</Link>
+              </li>
+              <li className='dropdownMenuDesign__item'>
+                <Link className="path__button" to="/GraphicPage">Graphic</Link>
+              </li>
+              <li className='dropdownMenuDesign__item'>
+                <Link className="path__button" to="/logo_design">Logo</Link>
+              </li>
+            </div>
+          </NavButton>
+          <NavButton text='Code'>
+            <div className="dropdownMenuDesign">
+              <li className='dropdownMenuDesign__item'>
+                <Link className="path__button" to="/CrpoPage">The CRPO</Link>
+              </li>
+              <li className='dropdownMenuDesign__item'>
+                <a className="path__button" target="_blank" href='https://noahhendrickson.github.io/calculator/'>JS Calc</a>
+              </li>
+              <li className='dropdownMenuDesign__item'>
+                <Link className="path__button" to="/logo_design">SVG Animations</Link>
+              </li>
+            </div>
+          </NavButton>
+            <li className='button__list'>
+              <motion.div whileHover={{scale: 1.1}} className='button__background customBttn'>
+                <div className='button__front customBttn'>
+                  <a onClick={toggleContact} className="button contactButton">Contact
+                  </a>
+                  {contactMenu && <ContactDropdown nav="nav" />}
+                </div>
+              </motion.div>
             </li>
-            <li className='dropdownMenuDesign__item'>
-              <Link className="path__button" to="/GraphicPage">Graphic</Link>
-            </li>
-            <li className='dropdownMenuDesign__item'>
-              <Link className="path__button" to="/logo_design">Logo</Link>
+            <li className='button__list'>
+              <motion.div whileTap={{scale: .98}} whileHover={{scale: 1.1}} className='button__background customBttn homeBttn'>
+                <div className='button__front customBttn'>    
+                  <Link className="button" to='/'>
+                    Home
+                  </Link>
+                </div>
+              </motion.div>
             </li>
           </div>
-        </NavButton>
-        <NavButton text='Code'>
-          <div className="dropdownMenuDesign">
-            <li className='dropdownMenuDesign__item'>
-              <Link className="path__button" to="/CrpoPage">The CRPO</Link>
-            </li>
-            <li className='dropdownMenuDesign__item'>
-              <a className="path__button" target="_blank" href='https://noahhendrickson.github.io/calculator/'>JS Calc</a>
-            </li>
-            <li className='dropdownMenuDesign__item'>
-              <Link className="path__button" to="/logo_design">SVG Animations</Link>
-            </li>
+          <div className='horizontal__switch'>
+            <Switch />
           </div>
-        </NavButton>
-          <li className='button__list'>
-          <motion.div whileHover={{scale: 1.1}} className='button__background customBttn'>
-            <div className='button__front customBttn'>
-              <a onClick={toggleContact} className="button contactButton">Contact
-              </a>
-              {contactMenu && <ContactDropdown nav="nav" />}
-            </div>
-          </motion.div>
-          </li>
-        <li className='button__list'>
-          <motion.div whileTap={{scale: .98}} whileHover={{scale: 1.1}} className='button__background customBttn homeBttn'>
-            <div className='button__front customBttn'>    
-              <Link className="button" to='/'>
-              Home
-              </Link>
-            </div>
-          </motion.div>
-          </li>
-      </div>
-      <div className='horizontal__switch'>
-        <Switch />
-      </div>
       </div>
     </div>
   )
