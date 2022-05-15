@@ -1,6 +1,5 @@
 .App {
   width: 100%;
-  height: 100vh;
   text-align: center;
   background-color: var(--kelly);
 }
@@ -156,6 +155,13 @@
   border-radius: 15px;
   height: 100px;
   background-color: var(--kelly);
+}
+
+@media (max-width: 500px) {
+  .Navbar {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .dropdownMenuDesign {
@@ -437,6 +443,11 @@ a {
 
 .LogoDesign {
   background-color: var(--cream);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
 }
 
 .LogoDesignDark {
@@ -444,17 +455,21 @@ a {
 }
 
 .logo__page {
-  margin-top: 25px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 70%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 35%);
+  background-color: var(--creamy);
 }
 
-.logo__designs {
-  display: grid;
-  grid-template-columns: repeat(3, 300px);
-  grid-template-rows: repeat(5, 300px);
+@media (max-width: 500px) {
+  .logo__page {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 30%);
+  }
 }
 
 .logoPatches {
@@ -563,7 +578,6 @@ a {
   background-image: url("./Assets/Logos/Cercek\ Timbercraft\ Logo-01.svg");
   background-size: 85%;
   background-color: var(--creamy);
-  grid-column: span 2;
 }
 
 .cercek:hover {

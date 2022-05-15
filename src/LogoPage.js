@@ -12,6 +12,7 @@ import AbsurdUni from "./Assets/Logos/AbsurdUni.svg"
 import DLT8 from './Assets/Logos/DLT8-01.svg'
 import DCL2 from "./Assets/Logos/dcl2-01.svg"
 import Navbar from './Navbar'
+import Footer from './Footer';
 
 const LogoDesign = () => {
   const [modal, setModal] = useState(false)
@@ -28,17 +29,8 @@ const LogoDesign = () => {
       exit={{y: '100vh', transition:{duration: .1}}}>
       <Navbar />
       <div className='logo__page'>
-        <div className='logo__designs'>
-          {/* <div className='hyperglide logoPatches'></div> */}
-          <div onClick={openModal} className='bosciaRose logoPatches'>
-            {/* <Link className="imglink" to="/boscia">hey</Link> */}
-            {modal && <div className='modalBG'>
-              <div className='bosciaModal'>
-
-              </div>
-            </div>}
-          </div>
           <div className='tlh logoPatches'></div>
+          <div className='bosciaRose logoPatches'></div>
           <div className='darkMatter logoPatches'></div>
           <div className='springside logoPatches'></div>
           <div className='dlt8 logoPatches'></div>
@@ -56,7 +48,6 @@ const LogoDesign = () => {
           <LogoSquare src={DORO} />
           <LogoSquare src={DLT8} />
           <LogoSquare className="span2" src={BCLogo} /> */}
-        </div>
       </div>
     </motion.div>
   )

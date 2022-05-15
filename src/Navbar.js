@@ -14,6 +14,7 @@ import ContactDropdown from './ContactDropdown';
 const Navbar = (props) => {
   const { theme, setTheme } = useContext(ThemeContext);
   const [contactMenu, setContactMenu] = useState(false);
+  const screenSize = window.screen.width
 
   function toggleContact() {
     setContactMenu(!contactMenu)
@@ -23,7 +24,7 @@ const Navbar = (props) => {
     <div className='Nav'>
     <div className={props.page ? `Navbar ${props.page}` : "Navbar"}>
       <div>
-        <Socials />
+          {screenSize > 500 ? <Socials /> : null}
       </div>
         <div>
          
