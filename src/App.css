@@ -267,6 +267,7 @@
 .NoahLogo__smaller {
   width: 8em;
   margin: 0px;
+  border: solid black 2px;
 }
 
 .splash__page--buttons {
