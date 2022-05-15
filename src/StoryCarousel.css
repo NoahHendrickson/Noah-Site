@@ -2,6 +2,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
 }
 
 .NoahHeadShot {
@@ -29,6 +30,13 @@
   text-align: left;
   position: relative;
   border-radius: 25px;
+}
+
+@media (min-width: 400px) {
+.story__button--container {
+  position: absolute;
+  bottom: 35px;
+  }
 }
 
 .story__title {
@@ -63,9 +71,7 @@
 
 @media (max-width: 500px) {
   .storyCarousel {
-    position: absolute;
     padding: 10px;
-    top: 80px;
     width: 95%;
     flex-direction: column;
     align-items: center;
@@ -74,7 +80,7 @@
     border-radius: 25px;
   }
   .story {
-    max-width: 90%;
+    max-width: 95%;
     margin: 5px;
     padding: 0px;
     display: flex;
@@ -90,7 +96,7 @@
   
   .story__text {
     color: var(--creamy);
-    font-size: .85em;
+    font-size: .9em;
     text-align: center;
     max-width: 95%;
   }
@@ -100,8 +106,8 @@
     width: 100%;
   }
   .NoahHeadShot {
-    width: 100px;
-    height: 100px;
+    width: 0px;
+    height: 0px;
     top: 0;
   }
   .skills {

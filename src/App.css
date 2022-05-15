@@ -24,6 +24,10 @@
   border-radius: 5px;
 }
 
+.customBttn__green {
+  border-radius: 5px;
+}
+
 .homeBttn {
   margin-left: 50px;
 }
@@ -52,8 +56,9 @@
 }
 
 .greenDark {
-  background-color: var(--darkGreen);
-  border: solid var(--lime) 2px;
+  background-color: var(--forest);
+  border: solid var(--darkGreen) 2px;
+  width: 8em;
 }
 
 .green {
@@ -74,6 +79,10 @@
 
 .customBttn:hover {
   border: solid var(--lightOrange) 2px;
+}
+
+.customBttn__green:hover {
+  border: solid var(--lime) 2px;
 }
 
 .AppDark {
@@ -317,6 +326,7 @@ a {
   justify-content: center;
   width: 125px;
 }
+
 @media (max-width: 400px) {
   .button__list {
     margin: 5px auto;
@@ -398,6 +408,7 @@ a {
   right: 120px;
   box-shadow: 2px 2px 12px rgba(25, 25, 25, .25);
 }
+
 .SlideOutMenu--code {
   border-radius: 5px;
   border: solid var(--lightOrange) 2px;
@@ -406,7 +417,6 @@ a {
   top: 0px;
   right: 120px;
   box-shadow: 2px 2px 12px rgba(25, 25, 25, .25);
-  width: 100px;
 }
 
 
@@ -421,6 +431,7 @@ a {
   }
   .SlideOutMenu--code {
     right: -110px;
+    width: 100px;
   }
 }
 
