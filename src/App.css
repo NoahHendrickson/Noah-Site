@@ -65,7 +65,7 @@
   border: solid var(--lime) 2px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .button__background {
     width: 4em;
   }
@@ -159,7 +159,7 @@
   border: solid black 5px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .Nav {
     width: 100%;
   }
@@ -190,7 +190,7 @@
   align-items: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .navbar__buttons {
     font-size: 12px;
     border: solid black 5px;
@@ -220,7 +220,7 @@
  font-size: 16px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .socials__container {
     position: absolute;
     top: 25px;
@@ -275,7 +275,7 @@
   margin-top: 50px;
 }
 
-@media  (max-width: 500px) {
+@media  (max-width: 600px) {
   .splash__page--buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -329,7 +329,7 @@ a {
   width: 100%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 .horizontal__switch {
   position: absolute;
   top: 35px;
@@ -351,7 +351,7 @@ a {
   width: 125px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .button__list {
     margin: 5px auto;
   }
@@ -444,7 +444,7 @@ a {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   ul {
     display: flex;
     flex-direction: column;
@@ -481,7 +481,7 @@ a {
   background-color: var(--creamy);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .logo__page {
     width: 100%;
     display: grid;

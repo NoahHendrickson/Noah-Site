@@ -32,7 +32,7 @@
   border-radius: 25px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
 .story__button--container {
   position: absolute;
   bottom: 35px;
@@ -69,7 +69,7 @@
   height: 35%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .storyCarousel {
     padding: 10px;
     width: 95%;
