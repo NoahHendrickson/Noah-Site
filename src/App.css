@@ -165,8 +165,8 @@
   }
   .Navbar {
     width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -266,6 +266,7 @@
 
 .NoahLogo__smaller {
   width: 8em;
+  margin: 0px;
 }
 
 .splash__page--buttons {
