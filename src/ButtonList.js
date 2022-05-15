@@ -26,8 +26,8 @@ const ButtonList = ({ text, toggleStory }) => {
         <SlideoutMenuCode />
       </NavButton>
       <li className='button__list'>
-        <motion.div whileTap={{scale: .98}} whileHover={{scale: 1.1}} className='behind customBttn'>
-          <div className='front customBttn'>
+        <motion.div whileTap={{scale: .98}} whileHover={{scale: 1.1}} className='button__background customBttn'>
+          <div className='button__front customBttn'>
             <a onClick={toggleStory} ref={NavButtonImitate} className='NavButton__imitation'>Me</a>
           </div>
         </motion.div>
@@ -53,8 +53,8 @@ export const NavButton = (props) => {
       <motion.div
         whileTap={{scale: 1.05}}
         whileHover={{ scale: 1.1 }}
-        className='behind customBttn'>
-          <div className='front customBttn'>
+        className='button__background customBttn'>
+          <div className='button__front customBttn'>
             <a className="button" ref={button} onClick={toggle}>
               {props.text}
             </a>

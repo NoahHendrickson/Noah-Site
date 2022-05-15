@@ -28,7 +28,7 @@
   margin-left: 50px;
 }
 
-.front {
+.button__front {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@
   bottom: 3px;
 }
 
-.behind {
+.button__background {
   position: relative;
   width: 5em;
   height: 2.25em;
@@ -51,9 +51,24 @@
   border: solid var(--darkestOrange) 2px;
 }
 
+.greenDark {
+  background-color: var(--darkGreen);
+  border: solid var(--lime) 2px;
+}
+
+.green {
+  background-color: var(--kelly);
+  border: solid var(--lime) 2px;
+}
+
 @media (max-width: 400px) {
-  .behind {
+  .button__background {
     width: 4em;
+  }
+
+  .greenDark {
+    width: 8em;
+    margin: 10px 0px;
   }
 }
 
@@ -186,7 +201,10 @@
 
 @media (max-width: 400px) {
   .socials__container {
-    display: none;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    align-items: flex-start;
   }
 }
 

@@ -59,8 +59,8 @@ const Navbar = (props) => {
           </div>
         </NavButton>
           <li className='button__list'>
-          <motion.div whileHover={{scale: 1.1}} className='behind customBttn'>
-            <div className='front customBttn'>
+          <motion.div whileHover={{scale: 1.1}} className='button__background customBttn'>
+            <div className='button__front customBttn'>
               <a onClick={toggleContact} className="button contactButton">Contact
               </a>
               {contactMenu && <ContactDropdown nav="nav" />}
@@ -68,8 +68,8 @@ const Navbar = (props) => {
           </motion.div>
           </li>
         <li className='button__list'>
-          <motion.div whileTap={{scale: .98}} whileHover={{scale: 1.1}} className='behind customBttn homeBttn'>
-            <div className='front customBttn'>    
+          <motion.div whileTap={{scale: .98}} whileHover={{scale: 1.1}} className='button__background customBttn homeBttn'>
+            <div className='button__front customBttn'>    
               <Link className="button" to='/'>
               Home
               </Link>

@@ -1,5 +1,5 @@
 import React from 'react'
-import FlowerLogoStyles from './FlowerLogoInfini.css'
+import FlowerLogoStyles from './FlowerLogo.css'
 
 const FlowerLogo = () => {
   return (
