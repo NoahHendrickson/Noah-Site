@@ -4,6 +4,7 @@ import html from "./Assets/html-1.svg"
 import css from "./Assets/css-3.svg"
 import java from "./Assets/logo-javascript.svg"
 import react from "./Assets/react-2.svg"
+import "./StoryCarousel.css"
 
 const StoryCarousel = () => {
   return (

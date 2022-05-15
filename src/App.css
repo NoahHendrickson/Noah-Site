@@ -53,27 +53,13 @@
 
 @media (max-width: 400px) {
   .behind {
-    width: 3em;
+    width: 4em;
   }
 }
 
 .customBttn:hover {
   border: solid var(--lightOrange) 2px;
 }
-
-.NoahHeadShot {
-  position: relative;
-  top: 100px;
-  flex-shrink: 0;
-  border-radius: 100px;
-  width: 200px;
-  height: 200px;
-  background-image: url("./Assets/profilepic.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 
 .AppDark {
   width: 100%;
@@ -88,55 +74,6 @@
   display: flex;
   justify-content: center;
   z-index: 2;
-}
-
-.story {
-  padding: 25px;
-  margin: 25px 15px;
-  max-width: 30%;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  position: relative;
-  border-radius: 25px;
-}
-
-.story__title {
-  color: var(--creamy);
-  font-size: 3em;
-}
-
-.story__text {
-  color: var(--creamy);
-  font-size: 1.25em;
-  text-align: center;
-}
-
-.skills {
-  width: 35px;
-  margin: 0px 10px;
-}
-
-.skills__container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 10px 0px;
-}
-
-.storyCarousel {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.splash__page--me {
-  display: flex;
-  align-items: center;
-  height: 35%;
 }
 
 .fullStory__button {
@@ -237,7 +174,7 @@
   width: 100%;
   position: relative;
   font-size: 1em;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .socials__container {
@@ -419,6 +356,17 @@ a {
   top: 0px;
   right: 120px;
   box-shadow: 2px 2px 12px rgba(25, 25, 25, .25);
+}
+
+@media (max-width: 400px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .SlideOutMenu {
+    right: 80px;
+  }
 }
 
 .LogoDesign {

@@ -16,9 +16,6 @@ import Footer from '../Footer';
 import Noah from "../Assets/profilepic.jpeg"
 import NoahLogoAnimated from '../NoahLogoAnimated';
 
-
-
-
 const Navigation = () => {
   const { theme, setTheme } = useContext(ThemeContext)
   const [story, setStory] = useState(false);
