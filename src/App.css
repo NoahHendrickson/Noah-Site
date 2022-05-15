@@ -238,11 +238,14 @@
 
 @media  (max-width: 400px) {
   .splash__page--buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin: 0px;
   }
   .NoahLogo {
     width: 10em;
-    margin: 100px 0px 25px;
+    margin: 25px 0px 25px;
   }
 }
 
@@ -288,11 +291,6 @@ a {
   margin: 15px auto;
 }
 
-@media (max-width: 400px) {
-  .button__list {
-    margin: 5px auto;
-  }
-}
 
 .code__list {
   color: var(--cream);
@@ -300,6 +298,15 @@ a {
   align-items: center;
   justify-content: center;
   width: 125px;
+}
+@media (max-width: 400px) {
+  .button__list {
+    margin: 5px auto;
+  }
+  .code__list {
+    width: auto;
+    margin: 7px auto;
+  }
 }
 
 .general__button {
@@ -373,6 +380,17 @@ a {
   right: 120px;
   box-shadow: 2px 2px 12px rgba(25, 25, 25, .25);
 }
+.SlideOutMenu--code {
+  border-radius: 5px;
+  border: solid var(--lightOrange) 2px;
+  background-color: var(--orange);
+  position: absolute;
+  top: 0px;
+  right: 120px;
+  box-shadow: 2px 2px 12px rgba(25, 25, 25, .25);
+  width: 100px;
+}
+
 
 @media (max-width: 400px) {
   ul {
@@ -381,7 +399,10 @@ a {
   }
 
   .SlideOutMenu {
-    right: 80px;
+    right: 70px;
+  }
+  .SlideOutMenu--code {
+    right: -110px;
   }
 }
 

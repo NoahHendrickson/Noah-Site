@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const SlideoutMenuCode = () => {
 
   return (
-    <div className='SlideOutMenu'>
+    <div className='SlideOutMenu--code'>
       <ul>
         <Link to="/CrpoPage" ><li className='code__list'>CRPO</li></Link>
         <li className='code__list'>SVG Animation</li>

@@ -65,7 +65,7 @@
   .storyCarousel {
     position: absolute;
     top: 30px;
-    width: 100%;
+    width: 95%;
     flex-direction: column;
     align-items: center;
     background-color: var(--orange);
@@ -84,7 +84,7 @@
   }
   .story__title {
     color: var(--creamy);
-    font-size: 1em;
+    font-size: 1.5em;
   }
   
   .story__text {
@@ -93,6 +93,7 @@
     text-align: center;
     max-width: 90%;
     margin-bottom: 15px;
+    margin-top: 5px;
   }
   .splash__page--me {
     display: flex;
@@ -100,10 +101,9 @@
     width: 100%;
   }
   .NoahHeadShot {
-    width: 100px;
-    height: 100px;
+    width: 0px;
+    height: 0px;
     top: 0;
-    order: 1;
   }
   .skills {
     width: 15px;
@@ -112,6 +112,6 @@
   .skills__container {
     display: flex;
     justify-content: center;
-    margin: 10px 0px;
+    margin: 0px;
   }
 }
