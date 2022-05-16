@@ -28,11 +28,14 @@
   margin-left: 10px;
 }
 
+.projectText__padded {
+  padding-right: 400px;
+}
+
+
 .subTitle {
   font-size: .35em;
-  color: var(--kelly);
   position: relative;
-  bottom: 8px;
 }
 
 .roleCard {
@@ -43,9 +46,11 @@
 }
 
 .role {
-  font-size: 1.25em;
+  color: var(--kelly);
+  font-size: .45em;
   width: 100%;
-  text-align: center;
+  text-align: right;
+  font-weight: 700;
   margin-right: 10px;
 }
 
@@ -56,6 +61,10 @@
 }
 
 @media (max-width: 600px) {
+  .projectText__padded {
+    padding-right: 0px;
+  }
+
   .roleCard {
     flex-direction: column;
     align-items: center;
@@ -63,8 +72,7 @@
   }
 
   .role {
-    font-size: 1.25em;
-    width: 95%;
+    font-size: .35em;
     font-weight: 700;
     text-align: center;
     margin: 10px 0px 5px 0px;
@@ -93,6 +101,6 @@
   .projectText {
     width: 85%;
     text-align: center;
-    margin: 0px;
+    margin: 5px 0px 0px 0px;
   }
 }

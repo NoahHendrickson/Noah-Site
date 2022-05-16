@@ -16,6 +16,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: solid var(--lime) 5px;
 }
 
 .story {

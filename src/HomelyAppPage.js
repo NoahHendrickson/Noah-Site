@@ -19,7 +19,7 @@ const HomelyAppPage = () => {
       exit={{y: '-100vh', transition:{duration: .2}}}
     >
       <Navbar />
-      <ProjectTitle role="Principal Designer & Junior Developer" title="Homely App" subtitle="UX Design" text="Homely is property management software app designed to be a social and conveinant way to handle all the needs of the tenant and leasing office relationship." />
+      <ProjectTitle page="projectText__padded" role="Principal Designer & Junior Developer" title="Homely App" subtitle="UX Design & App Development" text="Homely is property management software app designed to be a social and conveinant way to handle all the needs of the tenant and leasing office relationship." />
       <img className="hero__image--70 homely__margins" src={Wires} />
       <h1 className='caption'>The ideation started with simple wireframes to outline some key features and give a subtle design direction. Once I was happy with the wireframes direction I made some quick mockups with colors and more defined shapes and design.</h1>
       <img className="hero__image--70" src={Styles} />
