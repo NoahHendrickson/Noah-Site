@@ -36,3 +36,17 @@
   width: 75%;
   margin: 50px;
 }
+
+@media (max-width: 600px) {
+  .hero__image--70 {
+    width: 100%;
+    margin: 0px;
+  }
+  .imgGrid {
+    width: 100%;
+  }
+
+  .fit__images {
+    padding: 25px;
+  }
+}

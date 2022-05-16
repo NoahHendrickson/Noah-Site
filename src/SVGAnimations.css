@@ -1,0 +1,24 @@
+.SVGAni {
+ background-color: var(--creamy); 
+ height: 100vh;
+}
+
+.animations {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--creamy);
+}
+
+.svg__caption {
+  font-weight: 700;
+  margin: 25px auto;
+  width: 70%;
+}
+
+@media (max-width: 600px) {
+  .animations {
+    flex-direction: column;
+    height: 100%;
+  }
+}

@@ -60,6 +60,9 @@ const Navbar = (props) => {
               <li className='dropdownMenuDesign__item'>
                 <Link className="path__button" to="/logo_design">SVG Animations</Link>
               </li>
+              <li className='dropdownMenuDesign__item'>
+                <a className="path__button" target="_blank" href='https://github.com/NoahHendrickson/Noah-Site'>This Site</a>
+              </li>
             </div>
           </NavButton>
             <li className='button__list'>

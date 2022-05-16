@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
 }
 
 .titleCard__one {
@@ -39,12 +38,14 @@
 .roleCard {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .role {
-  font-size: 1.5em;
-  width: 30%;
-  text-align: right;
+  font-size: 1.25em;
+  width: 100%;
+  text-align: center;
   margin-right: 10px;
 }
 
@@ -54,23 +55,43 @@
   margin-left: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+  .roleCard {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .role {
+    font-size: 1.25em;
+    width: 95%;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+  }
+
+  .role__text {
+    font-size: 1em;
+    width: 85%;
+    text-align: center;
+  }
   .titleCard__one {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    border: solid black 5px;
   }
 
   .projectTitle {
-    width: 70%;
+    bottom: 0px;
+    width: 80%;
     margin: 0px;
     text-align: center;
+    font-size: 2.25em;
   }
 
   .projectText {
-    width: 70%;
+    width: 85%;
     text-align: center;
     margin: 0px;
   }

@@ -19,7 +19,7 @@ const NachoBox = () => {
       animate={{y: '0'}}
       exit={{y: '-100vh', transition:{duration: .2}}} 
     >
-      <Navbar page="nachoNav" />
+      <Navbar />
       <div className='content'>
         <ProjectTitle title='Nacho Box' subtitle='Package & Pattern Design' text="This is a packaging project I created in College. My goal was to concept out a conveinant Chips and Salsa container for parties or get togethers." />
         <div className='images'>
@@ -30,7 +30,7 @@ const NachoBox = () => {
             <div className='process__image process__image--right'></div>
           </div>
           <h1 className='caption'>This is the final font and some words that are associated with the concept of this project.</h1>
-          <img className='hero__image hero__image--fonts' src={PicThree} />
+          <img className='hero__image--70 hero__image--fonts' src={PicThree} />
           <h1 className='caption'>I took the same style and approach to create the icons for the patterns in this project. I initially thought the tortilla chip pattern was going to be the only pattern I used but I started messing around with some other ingredient icons which gave some individualality to the flavor designs later on.</h1>
           <div className='process__images'>
             <div className='sketch sketch--one'></div>
@@ -38,7 +38,7 @@ const NachoBox = () => {
             <div className='sketch sketch--three'></div>
             <div className='sketch sketch--four'></div>
           </div>
-          <img className='hero__image' src={iconsBanner} />
+          <img className='hero__image--70' src={iconsBanner} />
           <img className='hero__image' src={icons} />
           <h1 className='caption'>I took the same style and approach to create the icons for the patterns in this project. I initially thought the tortilla chip pattern was going to be the only pattern I used but I started messing around with some other ingredient icons which gave some individualality to the flavor designs later on.</h1>
           <img className='hero__image' src={nachoCovers} />

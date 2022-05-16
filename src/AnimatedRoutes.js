@@ -13,6 +13,7 @@ import DarkMatterPage from './DarkMatterPage';
 import FitPage from './FitPage';
 import HomelyAppPage from './HomelyAppPage';
 import TheCRPO from './TheCRPO';
+import SVGAnimations from './SVGAnimations';
 
 const AnimatedRoutes = () => {
 
@@ -37,6 +38,7 @@ const AnimatedRoutes = () => {
         <Route path='/FitPage' element={<FitPage />} />
         <Route path='/HomelyPage' element={<HomelyAppPage />} />
         <Route path='/CrpoPage' element={<TheCRPO />} />
+        <Route path='SVGAnimations' element={<SVGAnimations />} />
       </Routes>
     </AnimatePresence>
   )

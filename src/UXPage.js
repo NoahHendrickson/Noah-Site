@@ -26,7 +26,6 @@ const UXPage = () => {
           </div>
         </Link>
       </div>
-      <Footer />
     </motion.div>
   )
 }

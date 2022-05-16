@@ -19,6 +19,10 @@
   justify-content: center;
 }
 
+.inputBttn {
+  width: 100%;
+}
+
 .customBttn {
   border-radius: 5px;
 }
@@ -467,7 +471,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: scroll;
 }
 
 .LogoDesignDark {
@@ -476,10 +479,10 @@ a {
 
 .logo__page {
   width: 70%;
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 40%);
+  grid-template-rows: repeat(5, 450px);
   background-color: var(--creamy);
 }
 
@@ -488,7 +491,7 @@ a {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 30%);
+    grid-template-rows: repeat(7, 200px);
   }
 }
 
@@ -646,9 +649,12 @@ img {
 }
 
 .GraphicPage {
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--creamy);
+  height: 100vh;
+  overflow: scroll;
 }
 
 .GraphicPage__dark {
@@ -658,18 +664,29 @@ img {
 }
 
 .graphics {
-  display: grid;
-  grid-template-columns: repeat(2, 650px);
-  grid-template-rows: repeat(3, 450px);
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
 }
 
 .graphic {
   margin: 0px;
+  width: 70%;
+  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .graphics {
+    width: 100%;
+    height: 550px;
+  }
+  .graphic {
+    width: 100%;
+  }
 }
 
 
@@ -787,7 +804,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
-  width: 70%;
+  width: 75%;
   background-color: #CEF982;
   height: 500px;
 }
@@ -800,8 +817,16 @@ img {
   width: 70%;
   flex-wrap: wrap;
   margin: 100px auto;
-  border-radius: 15px;
+  border-radius: 5px;
   color: black;
+}
+
+@media (max-width: 600px) {
+  .caption {
+    width: 85%;
+    font-size: 1.25em;
+    margin: 50px auto;
+  }
 }
 
 .process__images {
@@ -897,6 +922,34 @@ img {
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  .title__image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .process__images {
+    width: 100%;
+  }
+
+  .process__image {
+    height: 200px;
+  }
+
+  .process__images--six {
+    height: 75px;
+  }
+
+  .sketch {
+    height: 100px;
+    margin: 0px 0px 50px 0px;
+  }
+
+  .process__image--package {
+    height: 300px;
+  }
 }
 
 .iconRam {

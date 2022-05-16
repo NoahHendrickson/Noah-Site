@@ -1,0 +1,124 @@
+.logoEXP {
+  width: 25%;
+}
+
+.logoEXP > svg {
+  width: 100%;
+}
+
+.spiral-reveal {
+  clip-path: url("#clip-spiral");
+  fill: none;
+  stroke-width: 80px;
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 4000;
+  animation: draw 1s cubic-bezier(0.8, 0.03, 1, 0.6) forwards;
+  stroke-linecap: round;
+}
+
+.purple-spiral {
+  stroke: #8150ce;
+  animation-delay: 2.5s;
+}
+
+.orange-spiral {
+  stroke: rgb(255, 171, 74);
+  animation-delay: 2.45s;
+}
+
+.grey-spiral {
+  stroke: grey;
+  animation-delay: 2.4s;
+}
+
+.purple-circle {
+  clip-path: url("#clip-circle");
+  fill: hsl(263, 56%, 56%);
+  /* fill-rule: evenodd; */
+  animation: grow 1s cubic-bezier(0.94, -0.01, 1, 0.45) forwards;
+  transform: scale(0);
+  transform-origin: 450px 250px;
+  animation-delay: 1s, 2.1s;
+}
+
+#orange-grey-clip-stripe {
+  clip-path: url("#clip-circle");
+}
+
+.stripe-reveal {
+  clip-path: url("#orange-grey-clip-stripe");
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 35;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 1000;
+  animation: drawDisappear 0.5s cubic-bezier(0.13, 0.71, 1, 0.71) forwards,
+    grow 1s cubic-bezier(0.94, -0.01, 1, 0.45) forwards;
+  transform: scale(0);
+  transform-origin: 450px 250px;
+}
+
+/* .purple-stripe {
+  clip-path: url("#clip-circle");
+  stroke: #8150ce;
+  animation-delay: 2s, 1s;
+  opacity: 0;
+}
+
+.orange-stripe {
+  stroke: rgb(255, 171, 74);
+  animation-delay: 2.2s, 1s;
+  opacity: 0;
+}
+
+.grey-stripe {
+  stroke: grey;
+  animation-delay: 2.1s, 1s;
+  opacity: 0;
+} */
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawDisappear {
+  to {
+    stroke-dashoffset: 400;
+  }
+}
+
+@keyframes grow {
+  to {
+    transform: scale(1);
+  }
+}
+
+.oval {
+  transform: scale(1) rotate(-35deg);
+  transform-origin: 450px 250px;
+  animation: shrink 1s cubic-bezier(0.63, 0.22, 0.81, 0.15) forwards;
+}
+
+.purple-oval {
+  fill: #8150ce;
+  animation-delay: 0s;
+}
+
+.grey-oval {
+  fill: grey;
+  animation-delay: 0.1s;
+}
+
+.orange-oval {
+  fill: rgb(255, 171, 74);
+  animation-delay: 0.2s;
+}
+
+@keyframes shrink {
+  to {
+    transform: scale(0) rotate(-35deg);
+    background: #8150ce;
+  }
+}

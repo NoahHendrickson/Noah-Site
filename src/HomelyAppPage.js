@@ -18,20 +18,18 @@ const HomelyAppPage = () => {
       animate={{y: '0'}}
       exit={{y: '-100vh', transition:{duration: .2}}}
     >
-      <Navbar page="homely" />
-      <ProjectTitle role="Design Lead & Junior Developer" roleText="I am responsbile for all design aspects of this project. I am a self taught programmer and will also be undertaking some of the development process." title="Homely App" subtitle="UX Design" text="Homely is a property management app designed to be a conveinant and fresh way to handle all the needs of the tenant and leasing office relationship." />
+      <Navbar />
+      <ProjectTitle role="Principal Designer & Junior Developer" title="Homely App" subtitle="UX Design" text="Homely is property management software app designed to be a social and conveinant way to handle all the needs of the tenant and leasing office relationship." />
+      <img className="hero__image--70 homely__margins" src={Wires} />
       <h1 className='caption'>The ideation started with simple wireframes to outline some key features and give a subtle design direction. Once I was happy with the wireframes direction I made some quick mockups with colors and more defined shapes and design.</h1>
-      <img className="hero__image--70" src={Wires} />
-      <h1 className='caption'>After collaborinting with the Principle Developer and founder I refined the mockups and nailed down some sytle guides and made some higher fidelity mockups in Illustrator.</h1>
       <img className="hero__image--70" src={Styles} />
+      <h1 className='caption'>After collaborinting with the Principle Developer and founder I refined the mockups and nailed down some sytle guides and made some higher fidelity mockups in Illustrator.</h1>
       <img className="hero__image--70" src={StyleGuide} />
-      <h1 className='caption'>Dark Theme</h1>
       <img className="hero__image--70" src={StyleGuideDark} />
       <h1 className='caption'>Once I was happy with the design direction I started working in Adobe XD to build out the different stories and screens users will come across.</h1>
-      <img className="hero__image--70" src={Mocks} />
-      <img className="hero__image--70" src={Mocks2} />
-      <h1 className='caption'>All the possible paths are being built out with Adobe XD</h1>
-      <img className="hero__image--70" src={Screens} />
+      <img className="homely__95" src={Mocks} />
+      <img className="homely__95 homely__margins" src={Mocks2} />
+      <img className="homely__95 homely__margins" src={Screens} />
     </motion.div>
   )
 }

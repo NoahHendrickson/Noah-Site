@@ -30,8 +30,8 @@
 }
 
 .letterBG {
-  fill: var(--orange);
-  stroke: var(--orange);
+  fill: var(--olive);
+  stroke: var(--olive);
   stroke-width: 10px;
   animation: slide 1.5s ease-in-out forwards;
   transition: skew;
@@ -43,13 +43,13 @@
   }
   90% {
     transform: translate(44.5%, 40%) scale(.25);
-    fill: var(--orange);
-    stroke: var(--orange)
+    fill: var(--olive);
+    stroke: var(--olive)
   }
   100% {
     transform: translate(45.25%, 40.5%) scale(.25) skew(-15deg);
-    fill: var(--creamy);
-    stroke: var(--creamy)
+    fill: var(--olive);
+    stroke: var(--olive)
   }
 };
 
