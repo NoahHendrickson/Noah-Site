@@ -37,7 +37,7 @@ const Navigation = () => {
         {/* <NoahLogoAnimated /> */}
         <Socials />
         <div className='splash__page--me'>
-          {story ? <StoryCarousel /> : <FlowerLogo />}
+          {story ? <StoryCarousel state={story} /> : <FlowerLogo />}
         </div>
         <NoahLogo className='NoahLogo' />
         <ButtonList toggleStory={toggleStory} />
