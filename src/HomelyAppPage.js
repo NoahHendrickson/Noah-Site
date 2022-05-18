@@ -4,12 +4,14 @@ import "./HomelyAppPage.css"
 import Navbar from './Navbar'
 import ProjectTitle from './ProjectTitle'
 import Wires from "./Assets/HomelyApp/HomelyImages-07.svg"
-import Styles from "./Assets/HomelyApp/HomelyImages-08.svg"
+import Styles from "./Assets/HomelyApp/FontFamily-08.svg"
 import StyleGuide from "./Assets/HomelyApp/HomelyImages-09.svg"
 import StyleGuideDark from "./Assets/HomelyApp/HomelyImages-10.svg"
 import Mocks2 from "./Assets/HomelyApp/homelyNew-01.svg"
 import Mocks from "./Assets/HomelyApp/homelyNew-03.svg"
 import Screens from "./Assets/HomelyApp/homelyNew-02.svg"
+import PitchDeck1 from "./Assets/HomelyApp/PitchDeck1.png"
+import PitchDeck2 from "./Assets/HomelyApp/PitchDeck2.png"
 
 const HomelyAppPage = () => {
   return (
@@ -20,6 +22,8 @@ const HomelyAppPage = () => {
     >
       <Navbar />
       <ProjectTitle page="projectText__padded" role="Principal Designer & Junior Developer" title="Homely App" subtitle="UX Design & App Development" text="Homely is property management software app designed to be a social and conveinant way to handle all the needs of the tenant and leasing office relationship." />
+      <img className="hero__image--full" src={PitchDeck1} />
+      <img className="hero__image--full pitchDeck" src={PitchDeck2} />
       <img className="hero__image--70 homely__margins" src={Wires} />
       <h1 className='caption'>The ideation started with simple wireframes to outline some key features and give a subtle design direction. Once I was happy with the wireframes direction I made some quick mockups with colors and more defined shapes and design.</h1>
       <img className="hero__image--70" src={Styles} />

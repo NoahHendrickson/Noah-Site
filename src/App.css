@@ -739,7 +739,7 @@ img {
 }
 
 .nachobox:hover .lime {
-  background-size: 50%;
+  background-size: 55%;
   transition: 100ms;
 }
 
@@ -771,6 +771,19 @@ img {
 .gear {
   background-image: url("./Assets/Graphics/graphicThumbnail-03.svg");
   background-size: 80%;
+}
+
+@media (max-width: 600px) {
+  .howto:hover .gpu {
+    background-size: 55%;
+  }
+  .gpu {
+    background-size: 50%;
+  }
+
+  .lime {
+    background-size: 50%;
+  }
 }
 
 .NachoBox__page {
