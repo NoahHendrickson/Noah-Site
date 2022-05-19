@@ -13,7 +13,7 @@ const FullStory = () => {
           <DownCarat className='downCarat' />
        </div>
         <div className='span__6'>
-          <h1 className='story__grid--title'>My Life Story (or more accurately the last 3 ish years) </h1>
+          <h1 className='story__grid--title'>currently buidling this page!! its pretty harding to 1. not sound narcisstic and 2. make this stuff interesting so ppl want to read it 😬</h1>
         </div>
         <div className='span__2'>
           <h1 className='story__grid--title'>Building</h1>
