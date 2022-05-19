@@ -25,9 +25,9 @@ const HomelyAppPage = () => {
       <img className="hero__image--full" src={PitchDeck1} />
       <img className="hero__image--full pitchDeck" src={PitchDeck2} />
       <img className="hero__image--70 homely__margins" src={Wires} />
-      <h1 className='caption'>The ideation started with simple wireframes to outline some key features and give a subtle design direction. Once I was happy with the wireframes direction I made some quick mockups with colors and more defined shapes and design.</h1>
+      <h1 className='caption'>I started with simple wireframes to outline some key features and give a subtle design direction. Once I was happy with the wireframes direction I made some quick mockups with colors and more defined shapes and design.</h1>
       <img className="hero__image--70" src={Styles} />
-      <h1 className='caption'>After collaborinting with the Principle Developer and founder I refined the mockups and nailed down some sytle guides and made some higher fidelity mockups in Illustrator.</h1>
+      <h1 className='caption'>After collaborating with the Principle Developer and founder I refined the mockups and nailed down some style guides and made some higher fidelity mockups in Illustrator.</h1>
       <img className="hero__image--70" src={StyleGuide} />
       <img className="hero__image--70" src={StyleGuideDark} />
       <h1 className='caption'>Once I was happy with the design direction I started working in Adobe XD to build out the different stories and screens users will come across.</h1>
