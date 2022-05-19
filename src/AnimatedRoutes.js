@@ -14,6 +14,7 @@ import FitPage from './FitPage';
 import HomelyAppPage from './HomelyAppPage';
 import TheCRPO from './TheCRPO';
 import SVGAnimations from './SVGAnimations';
+import FullStory from './FullStory';
 
 const AnimatedRoutes = () => {
 
@@ -39,6 +40,7 @@ const AnimatedRoutes = () => {
         <Route path='/HomelyPage' element={<HomelyAppPage />} />
         <Route path='/CrpoPage' element={<TheCRPO />} />
         <Route path='SVGAnimations' element={<SVGAnimations />} />
+        <Route path='FullStory' element={<FullStory />} />
       </Routes>
     </AnimatePresence>
   )

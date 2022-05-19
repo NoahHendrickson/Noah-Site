@@ -1,0 +1,50 @@
+.FullStoryPage {
+  background-color: var(--orange);
+  width: 100vw;
+  height: 100vh;
+}
+
+.story__grid {
+  margin: 0px auto;
+  width: 75%;
+  height: 80%;
+  border: solid white 1px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.story__grid > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px;
+  color: var(--creamy);
+}
+
+.span__6 {
+  grid-row: span 6;
+}
+.span__2 {
+  grid-row: span 2;
+}
+
+.story__grid--title {
+  font-size: 3em;
+  color: var(--creamy);
+}
+
+.story__timeline {
+  font-size: 1.5em;
+  color: var(--creamy);
+}
+
+.story__grid--text {
+  font-size: .5em;
+}
+
+.downCarat {
+  width: 50px;
+  fill: var(--lightOrange);
+}

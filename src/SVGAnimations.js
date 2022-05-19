@@ -2,7 +2,7 @@ import React from 'react'
 import FlowerLogo from './FlowerLogo'
 import NoahLogoAnimated from './NoahLogoAnimated'
 import "./NoahLogoAnimation.css"
-import "./FlowerLogoInfini.css"
+import "./FlowerLogo.css"
 import ExpressiveAnimation from './ExpressiveAnimation'
 import Navbar from './Navbar'
 import "./SVGAnimations.css"

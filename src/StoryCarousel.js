@@ -14,6 +14,7 @@ import { ReactComponent as ILLU } from "./Assets/illustrator.svg"
 import { ReactComponent as INDESIGN } from "./Assets/indesign.svg"
 import { ReactComponent as PHOTOSHOP } from "./Assets/photoshop-2.svg"
 import { ReactComponent as XD } from "./Assets/adobe-xd-2.svg"
+import { Link } from 'react-router-dom'
 
 const StoryCarousel = ({story}) => {
  
@@ -84,10 +85,12 @@ const StoryCarousel = ({story}) => {
       {screen <= 400 ? <NoahPFP Title="Designer & Developer" Text="Thanks for checking out my site, I'm Noah and I am a UX Designer and self taught Developer. I have been designing a lot longer than I've been coding but I am certain this is the path for me. I love problem solving and learning new skills. My ultimate goal is to become a Front End Engineer." /> : null}
       <div className='story__button--container'>
         <motion.div whileHover={{ scale: 1.1 }}
-        className='button__background greenDark customBttn__green button__padded'>
+          className='button__background greenDark customBttn__green button__padded'>
           <div className='button__front green customBttn__green'>
+          <Link to="FullStory">
             <a className='button extraPaddingBttn'>See my full story</a>
-          </div>
+            </Link>
+            </div>
         </motion.div>
       </div>
     </div>

@@ -467,6 +467,7 @@ a {
   .SlideOutMenu--code {
     right: -110px;
     width: 100px;
+    top: -50px;
   }
 }
 
