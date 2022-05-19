@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import ProjectTitle from './ProjectTitle'
-import Infographic from "./Assets/HowToPC/infographic-06-06.svg"
+import Infographic from "./Assets/HowToPC/infographic-06-06-06.svg"
 import Process from "./Assets/HowToPC/processpic-01.png"
 import ProcessTwo from "./Assets/HowToPC/processpic-02.svg"
 import { motion } from 'framer-motion'
