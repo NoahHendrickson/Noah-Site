@@ -3,11 +3,12 @@
   align-items: flex-start;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .NoahHeadShot {
   position: relative;
-  top: 100px;
+  top: 50px;
   flex-shrink: 0;
   border-radius: 100px;
   width: 200px;
@@ -20,8 +21,8 @@
 }
 
 .story {
-  padding: 25px;
-  margin: 25px 15px;
+  padding: 0px 25px;
+  margin: 35px 35px;
   max-width: 30%;
   display: flex;
   flex-direction: column;
@@ -36,7 +37,7 @@
 @media (min-width: 600px) {
 .story__button--container {
   position: absolute;
-  bottom: 35px;
+  bottom: -0px;
   }
 }
 
@@ -70,7 +71,7 @@
   height: 35%;
 }
 
-.orbit__container {
+/* .orbit__container {
   position: absolute;
   width: 500px;
   height: 500px;
@@ -81,7 +82,7 @@
 }
 .orbit {
   position: absolute;
-  top: 0;
+  transform-origin: cen;
   width: 60px;
   height: 60px;
   border: solid white 6px;
@@ -90,26 +91,33 @@
 
 @keyframes orbit {
   to {
-    transform: rotate(360deg);
+    transform: rotate(1turn);
   }
-}
+} */
 
 
 
-/* .orbit__container {
+.orbit__container {
   position: absolute;
-  top: -280px;
-  border: solid white 3px;
+  top: -150px;
   width: 600px;
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: orbit 10s linear infinite;
+}
+
+@media (max-width: 600px) {
+  .orbit__container {
+    top: -175px;
+    opacity: .5;
+  }
 }
 
 .logoIcon {
-  width: 50px;
-  height: 50px;
+  width: 2em;
+  height: 2em;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -118,8 +126,7 @@
 
 .orbit__offset {
   position: absolute;
-  transform-origin: 30px 205px;
-  animation: orbit 10s linear infinite;
+  transform-origin: center;
   width: 60px;
   height: 60px;
   display: flex;
@@ -128,27 +135,42 @@
 }
 
 .orbit__offset--java {
-  animation-delay: 5s;
+  transform: translate(-125px, 0px);
 }
 .orbit__offset--css {
-  animation-delay: 2.5s;
+  transform: translate(125px, 0px);
+}
+.orbit__offset--html {
+  transform: translate(0px, 125px);
 }
 .orbit__offset--react {
-  animation-delay: 7.5s;
+  transform: translate(0px, -125px);
+}
+.orbit__offset--illu {
+  transform: translate(90px, -90px);
+}
+.orbit__offset--photoshop {
+  transform: translate(-90px, 90px);
+}
+.orbit__offset--indesign {
+  transform: translate(-90px, -90px);
+}
+.orbit__offset--xd {
+  transform: translate(90px, 90px);
 }
 
 
 @keyframes  orbit {
   to {
-    transform: rotate(360deg);
+    transform: rotate(1turn);
   }
 }
 
 @keyframes antiOrbit {
   to {
-    transform: rotate(-360deg);
+    transform: rotate(-1turn);
   }
-} */
+}
 
 @media (max-width: 600px) {
   .storyCarousel {

@@ -217,19 +217,32 @@
   font-size: 1em;
 }
 
+.Switch__container {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  z-index: 2;
+  font-size: 1em;
+}
+
 .socials__container {
- display: flex;
- justify-content: space-between;
- width: 200px;
- font-size: 16px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  font-size: 16px;
 }
 
 @media (max-width: 600px) {
   .socials__container {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    align-items: flex-start;
+  }
+
+  .Switch__container {
+    justify-content: space-around;
+    right: 0px;
   }
 }
 
@@ -239,17 +252,6 @@
 
 .socials__icon--dark {
   fill: var(--cream);
-}
-
-
-.Switch__container {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  display: flex;
-  justify-content: flex-end;
-  z-index: 2;
-  font-size: 1em;
 }
 
 .flower__container {

@@ -58,7 +58,7 @@ const Navbar = (props) => {
                 <a className="path__button" target="_blank" href='https://noahhendrickson.github.io/calculator/'>JS Calc</a>
               </li>
               <li className='dropdownMenuDesign__item'>
-                <Link className="path__button" to="/logo_design">SVG Animations</Link>
+                <Link className="path__button" to="/SVGAnimations">SVG Animations</Link>
               </li>
               <li className='dropdownMenuDesign__item'>
                 <a className="path__button" target="_blank" href='https://github.com/NoahHendrickson/Noah-Site'>This Site</a>

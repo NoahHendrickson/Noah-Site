@@ -31,11 +31,12 @@ const Navigation = () => {
       exit={{y: '-100vh', transition:{duration: .3}}} 
     >
       <div className='Switch__container'>
+      <Socials />
+
         <Switch />
       </div>
       <div className="splash__page">
         {/* <NoahLogoAnimated /> */}
-        <Socials />
         <div className='splash__page--me'>
           {story ? <StoryCarousel state={story} /> : <FlowerLogo />}
         </div>
