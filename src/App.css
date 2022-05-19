@@ -9,11 +9,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  height: 100vh;
 }
 
 .footer {
-  height: 50px;
+  height: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,29 +211,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 85%;
   width: 100%;
   position: relative;
   font-size: 1em;
 }
 
 .Switch__container {
-  position: absolute;
-  top: 25px;
-  right: 25px;
+  padding-right: 25px;
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  align-items: center;
   z-index: 2;
   font-size: 1em;
+  height: 10%;
 }
 
 .socials__container {
   margin-right: 25px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 200px;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 @media (max-width: 600px) {
@@ -247,6 +248,8 @@
 }
 
 .socials__icon {
+  display: flex;
+  justify-content: center;
   fill: var(--darkGreen);
 }
 
