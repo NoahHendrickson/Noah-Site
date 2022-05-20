@@ -1,63 +1,73 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Navbar from "./Navbar"
+import pfp from "./"
 import "./FullStory.css"
-import { ReactComponent as DownCarat } from "./Assets/Story/fancyDownCarat.svg"
+import TimelineButton from './TimelineButton'
+import FancyCarat from './FancyCarat'
+import Noah from "./Assets/profilepic.jpeg"
+
 
 const FullStory = () => {
+
+  const [cap, setCap] = useState([]);
+
+  function firstCap() {
+    setCap("first cap");
+    console.log(cap)
+  }
+
   return (
     <div className='FullStoryPage'>
       <Navbar />
       <div className='story__grid'>
         <div>
-          <motion.div whileHover={{scale: 1.05}} className='timeline__button'>
-            <div className='timeline__button--front'>
-            <h1 className='story__timeline'>Went to College for Graphic Design</h1>
-            </div>
-          </motion.div>
-            <motion.div whileHover={{scale: 1.2}}>
-            <DownCarat className='downCarat' />
-            </motion.div>
-       </div>
+          <TimelineButton  text="Go to College for Graphic Design" />
+        </div>
         <div className='span__6'>
-            <h1 className='story__grid--title'>currently buidling this page!! its pretty harding to 1. not sound narcisstic and 2. make this stuff interesting so ppl want to read it 😬</h1>
+          <div>
+            <h1 className='caption__timeline'>The text in here will be dependant on what section is hovered on</h1>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div className='quote'>
+            <h1>
+              "You should never settle for who you are."
+            </h1>
+            <p>-Michael Scott's way of saying that you should always be looking to improve yourself and achieve greatness.</p>
+            
+          </div>
         </div>
         <div className='span__2'>
-          <h1 className='story__grid--title'>Building</h1>
-          <p className='story__grid--text'>From a very young age I was obsessed with building things. I loved Legos, Duplos, Bionicles and many other building/architectirl toys. As I look back on those years with a bit more wisdom on myself I realized I liked those toys but loved the feeling of building or creating my own original ideas. To this day I feel fulfilled and proud of building and creating beautiful products, designs and experiences.</p>
+        From a very young age I was obsessed with building things. I loved Legos, Duplos, Bionicles and many other building/architectirl toys. As I look back on those years with a bit more wisdom on myself I realized I liked those toys but loved the feeling of building or creating my own original ideas. To this day I feel fulfilled and proud of building and creating beautiful products, designs and experiences.
+        </div>
+        <div onMouseOver={firstCap} className='carat__holder'>
+          <FancyCarat />
         </div>
         <div>
-          <div className='timeline__button'>
-            <div className='timeline__button--front'>
-              <h1 className='story__timeline'>Graduate and get a random job at amazon in July 2019</h1>
-              </div>
-            </div>
-          <DownCarat className='downCarat' />
-       </div>
-        <div>
-          <h1 className='story__timeline'>Get promoted 3 times in 10 months and become an Area Manager</h1>
-          <DownCarat className='downCarat' />
-       </div>
-        <div className='span__2'>
-          <h1 className='story__grid--title'>Competing</h1>
-          <p className='story__grid--text'>"You need to hate losing more than you love winning" is one of the more memorable quotes from my tennis coach.</p>
+          <TimelineButton text="Graduate and get a random job at Amazon in 2019" />
+        </div>
+        <div className='carat__holder'>
+          <FancyCarat />
         </div>
         <div>
-          <h1 className='story__timeline'>Get promoted again 1 year later (2021)</h1>
-          <DownCarat className='downCarat' />
-       </div>
-        <div>
-          <h1 className='story__timeline'>Fully regained my confidence and decided to pursue a new career</h1>
-          <DownCarat className='downCarat' />
-
-       </div>
-        <div className='span__2'>
-          <h1 className='story__grid--title'>Creating</h1>
+          <TimelineButton text="Get promoted 3 times in 10 months to become an Area Manager" />
+        </div>
+        <div className='span__2'></div>
+        <div className='carat__holder'>
+          <FancyCarat />
         </div>
         <div>
-          <h1 className='story__timeline'>Loving UX Design and learning to Code</h1>
-          <DownCarat className='downCarat' />
-       </div>
+          <TimelineButton text="Promted again 1 year later in 2021" />
+        </div>
+        <div className='carat__holder'>
+          <FancyCarat />
+        </div>
+        <div>
+          <TimelineButton text="Regained my confidence and left Amazon to pursue a career in Front End Developement" />
+        </div>
+        <div className='span__2'></div>
       </div>
     </div>
   )

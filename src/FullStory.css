@@ -6,27 +6,75 @@
 
 .story__grid {
   margin: 0px auto;
-  width: 75%;
+  width: 90%;
   height: 85%;
-  border: solid white 1px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 8% 10% 8% 10% 12% 10% 8% 10% 12% 10%;
 }
 
 .story__grid > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   color: var(--creamy);
 }
 
-.span__6 {
-  grid-row: span 6;
+.carat__holder {
+  justify-content: center;
 }
+
+
+
+.span__6 {
+  align-items: center;
+  justify-content: center;
+  grid-row: span 12;
+}
+
+.span__6 > div {
+  height: 50%;
+  font-size: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.span__6 > div > h1 {
+  height: 30%;
+}
+
+.quote {
+  flex-direction: column;
+}
+
+.quote > h1 {
+  font-size: 1em;
+  color: var(--creamy);
+  width: 90%;
+}
+
+.quote > p {
+  margin-top: 15px;
+  font-size: .5em;
+  width: 80%;
+
+}
+
+.span__6 > div > div {
+  background-image: url("./Assets/profilepic.jpeg");
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .span__2 {
-  grid-row: span 2;
+  grid-row: span 4;
 }
 
 .story__grid--title {
@@ -34,7 +82,7 @@
   color: var(--creamy);
 }
 
-.story__timeline {
+.caption__timeline {
   font-size: 1em;
   color: var(--creamy);
   padding: 5px 0px;
@@ -45,10 +93,17 @@
 }
 
 .downCarat {
+  position: relative;
+  z-index: 3;
   width: 60px;
   fill: var(--lightOrange);
-  transition: 100ms;
+  transition: 200ms;
+  height: 3.25em;
 }
+
+/* .downCarat:hover {
+  transform: rotate(-90deg);
+} */
 
 .stroke1 {
   stroke: var(--lime)
@@ -66,9 +121,11 @@
 svg:hover .stroke2 {
   stroke: var(--lime);
 }
+
+
 .timeline__button {
   background-color: var(--forest);
-  border: solid var(--darkGreen) 3px;
+  border: solid var(--kelly) 3px;
   width: 100%;
   height: 2em;
   display: flex;
@@ -90,6 +147,6 @@ svg:hover .stroke2 {
   font-size: 20px;
 }
 
-.timeline__button:hover {
+/* .timeline__button:hover {
   border: solid var(--lime) 3px;
-}
+} */
