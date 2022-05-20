@@ -1,5 +1,5 @@
 .FullStoryPage {
-  background-color: var(--orange);
+  background-color: var(--olive);
   width: 100vw;
   height: 100vh;
 }
@@ -7,7 +7,7 @@
 .story__grid {
   margin: 0px auto;
   width: 75%;
-  height: 80%;
+  height: 85%;
   border: solid white 1px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -18,8 +18,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  padding: 25px;
+  justify-content: space-evenly;
   color: var(--creamy);
 }
 
@@ -36,8 +35,9 @@
 }
 
 .story__timeline {
-  font-size: 1.5em;
+  font-size: 1em;
   color: var(--creamy);
+  padding: 5px 0px;
 }
 
 .story__grid--text {
@@ -45,6 +45,51 @@
 }
 
 .downCarat {
-  width: 50px;
+  width: 60px;
   fill: var(--lightOrange);
+  transition: 100ms;
+}
+
+.stroke1 {
+  stroke: var(--lime)
+}
+
+.stroke2 {
+  stroke: var(--darkGreen);
+}
+
+
+.stroke2:hover {
+  stroke: var(--lime);
+}
+
+svg:hover .stroke2 {
+  stroke: var(--lime);
+}
+.timeline__button {
+  background-color: var(--forest);
+  border: solid var(--darkGreen) 3px;
+  width: 100%;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 6px;
+}
+
+.timeline__button--front {
+  background-color: var(--kelly);
+  border: solid var(--lime) 3px;
+  position: absolute;
+  width: calc(100% + 6px);
+  bottom: 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.timeline__button:hover {
+  border: solid var(--lime) 3px;
 }
