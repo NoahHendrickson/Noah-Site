@@ -6,7 +6,7 @@ import "./TheCRPO.css"
 import crpo from "./Assets/CRPO/crpoPRev.jpg"
 import crpo2 from "./Assets/CRPO/crpoPRev2.svg"
 import Footer from './Footer'
-import heroImage from "./Assets/CRPO/heroCRPO-01.svg"
+import heroImage from "./Assets/CRPO/2x/heromockup.png"
 
 const TheCRPO = () => {
   return (

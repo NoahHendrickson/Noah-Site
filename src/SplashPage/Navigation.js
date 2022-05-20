@@ -32,8 +32,7 @@ const Navigation = () => {
     >
       <div className='Switch__container'>
       <Socials />
-
-        <Switch />
+      <Switch />
       </div>
       <div className="splash__page">
         {/* <NoahLogoAnimated /> */}
@@ -43,7 +42,6 @@ const Navigation = () => {
         <NoahLogo className='NoahLogo' />
         <ButtonList toggleStory={toggleStory} />
       </div>
-      <Footer />
     </motion.div>
   )
 }

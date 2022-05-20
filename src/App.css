@@ -13,7 +13,6 @@
 }
 
 .footer {
-  height: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,7 +258,7 @@
 }
 
 .flower__container {
-  width: 18em;
+  width: 20em;
 }
 
 .NoahLogo {
@@ -277,13 +276,14 @@
 .NoahLogo__smaller {
   width: 8em;
   margin: 0px;
+  border: solid white 5px;
 }
 
 .splash__page--buttons {
   font-size: 1em;
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin: 25px 0px 0px 0px;
 }
 
 @media  (max-width: 600px) {
@@ -351,7 +351,7 @@ a {
 
 }
 .button__list {
-  margin: 15px auto;
+  margin: 10px auto;
 }
 
 
@@ -475,9 +475,6 @@ a {
 .LogoDesign {
   background-color: var(--cream);
   justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .LogoDesignDark {
@@ -485,6 +482,7 @@ a {
 }
 
 .logo__page {
+  margin: 0px auto;
   width: 70%;
   height: 100%;
   display: grid;

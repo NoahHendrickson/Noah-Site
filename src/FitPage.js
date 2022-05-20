@@ -32,7 +32,6 @@ const FitPage = () => {
 
         <img className="hero__image--70" src={Mockup} />
       </div>
-      <Footer />
     </motion.div>
   )
 }
