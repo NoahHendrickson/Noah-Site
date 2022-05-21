@@ -23,6 +23,8 @@
 
 .carat__holder {
   justify-content: center;
+  position: relative;
+  z-index: 6;
 }
 
 
@@ -43,7 +45,9 @@
 }
 
 .span__6 > div > h1 {
-  height: 30%;
+  width: 80%;
+  color: var(--creamy);
+  font-size: .75em;
 }
 
 .quote {
@@ -53,7 +57,7 @@
 .quote > h1 {
   font-size: 1em;
   color: var(--creamy);
-  width: 90%;
+  width: 80%;
 }
 
 .quote > p {
