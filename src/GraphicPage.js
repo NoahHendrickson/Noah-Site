@@ -33,7 +33,6 @@ const GraphicPage = () => {
           </Link>
         </div>
       </div>
-      <Footer />
     </motion.div>
   )
 }
