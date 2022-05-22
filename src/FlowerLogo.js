@@ -1,9 +1,14 @@
 import React from 'react'
 import FlowerLogoStyles from './FlowerLogo.css'
+import { motion } from 'framer-motion'
 
 const FlowerLogo = () => {
   return (
-    <div className="button_container flower__container">
+    <motion.div
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      exit={{scale: 0, opacity: 0}}
+      className="button_container flower__container">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="-110 -100 1200 1200"
@@ -164,7 +169,7 @@ const FlowerLogo = () => {
           </g>
         </g>
       </svg>  
-    </div>
+    </motion.div>
   )
 }
 

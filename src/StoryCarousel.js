@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import NoahPFP from './NoahPFP'
 import html from "./Assets/html-1.svg"
 import css from "./Assets/css-3.svg"
@@ -45,13 +45,31 @@ const StoryCarousel = ({story}) => {
   // })
     
 
-
+  const growUp = {
+    hidden: {
+      scale: 0,
+      opacity: 0
+    },
+    visible: {
+      scale: 1,
+      opacity: 1,
+    },
+    exit: {
+      scale: 0,
+      opacity: 0,
+    },
+  }
  
 
   return (
-    <div className='storyCarousel'>
+    <AnimatePresence onExitComplete={true}>
+    <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0}}
+      className='storyCarousel'>
       {screen > 400 ?
-      <NoahPFP Title="Developer" Text="I began my coding journey in January 2022. I am mostly self taught and have learned by doing. I have always loved building and learning and found coding to be a great combination. I am currently working to become a Front End App Developer but ultimately aspire to be a Full Stack App Developer." /> : null}
+      <NoahPFP Title="Developer" Text="I began my coding journey in January 2022. I am mostly self taught by way of Codecademy, Stack Overflow and most importantly Youtube University. I love building experiences that are beautiful and intuitive. I am currently working to become a Front End App Developer." /> : null}
       <div className='NoahHeadShot'></div>
       <div className='orbit__container'>
       </div>
@@ -81,7 +99,7 @@ const StoryCarousel = ({story}) => {
           <XD className='logoIcon' />
         </div>
       </div>
-      {screen > 400 ? <NoahPFP Title="Designer" Text="I've been designing a lot longer than I've been coding. I graduated with a BA in Advertising and Graphic Design in 2019 but I had trouble finding passion and drive in just design. For that reason I did not dive into that career path. I took a couple years and have found my passion again. I love to design and build. I have found a ton of love for UX Design in the past year. If you like my work and need some design help please reach out!" /> : null}
+      {screen > 400 ? <NoahPFP Title="Designer" Text="I've been designing a lot longer than I've been coding. I graduated with a BA in Advertising and Graphic Design in 2019. I have found a ton of love for UX Design in the past year becuase it is so closely tied to developement and I love coding as well. If you like my work and need some design help please reach out!" /> : null}
       {screen <= 400 ? <NoahPFP Title="Designer & Developer" Text="Thanks for checking out my site, I'm Noah and I am a UX Designer and self taught Developer. I have been designing a lot longer than I've been coding but I am certain this is the path for me. I love problem solving and learning new skills. My ultimate goal is to become a Front End Engineer." /> : null}
       <div className='story__button--container'>
         <motion.div whileHover={{ scale: 1.1 }}
@@ -93,7 +111,8 @@ const StoryCarousel = ({story}) => {
             </div>
         </motion.div>
       </div>
-    </div>
+      </motion.div>
+    </AnimatePresence>
   )
 }
 

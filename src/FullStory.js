@@ -13,10 +13,10 @@ import { ReactComponent as DownCarat } from "./Assets/Story/fancyDownCarat.svg"
 const FullStory = (props) => {
   const [which, setWhich] = useState();
   const [cap, setCap] = useState({
-    first: "I was not ready to go to College when I did and ended up surpressing my core traits and drives.",
+    first: "I didnt have a direction or a good idea of what I really wanted to do. But I was creative and liked computers so this seemed like a reasonable thing to do.",
     second: "The summer I graduated I did not want to pursue a career in the Design field yet. I decided to apply to Amazon as a Warehouse worker and move some cube and earn some cash.",
     third: "Turns out working at Amazon would totally turn my life and attitude around. I was able to get back to my passions of problem solving and winning.",
-    fourth: "fourth reason"
+    fourth: "Amazon was my first full time job and it helped me grow and develop professionally and personally. If I want to do something, I fully believe in my abilites to do said thing. Some call that delusional confidence and that is absolutely correct."
 });
 
   const set = (which) => {
@@ -44,18 +44,22 @@ const FullStory = (props) => {
             <div></div>
           </div>
           <div className='quote'>
-            <h1>
+            <h1 className='quote__caption'>
               "You should never settle for who you are."
             </h1>
-            <p>-Michael Scott's way of saying that you should always be looking to improve yourself and achieve greatness.</p>
+            <p>-Michael Scott's way of saying that you should always be looking to improve yourself.</p>
             
           </div>
         </div>
-        <div className='span__2'>
-        From a very young age I was obsessed with building things. I loved Legos, Duplos, Bionicles and many other building/architectirl toys. As I look back on those years with a bit more wisdom on myself I realized I liked those toys but loved the feeling of building or creating my own original ideas. To this day I feel fulfilled and proud of building and creating beautiful products, designs and experiences.
+        <div className='right__panel'>
+        From a very young age I was obsessed with building things. I loved Legos, Duplos, Bionicles, bascically any toy that was slightly technical, was up my alley. As I look back on those years with a bit more wisdom on myself I realized I liked those toys but loved the feeling of building or creating my own original ideas. To this day I feel fulfilled and proud of building and creating beautiful products, designs and experiences.
         </div>
         <div  className='carat__holder'>
           <FancyCarat selector="first" setWhich={setWhich} />
+          <motion.div
+            animate={{ scale: [0, 0, 1, 1, 0] }}
+            transition={{duration: 2, times: [0, .25, .5, .90, 1]}}
+            className='hint'>Hover over the arrows!</motion.div>
         </div>
         <div>
           <TimelineButton text="Graduate and get a random job at Amazon in 2019" />
@@ -66,12 +70,11 @@ const FullStory = (props) => {
         <div>
           <TimelineButton text="Get promoted 3 times in 10 months to become an Area Manager" />
         </div>
-        <div className='span__2'></div>
         <div className='carat__holder'>
           <FancyCarat selector="third" setWhich={setWhich} />
         </div>
         <div>
-          <TimelineButton text="Promted again 1 year later in 2021" />
+          <TimelineButton text="Promoted again 1 year later in 2021" />
         </div>
         <div className='carat__holder'>
         <FancyCarat selector="four" setWhich={setWhich} />
@@ -79,7 +82,6 @@ const FullStory = (props) => {
         <div>
           <TimelineButton text="Regained my confidence and left Amazon to pursue a career in Front End Developement" />
         </div>
-        <div className='span__2'></div>
       </div>
     </div>
   )

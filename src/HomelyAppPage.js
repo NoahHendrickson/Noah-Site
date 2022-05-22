@@ -1,5 +1,5 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useEffect } from 'react'
+import { motion, useAnimation } from 'framer-motion'
 import "./HomelyAppPage.css"
 import Navbar from './Navbar'
 import ProjectTitle from './ProjectTitle'
@@ -12,8 +12,41 @@ import Mocks from "./Assets/HomelyApp/homelyNew-03.svg"
 import Screens from "./Assets/HomelyApp/homelyNew-02.svg"
 import PitchDeck1 from "./Assets/HomelyApp/PitchDeck1.png"
 import PitchDeck2 from "./Assets/HomelyApp/PitchDeck2.png"
+import { useInView } from 'react-intersection-observer'
 
 const HomelyAppPage = () => {
+
+  const animation = useAnimation();
+  const [ref, inView, entry] = useInView({ threshold: .5 })
+  
+  useEffect(() => {
+    if (inView) {
+      animation.start('visible')
+    } else {
+      animation.start('hidden')
+    }
+  }, [animation, inView]);
+
+  const variants = {
+    visible: {
+      y: 0,
+      scale: 1,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        damping: 70,
+        stiffness: 1000,
+      },
+    },
+    hidden: {
+      y: entry,
+      opacity: 0,
+      scale: 0,
+      transition: {
+      }
+    },
+  }
+
   return (
     <motion.div className='HomelyPage'
     initial={{y: '-100vh'}}
@@ -24,9 +57,14 @@ const HomelyAppPage = () => {
       <ProjectTitle page="projectText__padded" role="Principal Designer & Junior Developer" title="Homely App" subtitle="UX Design & App Development" text="Homely is property management software app designed to be a social and conveinant way to handle all the needs of the tenant and leasing office relationship." />
       <img className="hero__image--full" src={PitchDeck1} />
       <img className="hero__image--full pitchDeck" src={PitchDeck2} />
-      <img className="hero__image--70 homely__margins" src={Wires} />
+      <motion.img
+        ref={ref}
+        animate={animation}
+        initial="hidden"
+        variants={variants}
+        className="hero__image--70 homely__margins" src={Wires} />
       <h1 className='caption'>I started with simple wireframes to outline some key features and give a subtle design direction. Once I was happy with the wireframes direction I made some quick mockups with colors and more defined shapes and design.</h1>
-      <img className="hero__image--70" src={Styles} />
+      <motion.img className="hero__image--70" src={Styles} />
       <h1 className='caption'>After collaborating with the Principle Developer and founder I refined the mockups and nailed down some style guides and made some higher fidelity mockups in Illustrator.</h1>
       <img className="hero__image--70" src={StyleGuide} />
       <img className="hero__image--70" src={StyleGuideDark} />

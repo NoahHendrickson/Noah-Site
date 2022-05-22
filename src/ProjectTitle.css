@@ -28,8 +28,11 @@
   margin-left: 10px;
 }
 
-.projectText__padded {
-  padding-right: 400px;
+@media (min-width: 1500px) {
+  .projectText__padded {
+    padding-right: 200px;
+  }
+
 }
 
 

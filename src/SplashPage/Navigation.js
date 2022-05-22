@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import ButtonList from '../ButtonList'
 import FlowerLogo from '../FlowerLogo'
 import Switch from '../Switch';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { ReactComponent as NoahLogo } from '../Assets/NoahLogo-10.svg'
 import '../FlowerLogo.css'
 import { ThemeContext } from '../App';
@@ -36,13 +36,14 @@ const Navigation = () => {
       </div>
       <div className="splash__page">
         {/* <NoahLogoAnimated /> */}
-        <div className='splash__page--me'>
-          {story ? <StoryCarousel state={story} /> : <FlowerLogo />}
+        <div
+          className='splash__page--me'>
+            {story ? <StoryCarousel state={story} /> : <FlowerLogo />}
         </div>
         <NoahLogo className='NoahLogo' />
         <ButtonList toggleStory={toggleStory} />
       </div>
-    </motion.div>
+      </motion.div>
   )
 }
 
