@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import SlideoutMenuDesign from './SlideoutMenuDesign'
 import SlideoutMenuCode from './SlideoutMenuCode'
-import ContactDropdown from './ContactDropdown';
+import ContactDropdown from '../ContactDropdown/ContactDropdown';
 import { motion } from 'framer-motion';
 
 const ButtonList = ({ text, toggleStory }) => {

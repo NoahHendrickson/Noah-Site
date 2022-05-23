@@ -892,7 +892,7 @@ img {
 
 .hero__image {
   width: 100%;
-  /* background-color: var(--nachoblue); */
+  margin: 50px 0px;
 }
 
 .hero__image--fonts {

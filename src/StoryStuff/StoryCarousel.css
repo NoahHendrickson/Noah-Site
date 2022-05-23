@@ -14,7 +14,7 @@
   border-radius: 100px;
   width: 200px;
   height: 200px;
-  background-image: url("./Assets/profilepic.jpeg");
+  background-image: url("../Assets/profilepic.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

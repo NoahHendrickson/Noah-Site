@@ -1,18 +1,17 @@
 import React from 'react'
-import Navbar from './Navbar'
-import DarkMatterLogo from "./Assets/DarkMatter/DarkMatterLogo-07.svg"
-import HomelyLogo from "./Assets/HomelyApp/HomelyLogo-03.svg"
+import Navbar from '../Navbar/Navbar'
+import DarkMatterLogo from "../Assets/DarkMatter/DarkMatterLogo-07.svg"
+import HomelyLogo from "../Assets/HomelyApp/HomelyLogo-03.svg"
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import "./UXPage.css"
-import Footer from './Footer'
 
 const UXPage = () => {
   return (
     <motion.div className='UXPage'
-     initial={{y: '-100vh'}}
+     initial={{y: '-50vh'}}
       animate={{y: '0'}}
-      exit={{y: '-100vh', transition:{duration: .2}}} >
+      exit={{y: '-100vh', transition:{duration: .35}}} >
       <Navbar />
       <div className='projects'>
         <Link className="project__Link project__Link--homely" to="/HomelyPage">

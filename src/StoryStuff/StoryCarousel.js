@@ -1,19 +1,15 @@
 import React, { useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import NoahPFP from './NoahPFP'
-import html from "./Assets/html-1.svg"
-import css from "./Assets/css-3.svg"
-import java from "./Assets/logo-javascript.svg"
-import react from "./Assets/react-2.svg"
 import "./StoryCarousel.css"
-import { ReactComponent as CSS } from "./Assets/css-3.svg"
-import { ReactComponent as JAVA } from "./Assets/logo-javascript.svg"
-import { ReactComponent as HTML } from "./Assets/html-1.svg"
-import { ReactComponent as REACT } from "./Assets/react-2.svg"
-import { ReactComponent as ILLU } from "./Assets/illustrator.svg"
-import { ReactComponent as INDESIGN } from "./Assets/indesign.svg"
-import { ReactComponent as PHOTOSHOP } from "./Assets/photoshop-2.svg"
-import { ReactComponent as XD } from "./Assets/adobe-xd-2.svg"
+import { ReactComponent as CSS } from "../Assets/css-3.svg"
+import { ReactComponent as JAVA } from "../Assets/logo-javascript.svg"
+import { ReactComponent as HTML } from "../Assets/html-1.svg"
+import { ReactComponent as REACT } from "../Assets/react-2.svg"
+import { ReactComponent as ILLU } from "../Assets/illustrator.svg"
+import { ReactComponent as INDESIGN } from "../Assets/indesign.svg"
+import { ReactComponent as PHOTOSHOP } from "../Assets/photoshop-2.svg"
+import { ReactComponent as XD } from "../Assets/adobe-xd-2.svg"
 import { Link } from 'react-router-dom'
 
 const StoryCarousel = ({story}) => {
@@ -101,7 +97,7 @@ const StoryCarousel = ({story}) => {
       </div>
       {screen > 400 ? <NoahPFP Title="Designer" Text="I've been designing a lot longer than I've been coding. I graduated with a BA in Advertising and Graphic Design in 2019. I have found a ton of love for UX Design in the past year becuase it is so closely tied to developement and I love coding as well. If you like my work and need some design help please reach out!" /> : null}
       {screen <= 400 ? <NoahPFP Title="Designer & Developer" Text="Thanks for checking out my site, I'm Noah and I am a UX Designer and self taught Developer. I have been designing a lot longer than I've been coding but I am certain this is the path for me. I love problem solving and learning new skills. My ultimate goal is to become a Front End Engineer." /> : null}
-      <div className='story__button--container'>
+        <div className='story__button--container'>
         <motion.div whileHover={{ scale: 1.1 }}
           className='button__background greenDark customBttn__green button__padded'>
           <div className='button__front green customBttn__green'>

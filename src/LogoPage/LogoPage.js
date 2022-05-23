@@ -1,18 +1,16 @@
 import React, {useContext, useState} from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ThemeContext } from './App';
-import LogoSquare from './LogoSquare'
-import Hyperglide from "./Assets/Logos/hyperglides-25.svg"
-import TLH from "./Assets/Logos/TLH.svg"
-import Beamen from "./Assets/Logos/BeamenLogo-21.svg"
-import DORO from "./Assets/Logos/Doro-02.svg"
-import BCLogo from "./Assets/Logos/BCLogo.svg"
-import AbsurdUni from "./Assets/Logos/AbsurdUni.svg"
-import DLT8 from './Assets/Logos/DLT8-01.svg'
-import DCL2 from "./Assets/Logos/dcl2-01.svg"
-import Navbar from './Navbar'
-import Footer from './Footer';
+import { ThemeContext } from '../App';
+import Hyperglide from "../Assets/Logos/hyperglides-25.svg"
+import TLH from "../Assets/Logos/TLH.svg"
+import Beamen from "../Assets/Logos/BeamenLogo-21.svg"
+import DORO from "../Assets/Logos/Doro-02.svg"
+import BCLogo from "../Assets/Logos/BCLogo.svg"
+import AbsurdUni from "../Assets/Logos/AbsurdUni.svg"
+import DLT8 from '../Assets/Logos/DLT8-01.svg'
+import DCL2 from "../Assets/Logos/dcl2-01.svg"
+import Navbar from '../Navbar/Navbar'
 
 const LogoDesign = () => {
   const [modal, setModal] = useState(false)
@@ -40,14 +38,6 @@ const LogoDesign = () => {
           <div className='beamen logoPatches'></div>
           <div className='absurdUni logoPatches'></div>
           <div className='cercek logoPatches'></div>
-          {/* <LogoSquare src={DCL2}/>
-          <LogoSquare src={Hyperglide}/>
-          <LogoSquare src={TLH} />
-          <LogoSquare src={AbsurdUni} />
-          <LogoSquare src={Beamen} />
-          <LogoSquare src={DORO} />
-          <LogoSquare src={DLT8} />
-          <LogoSquare className="span2" src={BCLogo} /> */}
       </div>
     </motion.div>
   )

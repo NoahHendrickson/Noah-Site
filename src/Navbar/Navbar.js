@@ -1,15 +1,14 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import ButtonList from './ButtonList'
 import Switch from './Switch';
-import { ThemeContext } from './App'
-import { ReactComponent as NoahLogo } from './Assets/NoahHyperLeaf-05.svg'
-import { NavButton } from './ButtonList';
-import SlideoutMenuCode from './SlideoutMenuCode';
-import SlideoutMenuDesign from './SlideoutMenuDesign';
+import { ThemeContext } from '../App'
+import { ReactComponent as NoahLogo } from '../Assets/NoahHyperLeaf-05.svg'
+import { NavButton } from '../SplashPage/ButtonList';
+import SlideoutMenuCode from '../SplashPage/SlideoutMenuCode';
+import SlideoutMenuDesign from '../SplashPage/SlideoutMenuDesign';
 import Socials from './Socials';
-import ContactDropdown from './ContactDropdown';
+import ContactDropdown from '../ContactDropdown/ContactDropdown';
 
 const Navbar = (props) => {
   const { theme, setTheme } = useContext(ThemeContext);

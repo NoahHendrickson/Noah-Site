@@ -1,20 +1,17 @@
 import React, { useContext, useEffect, useState } from 'react'
-import ButtonList from '../ButtonList'
-import FlowerLogo from '../FlowerLogo'
-import Switch from '../Switch';
+import ButtonList from './ButtonList'
+import FlowerLogo from '../CodeStuff/FlowerLogo'
+import Switch from '../Navbar/Switch';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ReactComponent as NoahLogo } from '../Assets/NoahLogo-10.svg'
-import '../FlowerLogo.css'
+import '../CodeStuff/FlowerLogo.css'
 import { ThemeContext } from '../App';
-import Socials from '../Socials';
-import Story from '../Story';
-import ContactDropdown from '../ContactDropdown';
-import NoahPFP from '../NoahPFP';
-import StoryCarousel from '../StoryCarousel';
-import Button from '../Button';
-import Footer from '../Footer';
+import Socials from '../Navbar/Socials';
+import Story from '../StoryStuff/Story';
+import ContactDropdown from '../ContactDropdown/ContactDropdown';
+import NoahPFP from '../StoryStuff/NoahPFP';
+import StoryCarousel from '../StoryStuff/StoryCarousel';
 import Noah from "../Assets/profilepic.jpeg"
-import NoahLogoAnimated from '../NoahLogoAnimated';
 
 const Navigation = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -26,9 +23,9 @@ const Navigation = () => {
 
   return (
     <motion.div className="Navigation"
-      initial={{y: '-100vh'}}
-      animate={{y: '0'}}
-      exit={{y: '-100vh', transition:{duration: .3}}} 
+      // initial={{y: '-100vh'}}
+      // animate={{y: '0'}}
+      // exit={{y: '-100vh', transition:{duration: .1}}} 
     >
       <div className='Switch__container'>
       <Socials />

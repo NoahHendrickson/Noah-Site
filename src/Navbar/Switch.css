@@ -34,7 +34,7 @@
   height: 1.7em;
   background-color: white;
   transition: 250ms ease-in-out;
-  background-image: url('./Assets/Light-mode-icon-11.svg');
+  background-image: url('../Assets/Light-mode-icon-11.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1em;
@@ -44,7 +44,7 @@
 input:checked + .Switch__slider:before {
   transform: translateX(1.7em);
   content: '';
-  background-image: url('./Assets/Dark-mode-icon-12.svg');
+  background-image: url('../Assets/Dark-mode-icon-12.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: .75em;

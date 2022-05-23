@@ -3,7 +3,7 @@ import React from 'react'
 import { useState, useContext } from 'react'
 import { BrowserRouter as Router} from 'react-router-dom';
 import AnimatedRoutes from './AnimatedRoutes';
-import Navbar from './Navbar';
+import Navbar from './Navbar/Navbar';
 
 export const ThemeContext = React.createContext('light');
 

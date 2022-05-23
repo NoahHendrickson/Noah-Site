@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from './Navbar'
-import ProjectTitle from './ProjectTitle'
-import Infographic from "./Assets/HowToPC/infographic-06-06-06.svg"
-import Process from "./Assets/HowToPC/processpic-01.png"
-import ProcessTwo from "./Assets/HowToPC/processpic-02.svg"
+import Navbar from '../Navbar/Navbar'
+import ProjectTitle from '../ProjectTitle'
+import Infographic from "../Assets/HowToPC/infographic-06-06-06.svg"
+import Process from "../Assets/HowToPC/processpic-01.png"
+import ProcessTwo from "../Assets/HowToPC/processpic-02.svg"
 import { motion } from 'framer-motion'
 
 const HowToPage = () => {
@@ -23,13 +23,7 @@ const HowToPage = () => {
             <div className='process__images--six iconMobo'></div>
             <div className='process__images--six iconGpu'></div>
             <div className='process__images--six iconCpu'></div>
-          </div>
-          <h1 className='caption'>Here is my completely organized beautiful process for creating the icons</h1>
-          <img className='hero__image--70' src={Process} />
-          <h1 className='caption'>I went straight to digital sketches and concepts because I knew I wanted a very clean hard line graphic style.</h1>
-          <img className='hero__image--70 white' src={ProcessTwo} />
-         
-          <h1 className='caption'>The guide took the form of a vertical infograph for easy web and mobile use</h1>
+          </div>   
           <img className='hero__image' src={Infographic} />
         </div>
       </div>

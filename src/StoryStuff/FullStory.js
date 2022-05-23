@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import Navbar from "./Navbar"
-import pfp from "./"
+import Navbar from "../Navbar/Navbar"
 import "./FullStory.css"
-import TimelineButton from './TimelineButton'
+import TimelineButton from '../TimelineButton'
 import FancyCarat from './FancyCarat'
-import Noah from "./Assets/profilepic.jpeg"
-import { ReactComponent as DownCarat } from "./Assets/Story/fancyDownCarat.svg"
+import Noah from "../Assets/profilepic.jpeg"
+import { ReactComponent as DownCarat } from "../Assets/Story/fancyDownCarat.svg"
 
 
 
@@ -25,7 +24,11 @@ const FullStory = (props) => {
   console.log(cap)
 
   return (
-    <div className='FullStoryPage'>
+    <motion.div
+      initial={{y: '100vh'}}
+      animate={{y: '0'}}
+      exit={{y: '100vh', transition:{duration: .1}}} 
+      className='FullStoryPage'>
       <Navbar />
       <div className='story__grid'>
         <div>
@@ -37,7 +40,7 @@ const FullStory = (props) => {
               {which === "first child" ? cap.first :
                 which === "second child" ? cap.second : 
                 which === "third child" ? cap.third : 
-                    which === "fourth child" ? cap.fourth : ""}
+                    which === "fourth child" ? cap.fourth : "Hover over the arrows to reveal story bits"}
             </h1>
           </div>
           <div>
@@ -83,7 +86,7 @@ const FullStory = (props) => {
           <TimelineButton text="Regained my confidence and left Amazon to pursue a career in Front End Developement" />
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ReactComponent as DownCarat } from "./Assets/Story/fancyDownCarat.svg"
+import { ReactComponent as DownCarat } from "../Assets/Story/fancyDownCarat.svg"
 
 const FancyCarat = ({setWhich, selector}) => {
   return (

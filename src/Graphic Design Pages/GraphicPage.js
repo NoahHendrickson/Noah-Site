@@ -1,19 +1,17 @@
 import React, { useContext } from 'react'
-import Navbar from './Navbar'
+import Navbar from '../Navbar/Navbar'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import GraphicThumbnails from './GraphicThumbnails'
-import Footer from './Footer'
-import { ThemeContext } from './App'
+import { ThemeContext } from '../App'
 
 
 const GraphicPage = () => {
   const { theme } = useContext(ThemeContext)
   return (
     <motion.div
-      initial={{y: '100vh'}}
+      initial={{y: '50vh'}}
       animate={{y: '0'}}
-      exit={{y: '100vh', transition:{duration: .4}}} 
+      exit={{y: '100vh', transition:{duration: .1}}} 
       className={theme === "light" ? 'GraphicPage' : 'GraphicPage__dark'}>
       <Navbar />
       <div className='graphics'>

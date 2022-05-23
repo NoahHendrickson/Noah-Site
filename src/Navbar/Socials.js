@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from 'react'
-import { ReactComponent as Insta } from "./Assets/iconmonstr-instagram-11.svg"
-import { ReactComponent as Github } from "./Assets/iconmonstr-github-1.svg"
-import { ReactComponent as LinkedIn } from "./Assets/iconmonstr-linkedin-3.svg"
+import { ReactComponent as Insta } from "../Assets/iconmonstr-instagram-11.svg"
+import { ReactComponent as Github } from "../Assets/iconmonstr-github-1.svg"
+import { ReactComponent as LinkedIn } from "../Assets/iconmonstr-linkedin-3.svg"
 import { Link } from 'react-router-dom';
-import { ThemeContext } from './App';
+import { ThemeContext } from '../App';
 
 
 const Socials = () => {
