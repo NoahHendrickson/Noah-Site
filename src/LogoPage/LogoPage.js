@@ -11,6 +11,7 @@ import AbsurdUni from "../Assets/Logos/AbsurdUni.svg"
 import DLT8 from '../Assets/Logos/DLT8-01.svg'
 import DCL2 from "../Assets/Logos/dcl2-01.svg"
 import Navbar from '../Navbar/Navbar'
+import "./LogoPage.css"
 
 const LogoDesign = () => {
   const [modal, setModal] = useState(false)

@@ -1,0 +1,137 @@
+.GraphicPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--creamy);
+  height: 100vh;
+  overflow: scroll;
+}
+
+.GraphicPage__dark {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+}
+
+.graphics {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.graphic {
+  margin: 0px;
+  width: 70%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .graphics {
+    width: 100%;
+    height: 550px;
+  }
+  .graphic {
+    width: 100%;
+  }
+}
+
+
+.hero__icon {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.howto {
+  background-color: #EA658E;
+  grid-column: span 2;
+  transition: 200ms;
+}
+
+.howtolink {
+  grid-column: span 2;
+}
+
+.howto:hover {
+  background-image: url("../Assets/Graphics/howtoPattern-09.svg");
+  background-size: cover;
+}
+
+.gpu {
+  background-image: url("../Assets/Graphics/graphicThumbnail-01.svg");
+  background-size: 25%;
+}
+
+.howto:hover .gpu {
+  transition: 100ms;
+  background-size: 30%;
+}
+
+.nachobox {
+  background-size: 40%;
+  background-color: #CEF982;
+  grid-column: span 2;
+}
+
+.lime {
+  background-image: url("../Assets/Graphics/graphicThumbnail-04.svg");
+  background-size: 35%;
+}
+
+.nachobox:hover {
+  background-image: url("../Assets/Graphics/nachos-08.svg");
+  background-size: cover;
+}
+
+.nachobox:hover .lime {
+  background-size: 55%;
+  transition: 100ms;
+}
+
+
+.hyperglide {
+  background-size: 30%;
+  background-color: rgb(146, 216, 243);
+}
+
+.squiggle {
+  background-image: url("../Assets/Graphics/graphicThumbnail-02.svg");
+  background-size: 30%;
+}
+
+.fit {
+  background-color: #fbcc8d;
+  grid-column: span 2;
+}
+
+.fit:hover {
+  background-image: url("../Assets/Fit/patternOpacity-15.svg");
+}
+
+.fit:hover .gear {
+  background-size: 85%;
+  transition: 100ms;
+}
+
+.gear {
+  background-image: url("../Assets/Graphics/graphicThumbnail-03.svg");
+  background-size: 80%;
+}
+
+@media (max-width: 600px) {
+  .howto:hover .gpu {
+    background-size: 55%;
+  }
+  .gpu {
+    background-size: 50%;
+  }
+
+  .lime {
+    background-size: 50%;
+  }
+}

@@ -1,0 +1,160 @@
+.LogoDesign {
+  background-color: var(--cream);
+  justify-content: center;
+}
+
+.LogoDesignDark {
+  background-color: var(--black);
+}
+
+.logo__page {
+  margin: 0px auto;
+  width: 70%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 450px);
+  background-color: var(--creamy);
+}
+
+@media (max-width: 600px) {
+  .logo__page {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 200px);
+  }
+}
+
+.logoPatches {
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* border-radius: 25px; */
+  transition: 100ms ease-in-out;
+}
+
+.BC {
+  background-image: url('../Assets/Logos/BCLogo.svg');
+  grid-row: span 2;
+  background-color: white;
+}
+
+.BC:hover {
+  background-size: 55%;
+}
+
+.bosciaRose {
+  background-image: url("../Assets/Logos/bosciarose-04.svg");
+  background-color: #7F3F98;
+}
+
+.bosciaRose:hover {
+  background-size: 55%;
+}
+
+.tlh {
+  background-image: url("../Assets/Logos/TLH.svg");
+  grid-column: span 2;
+  background-color: #F23838;
+}
+
+.tlh:hover {
+  background-size: 55%;
+}
+
+.darkMatter {
+  background-image: url("../Assets/Logos/darkmatter-03.svg");
+  background-color: #C6B187;
+}
+
+.darkMatter:hover {
+  background-size: 55%;
+}
+
+.springside {
+  background-image: url("../Assets/Logos/springside-02.svg");
+  background-color: #5B2133;
+}
+
+.springside:hover {
+  background-size: 55%;
+}
+
+.doro {
+  background-image: url("../Assets/Logos/Doro-02.svg");
+  grid-column: span 2;
+  background-color: #87AEDC;
+}
+
+.doro:hover {
+  background-size: 55%;
+}
+
+.dlt8 {
+  background-image: url("../Assets/Logos/DLT8-01.svg");
+  background-color: rgb(192, 189, 202);
+}
+
+.dlt8:hover {
+  background-size: 55%;
+}
+
+
+.dcl2 {
+  background-image: url("../Assets/Logos/newdcl2-07.svg");
+  background-color: var(--lightOrange);
+}
+
+.dcl2:hover {
+  background-size: 55%;
+}
+
+.beamen {
+  background-image: url("../Assets/Logos/BeamenLogo-21.svg");
+  background-color: #705448;
+}
+
+.beamen:hover {
+  background-size: 55%;
+}
+
+.absurdUni {
+  background-image: url("../Assets/Logos/AbsurdUni.svg");
+  background-color: lightcoral;
+}
+
+.absurdUni:hover {
+  background-size: 55%;
+}
+
+.cercek {
+  background-image: url("../Assets/Logos/Cercek\ Timbercraft\ Logo-01.svg");
+  background-size: 85%;
+  background-color: var(--creamy);
+}
+
+@media (min-width: 600px) {
+  .cercek {
+    grid-column: span 2;
+  }
+}
+
+.cercek:hover {
+  background-size: 90%; 
+}
+
+.imglink {
+  width: 100%;
+  height: 100%;
+  font-size: 25em;
+  opacity: 0;
+  pointer-events: all;
+}
+
+.logo__square {
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

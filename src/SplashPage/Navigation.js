@@ -23,9 +23,9 @@ const Navigation = () => {
 
   return (
     <motion.div className="Navigation"
-      // initial={{y: '-100vh'}}
-      // animate={{y: '0'}}
-      // exit={{y: '-100vh', transition:{duration: .1}}} 
+      initial={{y: '-100vh'}}
+      animate={{y: '0'}}
+      exit={{y: '-100vh', transition:{duration: .1}}} 
     >
       <div className='Switch__container'>
       <Socials />

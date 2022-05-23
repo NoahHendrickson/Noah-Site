@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ThemeContext } from '../App'
+import "./GraphicPage.css"
 
 
 const GraphicPage = () => {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import Navbar from "../Navbar/Navbar"
 import "./FullStory.css"
-import TimelineButton from '../TimelineButton'
+import TimelineButton from './TimelineButton'
 import FancyCarat from './FancyCarat'
 import Noah from "../Assets/profilepic.jpeg"
 import { ReactComponent as DownCarat } from "../Assets/Story/fancyDownCarat.svg"
