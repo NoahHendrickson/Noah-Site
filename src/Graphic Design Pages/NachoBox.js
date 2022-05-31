@@ -15,16 +15,16 @@ const NachoBox = () => {
 
   return (
     <motion.div className={theme === 'light' ? 'NachoBox__page' : 'NachoBox__page--dark'}
-      initial={{y: '-100vh'}}
+      initial={{y: '100vh'}}
       animate={{y: '0'}}
       exit={{y: '-100vh', transition:{duration: .2}}} 
     >
       <Navbar />
       <div className='content'>
-        <ProjectTitle title='Nacho Box' subtitle='Package & Pattern Design' text="This is a packaging project I created in College. My goal was to concept out a conveinant chips and salsa container for parties or get togethers." />
+        <ProjectTitle title='Nacho Box' subtitle='Package & Pattern Design' text="This is a packaging project I created in college. My goal was to concept out a convenienant chips and salsa container for parties or get togethers." />
         <div className='images'>
           <div className='title__image'></div>
-          <h1 className='caption'>To achieve an organic vibe I hand drew all the lettering and icons with pen and paper and then scanned them into Illustrator and cleaned them up.</h1>
+          <h1 className='caption'>To achieve an organic vibe, I hand drew all the lettering and icons with pen and paper and then scanned them into Illustrator and cleaned them up.</h1>
           <div className='process__images'>
             <div className='process__image process__image--left'></div>
             <div className='process__image process__image--right'></div>

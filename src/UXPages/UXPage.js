@@ -9,7 +9,7 @@ import "./UXPage.css"
 const UXPage = () => {
   return (
     <motion.div className='UXPage'
-     initial={{y: '-50vh'}}
+     initial={{y: '100vh'}}
       animate={{y: '0'}}
       exit={{y: '-100vh', transition:{duration: .35}}} >
       <Navbar />

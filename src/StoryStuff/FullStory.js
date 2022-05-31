@@ -40,7 +40,7 @@ const FullStory = (props) => {
               {which === "first child" ? cap.first :
                 which === "second child" ? cap.second : 
                 which === "third child" ? cap.third : 
-                    which === "fourth child" ? cap.fourth : "Hover over the arrows to reveal story bits"}
+                    which === "fourth child" ? cap.fourth : "This page is under construction but hover over stuff to see what im trying to do 😁"}
             </h1>
           </div>
           <div>

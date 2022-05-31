@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 import "./ContactDropdown.css"
 
 
-const ContactDropdown = ({nav}) => {
+const ContactDropdown = (props) => {
+  
   return (
-    <div className={nav === "nav" ? 'ContactDropdown__nav' : 'ContactDropdown'}>
+    <div className={props.nav === "nav" ? 'ContactDropdown__nav' : 'ContactDropdown'}>
       <h1 className='contactTitle'>Reach Out 😄</h1>
       <form action="https://formsubmit.co/noahjames017@gmail.com" method="POST">
       <input name="email" className='contact__inputField' placeholder='Your email' />

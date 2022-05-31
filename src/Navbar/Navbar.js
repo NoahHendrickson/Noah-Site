@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState, useRef } from 'react'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Switch from './Switch';
@@ -14,27 +14,26 @@ const Navbar = (props) => {
   const { theme, setTheme } = useContext(ThemeContext);
   const [contactMenu, setContactMenu] = useState(false);
   const screenSize = window.screen.width
+  const contactRef = useRef();
+  const menuRef = useRef();
 
   function toggleContact() {
     setContactMenu(!contactMenu)
   };
+  
+  document.addEventListener('click', e => {
+    if (e.target === contactRef.current || e.target === menuRef.children) {
+      console.log('something')
+    } else {
+      setContactMenu(false)
+      console.log('something else')
+    }
+  })
 
   return (
     <div className='Nav'>
       <div className={props.page ? `Navbar ${props.page}` : "Navbar"}>
-        {screenSize > 500 ?
-          <div>
-            <Socials />
-          </div> : null}
-          {screenSize > 500 ?
-        <div>
-         
-        </div> : null}
-
-        <div>
-          <NoahLogo className='NoahLogo__smaller'/>
-        </div>
-        <div className='navbar__buttons'>
+      <div className='navbar__buttons'>
          <NavButton text='Design'>
             <div className="dropdownMenuDesign">
               <li className='dropdownMenuDesign__item'>
@@ -67,9 +66,11 @@ const Navbar = (props) => {
             <li className='button__list'>
               <motion.div whileHover={{scale: 1.1}} className='button__background customBttn'>
                 <div className='button__front customBttn'>
-                  <a onClick={toggleContact} className="button contactButton">Contact
+                  <a ref={contactRef} onClick={toggleContact} className="button contactButton">Contact
                   </a>
-                  {contactMenu && <ContactDropdown nav="nav" />}
+                  <div ref={menuRef}>
+                    {contactMenu && <ContactDropdown nav="nav" />}
+                  </div>
                 </div>
               </motion.div>
             </li>
@@ -83,6 +84,17 @@ const Navbar = (props) => {
               </motion.div>
             </li>
           </div>
+        
+          
+
+        <div className='nav__logo--holder'>
+          <NoahLogo className='NoahLogo__smaller'/>
+        </div>
+        {screenSize > 500 ?
+          <div className='nav__social'>
+            <Socials />
+          </div> : null}
+        
           <div className='horizontal__switch'>
             <Switch />
           </div>

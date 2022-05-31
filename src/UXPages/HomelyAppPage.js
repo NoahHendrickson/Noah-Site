@@ -10,7 +10,7 @@ import StyleGuideDark from "../Assets/HomelyApp/HomelyImages-10.svg"
 import Mocks2 from "../Assets/HomelyApp/homelyNew-01.svg"
 import Mocks from "../Assets/HomelyApp/homelyNew-03.svg"
 import Screens from "../Assets/HomelyApp/homelyNew-02.svg"
-import PitchDeck1 from "../Assets/HomelyApp/PitchDeck1.png"
+import PitchDeck1 from "../Assets/HomelyApp/1x/copy2.png"
 import PitchDeck2 from "../Assets/HomelyApp/PitchDeck2.png"
 import { useInView } from 'react-intersection-observer'
 
@@ -49,9 +49,9 @@ const HomelyAppPage = () => {
 
   return (
     <motion.div className='HomelyPage'
-      initial={{y: '-50vh',}}
+      initial={{y: '100vh',}}
       animate={{y: '0'}}
-      exit={{y: '-100vh', transition:{duration: .1}}}
+      exit={{y: '-100vw', transition:{duration: .1}}}
     >
       <Navbar />
       <ProjectTitle page="projectText__padded" role="Principal Designer & Junior Developer" title="Homely App" subtitle="UX Design & App Development" text="Homely is property and tenant management software designed to streamline communication between the office and tenants." />

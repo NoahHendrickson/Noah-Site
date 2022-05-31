@@ -15,7 +15,7 @@ const HowToPage = () => {
     >
       <Navbar />
       <div className='content'>
-        <ProjectTitle title="How To Build a PC" subtitle="Graphic Design" text="I am a tech enthusiast so of course I build my own computers. I wanted to create a supplemental infograph for building a custom PC. The goal of this guide isn't to get into detail about each step but rather give an overview and suggest an order of process to make the experience easier." />
+        <ProjectTitle title="How To Build a PC" subtitle="Graphic Design" text="I am a tech enthusiast, so of course I build my own computers. I wanted to create a supplemental infograph for building a custom PC. The goal of this guide isn't to get into detail about each step but rather give an overview and suggest an order of process to make the experience easier." />
         <div className='images'>
         <div className='process__images--howto'>
             <div className='process__images--six iconRam'></div>

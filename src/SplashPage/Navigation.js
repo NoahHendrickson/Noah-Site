@@ -23,7 +23,7 @@ const Navigation = () => {
 
   return (
     <motion.div className="Navigation"
-      initial={{y: '-100vh'}}
+      initial={{y: '100vh'}}
       animate={{y: '0'}}
       exit={{y: '-100vh', transition:{duration: .1}}} 
     >
