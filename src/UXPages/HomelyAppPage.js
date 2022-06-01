@@ -67,6 +67,7 @@ const HomelyAppPage = () => {
       <img className="homely__95" src={StyleGuide} />
       <img className="homely__95" src={StyleGuideDark} />
       <img className="homely__95" src={Mocks} />
+      <img className="homely__95" src={Screens} />
     </motion.div>
   )
 }
