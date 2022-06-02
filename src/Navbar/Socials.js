@@ -15,9 +15,9 @@ const Socials = () => {
 
   return (
     <div className='socials__container'>
-          <Link to="/">
+          <a href='https://www.instagram.com/no_ahjames/' target="_bkank">
             <Insta className={theme === 'light' ? 'socials__icon' : 'socials__icon--dark' }/>
-          </Link>
+          </a>
           <a href='https://github.com/NoahHendrickson' target="_blank">
             <Github className={theme === 'light' ? 'socials__icon' : 'socials__icon--dark' } />
           </a>

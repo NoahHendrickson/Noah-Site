@@ -16,7 +16,7 @@ const SVGAnimations = () => {
       exit={{y: '50vh', transition:{duration: .1}}} 
       className='SVGAni'>
       <Navbar />
-      <h1 className='svg__caption'>Here are a few logos that are brought to life using SVGs, CSS and Javascript to animate them. SVG Animations have been an awesome way to combine creativity and technicality.</h1>
+      <h1 className='svg__caption'>Here are a few logos that are brought to life using SVGs, CSS and Javascript to animate them. This page doesn't work on all browsers or screen sizes, I'll get there eventually 😅</h1>
       <div className='animations'>
         <NoahLogoAnimated />
         <FlowerLogo />
