@@ -39,8 +39,9 @@
 .right__panel {
   grid-row: span 10;
   align-self: center;
-  font-size: clamp(1em, 100vw, 2em);
+  font-size: clamp(.75em, 100vw, 1.5em);
   color: white;
+  text-align: left;
 }
 
 .span__6 > div {
@@ -55,7 +56,7 @@
 .which__container {
   width: 100%;
   color: var(--creamy);
-  font-size: .75em;
+  font-size: .65em;
 }
 
 .quote {
@@ -96,7 +97,7 @@
 }
 
 .caption__timeline {
-  font-size: 1em;
+  font-size: .8em;
   font-weight: 500;
   color: var(--creamy);
   padding: 5px 0px;
@@ -109,7 +110,7 @@
 .downCarat {
   position: relative;
   z-index: 3;
-  width: 60px;
+  width: 50px;
   fill: var(--lightOrange);
   transition: 200ms;
   height: 3.25em;
