@@ -210,7 +210,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 85%;
+  height: 90%;
   width: 100%;
   position: relative;
   font-size: 1em;
@@ -350,6 +350,7 @@ a {
 }
 
 }
+
 .button__list {
   margin: 10px auto;
 }

@@ -22,7 +22,9 @@ const Navbar = (props) => {
   };
   
   document.addEventListener('click', e => {
-    if (e.target === contactRef.current || e.target === menuRef.children) {
+    if (e.target === contactRef.current) {
+      console.log('something')
+    } else if (e.target === menuRef.current) {
       console.log('something')
     } else {
       setContactMenu(false)
@@ -68,9 +70,7 @@ const Navbar = (props) => {
                 <div className='button__front customBttn'>
                   <a ref={contactRef} onClick={toggleContact} className="button contactButton">Contact
                   </a>
-                  <div ref={menuRef}>
-                    {contactMenu && <ContactDropdown nav="nav" />}
-                  </div>
+                {contactMenu && <ContactDropdown nav="nav" />}
                 </div>
               </motion.div>
             </li>

@@ -3,7 +3,7 @@ import "./ContactDropdown.css"
 
 
 const ContactDropdown = (props) => {
-  
+
   return (
     <div className={props.nav === "nav" ? 'ContactDropdown__nav' : 'ContactDropdown'}>
       <h1 className='contactTitle'>Reach Out 😄</h1>
