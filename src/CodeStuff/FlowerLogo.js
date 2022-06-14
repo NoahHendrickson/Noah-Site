@@ -1,12 +1,13 @@
 import React from 'react'
 import FlowerLogoStyles from './FlowerLogo.css'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const FlowerLogo = () => {
   return (
+    <AnimatePresence onExitComplete={true}>
     <motion.div
       initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
+      animate={{ opacity: 1, scale: 1 }}
       exit={{scale: 0, opacity: 0}}
       className="button_container flower__container">
       <svg
@@ -169,7 +170,8 @@ const FlowerLogo = () => {
           </g>
         </g>
       </svg>  
-    </motion.div>
+      </motion.div>
+    </AnimatePresence>
   )
 }
 

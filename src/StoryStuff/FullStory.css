@@ -115,6 +115,14 @@
   transition: 200ms;
   height: 3.25em;
 }
+.quickCarat {
+  position: relative;
+  z-index: 3;
+  width: 35px;
+  fill: var(--lightOrange);
+  height: auto;
+  margin-left: 15px;
+}
 
 /* .downCarat:hover {
   transform: rotate(-90deg);

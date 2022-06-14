@@ -3,7 +3,7 @@ import ButtonList from './ButtonList'
 import FlowerLogo from '../CodeStuff/FlowerLogo'
 import Switch from '../Navbar/Switch';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ReactComponent as NoahLogo } from '../Assets/NoahLogo-10.svg'
+import { ReactComponent as NoahLogo } from '../Assets/NoahBevel-20.svg'
 import '../CodeStuff/FlowerLogo.css'
 import { ThemeContext } from '../App';
 import Socials from '../Navbar/Socials';
@@ -12,8 +12,11 @@ import ContactDropdown from '../ContactDropdown/ContactDropdown';
 import NoahPFP from '../StoryStuff/NoahPFP';
 import StoryCarousel from '../StoryStuff/StoryCarousel';
 import Noah from "../Assets/profilepic.jpeg"
+import FancyCarat from '../StoryStuff/FancyCarat';
+import homely from '../Assets/HomelyApp/FourScreens@1.5x.jpg'
+import { Link } from 'react-router-dom';
 
-const Navigation = () => {
+const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext)
   const [story, setStory] = useState(false);
 
@@ -22,26 +25,15 @@ const Navigation = () => {
   };
 
   return (
-    <motion.div className="Navigation"
-      initial={{y: '100vh'}}
-      animate={{y: '0'}}
-      exit={{y: '-100vh', transition:{duration: .1}}} 
-    >
-      <div className='Switch__container'>
-      <Socials />
-      <Switch />
+    <motion.div className="Home">
+      <div>
+        <FlowerLogo />
+        <NoahLogo />
       </div>
-      <div className="splash__page">
-        {/* <NoahLogoAnimated /> */}
-        <div
-          className='splash__page--me'>
-            {story ? <StoryCarousel state={story} /> : <FlowerLogo />}
-        </div>
-        <NoahLogo className='NoahLogo' />
-        <ButtonList toggleStory={toggleStory} />
-      </div>
-      </motion.div>
+      <div></div>
+      <div></div>
+      </motion.div>   
   )
 }
 
-export default Navigation
+export default Home

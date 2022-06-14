@@ -4,12 +4,36 @@
   background-color: var(--kelly);
 }
 
-.Navigation {
+.Home {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
+}
+
+.preview {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+
+.featured {
+  background-image: url('./Assets/HomelyApp/FourScreens@1.5x.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  width: 30%;
+  height: 300px;
+  background-color: aliceblue;
+}
+
+.quicklinks {
+  color: var(--creamy);
+  display: flex;
+  align-items: flex-end;
+  padding: 0px 50px;
 }
 
 .footer {
@@ -262,7 +286,7 @@
 }
 
 .NoahLogo {
-  width: 12em;
+  width: 10em;
 }
 
 .st10 {
@@ -280,7 +304,7 @@
 }
 
 .splash__page--buttons {
-  font-size: 1em;
+  font-size: .9em;
   display: flex;
   flex-direction: column;
   margin: 25px 0px 0px 0px;
