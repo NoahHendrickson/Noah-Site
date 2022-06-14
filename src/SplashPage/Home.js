@@ -15,6 +15,8 @@ import Noah from "../Assets/profilepic.jpeg"
 import FancyCarat from '../StoryStuff/FancyCarat';
 import homely from '../Assets/HomelyApp/FourScreens@1.5x.jpg'
 import { Link } from 'react-router-dom';
+import { ReactComponent as Headline } from '../Assets/Story/Headline-21.svg'
+import ExpBox from './ExpBox';
 
 const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -33,13 +35,9 @@ const Home = () => {
       </div>
       <div className='LeftContent'>
         <div>
-          <h1 className='Headline'>DESIGNER & <br></br> SELF-TAUGHT DEVELOPER</h1>
+          <Headline className='Headline'/>
         </div>
-        <div>
-          <h1></h1>
-          <h1></h1>
-          <h2></h2>
-        </div>
+        <ExpBox />
       </div>
       <div></div>
       </motion.div>   

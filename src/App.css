@@ -20,6 +20,15 @@
   background-color: var(--creamy);
 }
 
+.LeftContent {
+  width: 40%;
+}
+
+.Headline {
+  width: 100%;
+  padding: 4em;
+}
+
 
 
 
@@ -243,8 +252,7 @@
 }
 
 @media (max-width: 600px) {
-  .socials__container {
-  }
+  
 
   .Switch__container {
     justify-content: space-around;
