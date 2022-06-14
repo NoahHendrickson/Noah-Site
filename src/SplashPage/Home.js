@@ -26,11 +26,21 @@ const Home = () => {
 
   return (
     <motion.div className="Home">
-      <div>
-        <FlowerLogo />
-        <NoahLogo />
+      <div className='SideBar'>
+        <FlowerLogo className="flower__container" />
+        <NoahLogo className='NoahLogo'/>
+        <ButtonList />
       </div>
-      <div></div>
+      <div className='LeftContent'>
+        <div>
+          <h1 className='Headline'>DESIGNER & <br></br> SELF-TAUGHT DEVELOPER</h1>
+        </div>
+        <div>
+          <h1></h1>
+          <h1></h1>
+          <h2></h2>
+        </div>
+      </div>
       <div></div>
       </motion.div>   
   )
