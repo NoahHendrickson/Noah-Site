@@ -14,14 +14,16 @@
 .ExpSubTitle {
   color: var(--black);
   font-size: .75em;
+  font-weight: 600;
 }
 
 .ExpLine {
   margin: 0px 10px 10px 0px;
   width: 75%;
   background-color: white;
-  height: .15em;
+  height: 3px;
   border-radius: 50px;
+  display: flex;
 }
 
 .ExpLineShort {

@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer'
 const ExpBox = (props) => {
 
   const animation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: .1 })
+  const [ref, inView, entry] = useInView({ threshold: 1 })
   
   useEffect(() => {
     if (inView) {
