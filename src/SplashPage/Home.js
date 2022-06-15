@@ -11,7 +11,8 @@ import Noah from "../Assets/profilepic.jpeg"
 import { ReactComponent as Headline } from '../Assets/Story/Headline-21.svg'
 import { ReactComponent as DownCarat } from "../Assets/Story/fancyDownCarat.svg"
 import { ReactComponent as Portfolio } from "../Assets/portfolio-22.svg"
-import { Parallax, ParallaxLayer} from '@react-spring/parallax'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import FourScreens from "../Assets/HomelyApp/HomelyLogo-03.svg"
 
 import ExpBox from './ExpBox';
 
@@ -53,6 +54,13 @@ const Home = () => {
           <div className='Work'>
             <div className='PortfolioHeadline'>
               <Portfolio className='PortfolioTitle'/>
+            </div>
+            <div>
+              <h1>UX</h1>
+              <div>
+                <h2>Homely App</h2>
+                <img className="WorkIcon" src={FourScreens} />
+              </div>
             </div>
           </div>
         </ParallaxLayer>
