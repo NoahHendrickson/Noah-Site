@@ -1,0 +1,43 @@
+.ExpBox {
+  width: 45%;
+  text-align: left;
+  font-size: 13px;
+}
+
+.ExpTitle {
+  font-size: 1.75em;
+  color: black;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.ExpSubTitle {
+  color: var(--black);
+  font-size: .75em;
+}
+
+.ExpLine {
+  margin: 0px 10px 10px 0px;
+  width: 75%;
+  background-color: white;
+  height: .15em;
+  border-radius: 50px;
+}
+
+.ExpLineShort {
+  width: 35%;
+  margin: 10px 0px 10px 0px;
+
+}
+
+.ExpTime {
+  font-size: 1.5em;
+  color: black;
+  font-weight: 700;
+}
+
+.ExpDescription {
+  color: white;
+  font-size: 1.25em;
+  font-weight: 600;
+}

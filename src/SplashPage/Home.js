@@ -1,21 +1,18 @@
 import React, { useContext, useEffect, useState } from 'react'
 import ButtonList from './ButtonList'
 import FlowerLogo from '../CodeStuff/FlowerLogo'
-import Switch from '../Navbar/Switch';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ReactComponent as NoahLogo } from '../Assets/NoahBevel-20.svg'
 import '../CodeStuff/FlowerLogo.css'
 import { ThemeContext } from '../App';
-import Socials from '../Navbar/Socials';
-import Story from '../StoryStuff/Story';
 import ContactDropdown from '../ContactDropdown/ContactDropdown';
-import NoahPFP from '../StoryStuff/NoahPFP';
 import StoryCarousel from '../StoryStuff/StoryCarousel';
 import Noah from "../Assets/profilepic.jpeg"
-import FancyCarat from '../StoryStuff/FancyCarat';
-import homely from '../Assets/HomelyApp/FourScreens@1.5x.jpg'
-import { Link } from 'react-router-dom';
 import { ReactComponent as Headline } from '../Assets/Story/Headline-21.svg'
+import { ReactComponent as DownCarat } from "../Assets/Story/fancyDownCarat.svg"
+import { ReactComponent as Portfolio } from "../Assets/portfolio-22.svg"
+import { Parallax, ParallaxLayer} from '@react-spring/parallax'
+
 import ExpBox from './ExpBox';
 
 const Home = () => {
@@ -28,19 +25,39 @@ const Home = () => {
 
   return (
     <motion.div className="Home">
-      <div className='SideBar'>
-        <FlowerLogo className="flower__container" />
-        <NoahLogo className='NoahLogo'/>
-        <ButtonList />
-      </div>
-      <div className='LeftContent'>
-        <div>
-          <Headline className='Headline'/>
-        </div>
-        <ExpBox />
-      </div>
-      <div></div>
-      </motion.div>   
+      <Parallax className='Home' pages={2}>
+        <div className='SplashPage'>
+          <div className='SideBar'>
+            <ParallaxLayer className='SideBar' speed={2}>
+              <FlowerLogo className="flower__container" />
+              <NoahLogo className='NoahLogo'/>
+              <ButtonList toggleStory={toggleStory} />
+            </ParallaxLayer>
+          </div>
+          <ParallaxLayer speed={.75} offset={0}>
+            <div className='LeftContent'>
+              <Headline className='Headline' />
+              <ExpBox />
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer speed={1.5}>
+            <div className='RightContent'>
+              {story ? <StoryCarousel /> : null}
+            </div>
+          </ParallaxLayer>
+          <div className='ScrollDownButton'>
+            <DownCarat className='CaratAnimation'/>
+              Scroll Down :)</div>
+          </div>
+        <ParallaxLayer offset={1.1} speed={.5} >
+          <div className='Work'>
+            <div className='PortfolioHeadline'>
+              <Portfolio className='PortfolioTitle'/>
+            </div>
+          </div>
+        </ParallaxLayer>
+      </Parallax>
+    </motion.div>   
   )
 }
 

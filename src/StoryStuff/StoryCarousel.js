@@ -97,16 +97,6 @@ const StoryCarousel = ({story}) => {
       </div>
       {screen > 400 ? <NoahPFP Title="Designer" Text="I've been designing a lot longer than I've been coding. I graduated with a BA in Advertising and Graphic Design in 2019. I have found a ton of love for UX Design in the past year because it is so closely tied to developement and I love coding as well. If you like my work and need some design help please reach out!" /> : null}
       {screen <= 400 ? <NoahPFP Title="Designer & Developer" Text="Thanks for checking out my site, I'm Noah and I am a UX Designer and self taught Developer. I have been designing a lot longer than I've been coding but I am certain this is the path for me. I love problem solving and learning new skills. My ultimate goal is to become a Front End Engineer." /> : null}
-        <div className='story__button--container'>
-        <motion.div whileHover={{ scale: 1.1 }}
-          className='button__background greenDark customBttn__green button__padded'>
-          <div className='button__front green customBttn__green'>
-          <Link to="FullStory">
-            <a className='button extraPaddingBttn'>See my full story</a>
-            </Link>
-            </div>
-        </motion.div>
-      </div>
       </motion.div>
     </AnimatePresence>
   )
