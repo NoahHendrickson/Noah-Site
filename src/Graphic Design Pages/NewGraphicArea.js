@@ -8,7 +8,7 @@ import Fit from "../Assets/Fit/SVG/Artboard3.svg"
 const NewGraphicArea = () => {
 
   const animation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: .1 })
+  const [ref, inView, entry] = useInView({ threshold: .6 })
   
   useEffect(() => {
     if (inView) {

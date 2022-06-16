@@ -47,9 +47,11 @@ const Home = () => {
               {story ? <StoryCarousel /> : null}
             </div>
           </ParallaxLayer>
+          <ParallaxLayer speed={3}>
           <div className='ScrollDownButton'>
             <DownCarat className='CaratAnimation'/>
               Scroll Down :)</div>
+            </ParallaxLayer>
           </div>
           <div className='Work'>
         <ParallaxLayer offset={1} speed={.25} >
@@ -75,9 +77,9 @@ const Home = () => {
               </div>
             </div>
             </ParallaxLayer>
-          <ParallaxLayer offset={1.85} speed={1.5}>
-            <div className='PortfolioArea'>
-              <h1 className='AreaTitle'>Graphic Design</h1>
+          <ParallaxLayer offset={1.85} speed={1.25}>
+            <div className='PortfolioArea cream'>
+              <h1 className='AreaTitle'>Logos</h1>
               <div className='TitleLineDivider'></div>
               <div className='AreaHolder'>
                 <NewLogoArea />
