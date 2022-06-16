@@ -76,15 +76,14 @@
 }
 
 .Work {
-  height: 100vh;
+  height: 100%;
   background-color: var(--black);
 }
 
 .WorkIcon {
-  width: 400px;
-  border-radius: 70px;
-  box-shadow: 0px 5px 20px rgba(25, 25, 25, .5);
-  background-color: var(--forest);
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
 }
 
 .PortfolioHeadline {
@@ -98,6 +97,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 10%;
 }
 
 .PortfolioTitle {
@@ -108,9 +108,32 @@
   width: 75%;
   height: 3px;
   background-color: white;
+  margin: 15px 0px;
+}
+
+.UXArea {
+  display: flex;
+  margin: 0px 25px;
+}
+
+.WorkTitle {
+  text-align: right;
+  color: white;
+  margin-top: 10px;
+}
+
+.AreaHolder {
+  display: flex;
+}
+
+.AreaTitle {
+  color: white;
+  font-weight: 600;
 }
 
 .ThumbnailHolder {
+  height: 250px;
+  width: 250px;
 }
 
 

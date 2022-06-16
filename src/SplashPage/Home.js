@@ -12,9 +12,9 @@ import { ReactComponent as Headline } from '../Assets/Story/Headline-21.svg'
 import { ReactComponent as DownCarat } from "../Assets/Story/fancyDownCarat.svg"
 import { ReactComponent as Portfolio } from "../Assets/portfolio-22.svg"
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import FourScreens from "../Assets/HomelyApp/FourScreens@1.5x.jpg"
-
 import ExpBox from './ExpBox';
+import NewUXArea from '../UXPages/NewUXArea';
+import NewGraphicArea from '../Graphic Design Pages/NewGraphicArea';
 
 const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -41,7 +41,7 @@ const Home = () => {
               <ExpBox />
             </div>
           </ParallaxLayer>
-          <ParallaxLayer speed={1.5}>
+          <ParallaxLayer speed={.25}>
             <div className='RightContent'>
               {story ? <StoryCarousel /> : null}
             </div>
@@ -50,23 +50,31 @@ const Home = () => {
             <DownCarat className='CaratAnimation'/>
               Scroll Down :)</div>
           </div>
-        <ParallaxLayer offset={1} speed={.5} >
           <div className='Work'>
+        <ParallaxLayer offset={1} speed={.25} >
             <div className='PortfolioHeadline'>
               <Portfolio className='PortfolioTitle'/>
             </div>
+          </ParallaxLayer>
+          <ParallaxLayer offset={1.2} speed={.5}>
             <div className='PortfolioArea'>
-              <h1 className='ExpTitle'>UX</h1>
+              <h1 className='AreaTitle'>UX</h1>
               <div className='TitleLineDivider'></div>
-              <div>
-                <h2 className='ExpDescription'>Homely App</h2>
-                <div className='ThumbnailHolder'>
-                  <img className="WorkIcon" src={FourScreens} />
-                </div>
+              <div className='AreaHolder'>
+                <NewUXArea />
               </div>
             </div>
+          </ParallaxLayer>
+          <ParallaxLayer offset={1.6} speed={1}>
+            <div className='PortfolioArea'>
+              <h1 className='AreaTitle'>Graphic Design</h1>
+              <div className='TitleLineDivider'></div>
+              <div className='AreaHolder'>
+                <NewGraphicArea />
+              </div>
+            </div>
+            </ParallaxLayer>
           </div>
-        </ParallaxLayer>
       </Parallax>
     </motion.div>   
   )
