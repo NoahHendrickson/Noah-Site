@@ -1,8 +1,10 @@
 import React, { useEffect} from 'react'
-import HomelyTHMB from "../Assets/HomelyApp/NewHomelyTB.svg"
-import DarkMatterTHMB from "../Assets/DarkMatter/NewDarkMatterTB.svg"
 import { motion, transform, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import HomelyTHMB from "../Assets/PortfolioThumbNails/HomelyStandard.svg"
+import HomelyMini from "../Assets/PortfolioThumbNails/HomelyMini.svg"
+import DarkMatterMini from "../Assets/PortfolioThumbNails/DarkMatterMini.svg"
+import DarkMatterTHMB from "../Assets/PortfolioThumbNails/DarkMatterStandard.svg"
 
 
 
@@ -36,12 +38,14 @@ const NewUXArea = () => {
       id: 1,
       title: 'Homely App',
       image: HomelyTHMB,
+      miniImage: HomelyMini,
 
     },
     {
       id: 2,
       title: 'Dark Matter Network',
       image: DarkMatterTHMB,
+      miniImage: DarkMatterMini,
     },
   ]
   return (
@@ -59,11 +63,15 @@ const NewUXArea = () => {
               mass: 1,
               damping: 10,
         }}
-      >
+        >
         <div>
-          <div className='ThumbnailHolder'>
+          <motion.div whileHover={{scale: 2}} className='ThumbnailHolder'>
             <img className="WorkIcon" src={article.image} />
-          </div>
+            <div className='TheBlur'></div>
+            <div className='TheMini'>
+              <img className="miniImage" src={article.miniImage} />
+            </div>
+          </motion.div>
           <h2 className='WorkTitle'>{article.title}</h2>
         </div>
       </motion.div>

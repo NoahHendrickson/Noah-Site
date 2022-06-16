@@ -56,7 +56,7 @@ const Home = () => {
               <Portfolio className='PortfolioTitle'/>
             </div>
           </ParallaxLayer>
-          <ParallaxLayer offset={1.2} speed={.5}>
+          <ParallaxLayer offset={1.15} speed={.5}>
             <div className='PortfolioArea'>
               <h1 className='AreaTitle'>UX</h1>
               <div className='TitleLineDivider'></div>
