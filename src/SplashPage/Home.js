@@ -15,6 +15,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import ExpBox from './ExpBox';
 import NewUXArea from '../UXPages/NewUXArea';
 import NewGraphicArea from '../Graphic Design Pages/NewGraphicArea';
+import NewLogoArea from '../LogoPage/NewLogoArea';
 
 const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -26,7 +27,7 @@ const Home = () => {
 
   return (
     <motion.div className="Home">
-      <Parallax className='Home' pages={2}>
+      <Parallax className='Home' pages={3}>
         <div className='SplashPage'>
           <div className='SideBar'>
             <ParallaxLayer className='SideBar' speed={2}>
@@ -65,12 +66,21 @@ const Home = () => {
               </div>
             </div>
           </ParallaxLayer>
-          <ParallaxLayer offset={1.6} speed={1}>
+          <ParallaxLayer offset={1.5} speed={1}>
             <div className='PortfolioArea'>
               <h1 className='AreaTitle'>Graphic Design</h1>
               <div className='TitleLineDivider'></div>
               <div className='AreaHolder'>
                 <NewGraphicArea />
+              </div>
+            </div>
+            </ParallaxLayer>
+          <ParallaxLayer offset={1.85} speed={1.5}>
+            <div className='PortfolioArea'>
+              <h1 className='AreaTitle'>Graphic Design</h1>
+              <div className='TitleLineDivider'></div>
+              <div className='AreaHolder'>
+                <NewLogoArea />
               </div>
             </div>
             </ParallaxLayer>

@@ -1,5 +1,6 @@
 import React, { useEffect} from 'react'
 import { motion, transform, useAnimation } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { useInView } from 'react-intersection-observer'
 import HomelyTHMB from "../Assets/PortfolioThumbNails/HomelyStandard.svg"
 import HomelyMini from "../Assets/PortfolioThumbNails/HomelyMini.svg"
@@ -39,6 +40,7 @@ const NewUXArea = () => {
       title: 'Homely App',
       image: HomelyTHMB,
       miniImage: HomelyMini,
+      path: "/HomelyPage"
 
     },
     {
@@ -46,6 +48,8 @@ const NewUXArea = () => {
       title: 'Dark Matter Network',
       image: DarkMatterTHMB,
       miniImage: DarkMatterMini,
+      path: "/DarkMatter"
+
     },
   ]
   return (
@@ -64,7 +68,7 @@ const NewUXArea = () => {
               damping: 10,
         }}
         >
-        <div>
+        <Link to={article.path}>
           <motion.div whileHover={{scale: 2}} className='ThumbnailHolder'>
             <img className="WorkIcon" src={article.image} />
             <div className='TheBlur'></div>
@@ -73,7 +77,7 @@ const NewUXArea = () => {
             </div>
           </motion.div>
           <h2 className='WorkTitle'>{article.title}</h2>
-        </div>
+        </Link>
       </motion.div>
     ))
     
