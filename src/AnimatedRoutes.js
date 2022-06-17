@@ -14,6 +14,7 @@ import TheCRPO from './CodeStuff/TheCRPO';
 import SVGAnimations from './CodeStuff/SVGAnimations';
 import FullStory from './StoryStuff/FullStory';
 import Home from './SplashPage/Home';
+import ContactPage from './ContactDropdown/ContactPage';
 
 const AnimatedRoutes = () => {
 
@@ -39,6 +40,7 @@ const AnimatedRoutes = () => {
         <Route path='/CrpoPage' element={<TheCRPO />} />
         <Route path='SVGAnimations' element={<SVGAnimations />} />
         <Route path='FullStory' element={<FullStory />} />
+        <Route path="ContactPage" element={<ContactPage />} />
       </Routes>
     </AnimatePresence>
   )

@@ -17,6 +17,7 @@ import ExpBox from './ExpBox';
 import NewUXArea from '../UXPages/NewUXArea';
 import NewGraphicArea from '../Graphic Design Pages/NewGraphicArea';
 import NewLogoArea from '../LogoPage/NewLogoArea';
+import ContactPage from '../ContactDropdown/ContactPage';
 
 const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -24,6 +25,13 @@ const Home = () => {
 
   function toggleStory() {
     setStory(!story)
+  };
+
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
 
   return (
@@ -34,7 +42,8 @@ const Home = () => {
             <ParallaxLayer className='SideBar' speed={2}>
               <FlowerLogo className="flower__container" />
               <NoahLogo className='NoahLogo'/>
-              <ButtonList toggleStory={toggleStory} />
+              <ButtonList toggleStory={toggleStory} scroll={scrollToBottom} />
+              <button onClick={scrollToBottom}>hell</button>
             </ParallaxLayer>
           </div>
           <ParallaxLayer speed={.75} offset={0}>
@@ -93,10 +102,8 @@ const Home = () => {
           <CONTACT className='NNN' />
         </ParallaxLayer>
         <ParallaxLayer offset={2.2} speed={.5}>
-          <div className='ContactPage'>
-            <ContactDropdown />
-          </div>
-         </ParallaxLayer>
+          <ContactPage />
+        </ParallaxLayer>
       </Parallax>
     </motion.div>   
   )

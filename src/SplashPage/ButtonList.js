@@ -5,7 +5,7 @@ import ContactDropdown from '../ContactDropdown/ContactDropdown';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const ButtonList = ({ text, toggleStory }) => {
+const ButtonList = ({ text, toggleStory, scrollToBottom }) => {
 
   const [contactOpen, setContactOpen] = useState(false);
   const NavButtonImitate = useRef()
@@ -20,12 +20,6 @@ const ButtonList = ({ text, toggleStory }) => {
   
   return (
     <ul className='splash__page--buttons button_container'>
-      <NavButton text="Design">
-        <SlideoutMenuDesign />
-      </NavButton>
-      <NavButton text="Code">
-        <SlideoutMenuCode />
-      </NavButton>
       <li className='button__list'>
         <motion.div whileTap={{scale: .98}} whileHover={{scale: 1.1}} className='button__background customBttn'>
           <div className='button__front customBttn'>
@@ -33,9 +27,9 @@ const ButtonList = ({ text, toggleStory }) => {
           </div>
         </motion.div>
       </li>
-      <Link to="contact" >
-        <NavButton text="Contact" />
-      </Link>
+      <a onClick={scrollToBottom}>
+        <NavButton scroll={scrollToBottom} text="Contact" />
+      </a>
     </ul>
   );
 };
@@ -50,13 +44,14 @@ export const NavButton = (props) => {
   };
 
   return (
+
     <li className='button__list'>
       <motion.div
         whileTap={{scale: 1.05}}
         whileHover={{ scale: 1.1 }}
         className='button__background customBttn'>
           <div className='button__front customBttn'>
-            <a className="button" ref={button} onClick={toggle}>
+            <a className="button" onClick={props.scroll} ref={button}>
               {props.text}
             </a>
               {open && props.children}
