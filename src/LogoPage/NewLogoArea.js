@@ -12,6 +12,7 @@ import DLT8 from '../Assets/Logos/DLT8-01.svg'
 import DCL2 from "../Assets/Logos/dcl2-01.svg"
 import BosciaRose from "../Assets/Logos/bosciarose-04.svg"
 import Cercek from "../Assets/Logos/CercekTimbercraftLogo-01.svg"
+import springside from "../Assets/Logos/springside-02.svg"
 import Navbar from '../Navbar/Navbar'
 
 const NewLogoArea = () => {
@@ -20,52 +21,57 @@ const NewLogoArea = () => {
     {
       id: 1,
       img: Hyperglide,
-      color: "pink",
+      color: "white",
     },
     {
       id: 2,
       img: DORO,
-      color: "lightblue",
+      color: "#5a99f8",
     },
     {
       id: 9,
       img: BosciaRose,
-      color: "lightblue",
+      color: "#7954A3",
     },
     {
-      id: 10,
-      img: Cercek,
-      color: "lightblue",
-    },
-    {
-      id: 3,
-      img: DLT8,
-      color: "brown",
+      id: 11,
+      img: springside,
+      color: "black",
     },
     {
       id: 4,
       img: TLH,
-      color: "brown",
+      color: "#1F79FC",
+    },
+    {
+      id: 3,
+      img: DLT8,
+      color: "#ee8114",
     },
     {
       id: 5,
       img: BCLogo,
-      color: "brown",
+      color: "lightgrey",
     },
     {
       id: 6,
       img: AbsurdUni,
-      color: "brown",
+      color: "coral",
     },
     {
       id: 7,
       img: DCL2,
-      color: "brown",
+      color: "white",
     },
     {
       id: 8,
       img: Beamen,
-      color: "brown",
+      color: "#5A563A",
+    },
+    {
+      id: 10,
+      img: Cercek,
+      color: "lightgrey",
     },
   ]
 
@@ -89,6 +95,9 @@ const NewLogoArea = () => {
     hidden: {
       x: "100%",
       opacity: 0,
+      transition: {
+        duration: .25
+      }
     },
   }
 
@@ -100,15 +109,15 @@ const NewLogoArea = () => {
         animate={animation}
         variants={variants2}
         transition={{
-          duration: 1,
-          delay: i * .25,
+          duration: .25,
+          delay: i * .1,
           type: 'spring',
               stiffness: 80,
               mass: 1,
               damping: 10,
         }}
         className='LogoHolder'>
-        <img src={logo.img} />
+        <img style={{backgroundColor: logo.color}} className="LLL" src={logo.img} />
       </motion.div>
     ))
   )

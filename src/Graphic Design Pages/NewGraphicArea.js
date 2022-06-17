@@ -1,9 +1,13 @@
 import React, { useEffect} from 'react'
 import { motion, transform, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import Nacho from "../Assets/Fit/SVG/Artboard1.svg"
-import HowTo from "../Assets/Fit/SVG/Artboard2.svg"
-import Fit from "../Assets/Fit/SVG/Artboard3.svg"
+import Nacho from "../Assets/PortfolioThumbNails/limeStandard.svg"
+import miniNacho from "../Assets/PortfolioThumbNails/limeMini.svg"
+import HowTo from "../Assets/PortfolioThumbNails/standardPC.svg"
+import miniPC from "../Assets/PortfolioThumbNails/MiniPc.svg"
+import Fit from "../Assets/PortfolioThumbNails/fitStandard.svg"
+import FitMini from "../Assets/PortfolioThumbNails/fitMini.svg"
+import { Link } from 'react-router-dom'
 
 const NewGraphicArea = () => {
 
@@ -35,17 +39,22 @@ const NewGraphicArea = () => {
       id: 1,
       title: 'How To',
       image: HowTo,
-
+      miniImg: miniPC,
+      path: "/HowToPC"
     },
     {
       id: 2,
       title: 'Nacho Box',
       image: Nacho,
+      miniImg: miniNacho,
+      path: "/NachoBox"
     },
     {
       id: 3,
       title: 'Fit',
       image: Fit,
+      miniImg: FitMini,
+      path: "/Fitpage"
     },
   ]
 
@@ -65,12 +74,16 @@ const NewGraphicArea = () => {
               damping: 10,
         }}
       >
-        <div>
-          <div className='ThumbnailHolder'>
+        <Link to={article.path}>
+          <motion.div whileHover={{scale: 2}} className='ThumbnailHolder'>
             <img className="WorkIcon" src={article.image} />
-          </div>
+            <div className='TheBlur'></div>
+            <div className='TheMini'>
+              <img className="miniImage" src={article.miniImg} />
+            </div>
+          </motion.div>
           <h2 className='WorkTitle'>{article.title}</h2>
-        </div>
+        </Link>
       </motion.div>
     ))
     

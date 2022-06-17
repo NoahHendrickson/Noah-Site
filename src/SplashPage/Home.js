@@ -11,6 +11,7 @@ import Noah from "../Assets/profilepic.jpeg"
 import { ReactComponent as Headline } from '../Assets/Story/Headline-21.svg'
 import { ReactComponent as DownCarat } from "../Assets/Story/fancyDownCarat.svg"
 import { ReactComponent as Portfolio } from "../Assets/portfolio-22.svg"
+import { ReactComponent as CONTACT } from "../Assets/CONTACT.svg"
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import ExpBox from './ExpBox';
 import NewUXArea from '../UXPages/NewUXArea';
@@ -48,13 +49,14 @@ const Home = () => {
             </div>
           </ParallaxLayer>
           <ParallaxLayer speed={3}>
-          <div className='ScrollDownButton'>
-            <DownCarat className='CaratAnimation'/>
-              Scroll Down :)</div>
-            </ParallaxLayer>
-          </div>
-          <div className='Work'>
-        <ParallaxLayer offset={1} speed={.25} >
+            <div className='ScrollDownButton'>
+              <DownCarat className='CaratAnimation'/>
+              Scroll Down :)
+            </div>
+          </ParallaxLayer>
+        </div>
+        <div className='Work'>
+          <ParallaxLayer offset={1} speed={.25} >
             <div className='PortfolioHeadline'>
               <Portfolio className='PortfolioTitle'/>
             </div>
@@ -76,7 +78,7 @@ const Home = () => {
                 <NewGraphicArea />
               </div>
             </div>
-            </ParallaxLayer>
+          </ParallaxLayer>
           <ParallaxLayer offset={1.85} speed={1.25}>
             <div className='PortfolioArea cream'>
               <h1 className='AreaTitle'>Logos</h1>
@@ -85,8 +87,16 @@ const Home = () => {
                 <NewLogoArea />
               </div>
             </div>
-            </ParallaxLayer>
+          </ParallaxLayer>
+        </div>
+        <ParallaxLayer offset={2.08} speed={1.25}>
+          <CONTACT className='NNN' />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2.2} speed={.5}>
+          <div className='ContactPage'>
+            <ContactDropdown />
           </div>
+         </ParallaxLayer>
       </Parallax>
     </motion.div>   
   )

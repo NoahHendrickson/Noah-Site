@@ -3,6 +3,7 @@ import SlideoutMenuDesign from './SlideoutMenuDesign'
 import SlideoutMenuCode from './SlideoutMenuCode'
 import ContactDropdown from '../ContactDropdown/ContactDropdown';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const ButtonList = ({ text, toggleStory }) => {
 
@@ -32,9 +33,9 @@ const ButtonList = ({ text, toggleStory }) => {
           </div>
         </motion.div>
       </li>
-      <NavButton text="Contact">
-        <ContactDropdown />
-      </NavButton>
+      <Link to="contact" >
+        <NavButton text="Contact" />
+      </Link>
     </ul>
   );
 };
