@@ -36,10 +36,10 @@ const Home = () => {
 
   return (
     <motion.div className="Home">
-      <Parallax className='Home' pages={3}>
         <div className='SplashPage'>
+      <Parallax className='Home' pages={1}>
           <div className='SideBar'>
-            <ParallaxLayer className='SideBar' speed={2}>
+            <ParallaxLayer className='SideBar' offset={.1} speed={2}>
               <FlowerLogo className="flower__container" />
               <NoahLogo className='NoahLogo'/>
               <ButtonList toggleStory={toggleStory} scroll={scrollToBottom} />
@@ -63,14 +63,13 @@ const Home = () => {
               Scroll Down :)
             </div>
           </ParallaxLayer>
+        </Parallax>
         </div>
-        <div className='Work'>
-          <ParallaxLayer offset={1} speed={.25} >
+      <div className='Work'>
+        <Parallax pages={1}>
             <div className='PortfolioHeadline'>
               <Portfolio className='PortfolioTitle'/>
             </div>
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.15} speed={.5}>
             <div className='PortfolioArea'>
               <h1 className='AreaTitle'>UX</h1>
               <div className='TitleLineDivider'></div>
@@ -78,8 +77,6 @@ const Home = () => {
                 <NewUXArea />
               </div>
             </div>
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.5} speed={1}>
             <div className='PortfolioArea'>
               <h1 className='AreaTitle'>Graphic Design</h1>
               <div className='TitleLineDivider'></div>
@@ -87,24 +84,17 @@ const Home = () => {
                 <NewGraphicArea />
               </div>
             </div>
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.85} speed={1.25}>
             <div className='PortfolioArea cream'>
               <h1 className='AreaTitle'>Logos</h1>
               <div className='TitleLineDivider'></div>
               <div className='AreaHolder'>
                 <NewLogoArea />
               </div>
-            </div>
-          </ParallaxLayer>
+          </div>
+          </Parallax>
         </div>
-        <ParallaxLayer offset={2.08} speed={1.25}>
           <CONTACT className='NNN' />
-        </ParallaxLayer>
-        <ParallaxLayer offset={2.2} speed={.5}>
           <ContactPage />
-        </ParallaxLayer>
-      </Parallax>
     </motion.div>   
   )
 }
