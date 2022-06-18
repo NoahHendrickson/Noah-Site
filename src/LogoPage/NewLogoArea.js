@@ -76,7 +76,7 @@ const NewLogoArea = () => {
   ]
 
   const animation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: .1 })
+  const [ref, inView, entry] = useInView({ threshold: 0 })
   
   useEffect(() => {
     if (inView) {
@@ -95,9 +95,9 @@ const NewLogoArea = () => {
     hidden: {
       x: "100%",
       opacity: 0,
-      transition: {
-        duration: .25
-      }
+      // transition: {
+      //   duration: .5
+      // }
     },
   }
 

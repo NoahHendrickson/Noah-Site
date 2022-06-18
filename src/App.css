@@ -37,14 +37,14 @@
 .ScrollDownButton {
   position: absolute;
   bottom: 50px;
-  right: 550px;
+  right: 625px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.75em;
   width: 250px;
   font-weight: 900;
-  color: var(--creamy);
+  color: white;
   pointer-events: none;
   z-index: 105;
 }
@@ -108,9 +108,10 @@
   width: 100%;
   height: 100%;
   border-radius: 25px;
+  pointer-events: none;
 }
 
-.TheBlur {
+/* .TheBlur {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -118,14 +119,7 @@
   background-color: #0003;
   backdrop-filter: blur(10px);
   border-radius: 25px;
-}
-
-.ThumbnailHolder:hover .TheBlur {
-  display: none;
-}
-.ThumbnailHolder:hover .TheMini {
-  display: none;
-}
+} */
 
 .TheMini {
   position: absolute;
@@ -134,7 +128,14 @@
   top: 25%;
   left: 25%;
   border-radius: 25px;
+  backdrop-filter: blur(10px);
   box-shadow: 0px 10px 30px rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+.LinkTouchArea {
+  position: relative;
+  z-index: 200;
 }
 
 .miniImage {
@@ -198,10 +199,10 @@
 
 .LogoHolder {
   display: flex;
-  margin: 15px 15px;
+  margin: 5px 5px;
   padding: 25px;
   width: 20%;
-  height: 350px;
+  height: 300px;
   /* box-shadow: 0px 10px 30px rgba(0, 0, 0, .5); */
 }
 
@@ -280,7 +281,11 @@
 }
 
 .nav__social {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: .75em;
+
 }
 
 .MMM {
@@ -293,33 +298,34 @@
 
 .LeavesHolder {
   position: absolute;
-  right: 50px;
+  right: -370px;
   width: 100%;
   height: 100vh;
   position: relative;
 }
 
 .leaf {
+  width: 230px;
+  height: 230px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 200;
+  /* pointer-events: none; */
 }
 
 .leafimg {
   position: absolute;
   top: 0;
   bottom: 0;
-  height: 150px;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   transform-origin: center;
   animation-name: flow;
   transform: translateX(70px);
-
- 
 }
 
 .leafscroll {

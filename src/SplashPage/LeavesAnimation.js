@@ -74,11 +74,13 @@ const LeavesAnimation = () => {
     }
   }, [])
 
+  
+
   return (
     <div className='LeavesHolder'>
-      <div className='leaf'>
-        <img className="leafimg" src={leaf} />
-      </div>
+      <motion.div className='leaf'>
+        <motion.img  className="leafimg" src={leaf} />
+      </motion.div>
     </div>
   )
 }

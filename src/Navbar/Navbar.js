@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Switch from './Switch';
 import { ThemeContext } from '../App'
-import { ReactComponent as NoahLogo } from '../Assets/NoahHyperLeaf-05.svg'
+import { ReactComponent as NoahLogo } from '../Assets/NoahBevel-20.svg'
 import { NavButton } from '../SplashPage/ButtonList';
 import SlideoutMenuCode from '../SplashPage/SlideoutMenuCode';
 import SlideoutMenuDesign from '../SplashPage/SlideoutMenuDesign';

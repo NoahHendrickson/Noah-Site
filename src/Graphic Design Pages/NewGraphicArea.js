@@ -71,13 +71,12 @@ const NewGraphicArea = () => {
           type: 'spring',
               stiffness: 80,
               mass: 1,
-              damping: 10,
+              damping: 15,
         }}
       >
-        <Link to={article.path}>
-          <motion.div whileHover={{scale: 2}} className='ThumbnailHolder'>
+        <Link className='LinkTouchArea' to={article.path}>
+          <motion.div whileHover={{scale: 1.8}}  transition={{duration: .1}} className='ThumbnailHolder'>
             <img className="WorkIcon" src={article.image} />
-            <div className='TheBlur'></div>
             <div className='TheMini'>
               <img className="miniImage" src={article.miniImg} />
             </div>
