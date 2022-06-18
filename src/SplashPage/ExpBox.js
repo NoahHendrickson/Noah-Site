@@ -63,7 +63,7 @@ const ExpBox = (props) => {
   <div className='ExpBox'>
       {articles.map((articles, i) => (
       <AnimatePresence onExitComplete={true}>
-          <motion.div
+          <motion.div className='ExpBox2'
             key={articles.key}
             ref={ref}
             initial="hidden"

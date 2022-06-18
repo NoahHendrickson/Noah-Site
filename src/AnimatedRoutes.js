@@ -1,12 +1,9 @@
 import React, {useContext} from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import LogoPage from './LogoPage/LogoPage';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ThemeContext } from './App';
-import GraphicPage from './Graphic Design Pages/GraphicPage';
 import NachoBox from './Graphic Design Pages/NachoBox';
 import HowToPage from './Graphic Design Pages/HowToPage';
-import UXPage from './UXPages/UXPage';
 import DarkMatterPage from './UXPages/DarkMatterPage';
 import FitPage from './Graphic Design Pages/FitPage';
 import HomelyAppPage from './UXPages/HomelyAppPage';
@@ -30,11 +27,8 @@ const AnimatedRoutes = () => {
     >
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
-        <Route path="/logo_design" element={<LogoPage />} />
-        <Route path="/GraphicPage" element={<GraphicPage />} />
         <Route path='/NachoBox' element={<NachoBox />} />
         <Route path='/HowToPC' element={<HowToPage />} />
-        <Route path="/UXPage" element={<UXPage />} />
         <Route path="/DarkMatter" element={<DarkMatterPage />} />
         <Route path='/FitPage' element={<FitPage />} />
         <Route path='/HomelyPage' element={<HomelyAppPage />} />

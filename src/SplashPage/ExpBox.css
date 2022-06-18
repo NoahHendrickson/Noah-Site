@@ -6,7 +6,11 @@
 
 @media (max-width: 600px) {
   .ExpBox {
-    width: 50%;
+    width: 100%;
+  }
+
+  .ExpBox2 {
+    width: 60%;
   }
 }
 

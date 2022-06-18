@@ -27,8 +27,8 @@ const ButtonList = ({ text, toggleStory, scrollToBottom }) => {
           </div>
         </motion.div>
       </li>
-      <a onClick={scrollToBottom}>
-        <NavButton scroll={scrollToBottom} text="Contact" />
+      <a>
+        <NavButton text="Contact" />
       </a>
     </ul>
   );
@@ -51,7 +51,7 @@ export const NavButton = (props) => {
         whileHover={{ scale: 1.1 }}
         className='button__background customBttn'>
           <div className='button__front customBttn'>
-            <a className="button" onClick={props.scroll} ref={button}>
+            <a className="button" onClick={toggle} ref={button}>
               {props.text}
             </a>
               {open && props.children}

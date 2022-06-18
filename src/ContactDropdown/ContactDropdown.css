@@ -9,6 +9,10 @@ form {
   flex-direction: column;
 }
 
+.navform {
+  width: 100%;
+}
+
 @media (max-width: 600px) {
   form {
     width: 70%;
