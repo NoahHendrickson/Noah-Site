@@ -23,6 +23,7 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 @media (max-width: 600px) {
@@ -174,8 +175,8 @@
 
 .CodeAreaBG {
   margin: 5px 25px;
-  background-color: var(--darkGreen);
-  outline: solid var(--forest) 4px;
+  background-color: var(--forest);
+  outline: solid var(--darkGreen) 4px;
   height: 250px;
   width: 250px;
   border-radius: 20px;
@@ -186,12 +187,26 @@
   position: absolute;
   margin: 0px;
   text-align: left;
-  outline: solid var(--lime) 4px;
+  outline: solid #9EFF2E 4px;
   width: 100%;
   height: 95%;
   background-color: var(--kelly);
   padding: 20px;
   border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  .CodeAreaBG {
+    height: 220px;
+    width: 40%;
+    margin: 15px 15px;
+    outline: solid var(--darkGreen) 3px;
+  }
+
+  .CodeArea {
+    font-size: 10px;
+    outline: solid #9EFF2E 3px;
+  }
 }
 
 .WorkTitle {
@@ -252,6 +267,7 @@
 @media (max-width: 600px) {
 
   .AreaHolder {
+    width: 100%;
   }
 
   .PortfolioArea {
@@ -285,12 +301,6 @@
   }
   
 }
-
-
-
-
-
-
 
 .SocialSideBar {
   position: relative;
@@ -328,11 +338,13 @@
 
 .LeavesHolder {
   position: absolute;
-  right: -370px;
+  top: -600px;
+  right: -600px;
   width: 100%;
   height: 100vh;
-  position: relative;
 }
+
+
 
 .leaf {
   width: 230px;
@@ -364,6 +376,22 @@
   animation-timing-function: ease-in-out;
   transform-origin: center;
   animation-name: flow;
+}
+
+@media (max-width: 600px) {
+
+  .LeavesHolder {
+    opacity: .25;
+    width: 50%;
+    top: 300px;
+    right: -100px;
+    z-index: 0;
+  }
+
+  .leaf {
+    width: 225px;
+    height: 225px;
+  }
 }
 
 
@@ -613,10 +641,14 @@
 
 .flower__container {
   width: 15em;
+  position: relative;
+  z-index: 3;
 }
 
 .NoahLogo {
   width: 10em;
+  position: relative;
+  z-index: 3;
 }
 
 .st10 {
@@ -638,6 +670,8 @@
   display: flex;
   flex-direction: column;
   margin: 25px 0px 0px 0px;
+  position: relative;
+  z-index: 3;
 }
 
 @media  (max-width: 600px) {

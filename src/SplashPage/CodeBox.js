@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const CodeBox = () => {
 
   const animation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: 1 })
+  const [ref, inView, entry] = useInView({ threshold: .2  })
   
   useEffect(() => {
     if (inView) {
@@ -34,33 +34,38 @@ const CodeBox = () => {
       description: "A simple tool you manually enter your holdings in to and get a portfolio view",
       toolsTitle: "Tools used",
       tools: "React JS, CoinGecko API, Binance Websockets, Chart JS",
-      path: "/CrpoPage"
+      path: "/CrpoPage",
+      target: "",
     },
     {
       title: "Javascript Calculator",
       description: "The honorary badge of a self taught developer",
       toolsTitle: "Tools used",
       tools: "...Javascript",
-      href: "https://noahhendrickson.github.io/calculator/"
+      path: "https://noahhendrickson.github.io/calculator/",
+      target: "_blank"
     },
     {
       title: "SVG Animations",
       description: "Animations made with CSS and Javascript",
       toolsTitle: "Tools used",
       tools: "CSS, Javascript, Framer Motion, Parallax React Package",
-      path: "/SVGAnimations"
+      path: "/SVGAnimations",
+      target: "",
     },
     {
       title: "This Site",
       description: "I am building this site from scratch using React",
       toolsTitle: "Tools used",
       tools: "React, Framer Motion, Parallax React Package, React Router",
+      path: "https://noahhendrickson.github.io/calculator/",
+      target: "_blank"
     },
   ]
   return (
     projetcs.map((article, i) => (
       <motion.div
-        whileHover={{scale:1.1, transition: {duration: .1}}}
+        whileHover={{scale:1.1, transition: {duration: .2}}}
         ref={ref}
         initial="hidden"
         animate={animation}
@@ -74,8 +79,7 @@ const CodeBox = () => {
               damping: 15,
         }}
         className='CodeAreaBG'>
-          <a href={article.href} target="_blank">
-        <Link to={article.path ? article.path : ""}>
+        <a target={article.target} href={article.path}>
         <div className='CodeArea'>
           <h1 className='CodeTitle'>{article.title}</h1>
           <div>
@@ -83,8 +87,7 @@ const CodeBox = () => {
           </div>
           <span className='CodeTools'>{article.tools}</span>
             </div>
-        </Link>
-            </a>
+        </a>
       </motion.div>
     ))
   )

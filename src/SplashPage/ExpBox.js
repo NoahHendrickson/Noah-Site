@@ -33,7 +33,7 @@ const ExpBox = (props) => {
     {
       key: 1, Title: 'Product Designer', subTitle: "", Time: "1YRs",
       Desc: "contracted as Lead UX Designer for two products currently under development",
-      Desc2: "learning to code and deployed 2 personal React projects (your'e exploring one of them right now)",
+      Desc2: "learning to code and deployed 2 personal React projects (you're exploring one of them right now)",
       Desc3: ""
     },
     {

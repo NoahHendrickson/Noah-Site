@@ -24,6 +24,7 @@ import Logos from './Logos';
 import StoryCarousel from '../StoryStuff/StoryCarousel';
 import ExpBox from './ExpBox';
 import CodeBox from './CodeBox';
+import LeavesAnimation from './LeavesAnimation';
 
 const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -80,10 +81,10 @@ const Home = () => {
             <Logos />
           </ParallaxLayer>
         </div>
-        <ParallaxLayer offset={3} speed={1.25}>
+        <ParallaxLayer offset={3.1} speed={1.25}>
           <CONTACT className='NNN' />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.15} speed={.5}>
+        <ParallaxLayer offset={3.25} speed={.5}>
           <ContactPage />
         </ParallaxLayer>
         </Parallax> :
@@ -96,8 +97,16 @@ const Home = () => {
           <ExpBox mobile={45} /> 
           <UX />
           <Graphic />
+          <div className='PortfolioArea'>
+            <h1 className='AreaTitle'>Code</h1>
+            <div className='TitleLineDivider'></div>
+            <div className='AreaHolder'>
+              <CodeBox />
+            </div>
+          </div>
           <Logos />
           <ContactPage />
+          <LeavesAnimation />
         </div>  
       }
     </motion.div>   

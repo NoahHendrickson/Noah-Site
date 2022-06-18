@@ -7,6 +7,8 @@
 @media (max-width: 600px) {
   .ExpBox {
     width: 100%;
+    position: relative;
+    z-index: 2;
   }
 
   .ExpBox2 {
