@@ -1,23 +1,28 @@
 import React, { useContext, useEffect, useState } from 'react'
-import ButtonList from './ButtonList'
-import FlowerLogo from '../CodeStuff/FlowerLogo'
 import { AnimatePresence, motion } from 'framer-motion';
-import { ReactComponent as NoahLogo } from '../Assets/NoahBevel-20.svg'
 import '../CodeStuff/FlowerLogo.css'
 import { ThemeContext } from '../App';
 import ContactDropdown from '../ContactDropdown/ContactDropdown';
-import StoryCarousel from '../StoryStuff/StoryCarousel';
 import Noah from "../Assets/profilepic.jpeg"
-import { ReactComponent as Headline } from '../Assets/Story/Headline-21.svg'
 import { ReactComponent as DownCarat } from "../Assets/Story/fancyDownCarat.svg"
 import { ReactComponent as Portfolio } from "../Assets/portfolio-22.svg"
 import { ReactComponent as CONTACT } from "../Assets/CONTACT.svg"
+import { ReactComponent as NoahLogo } from '../Assets/NoahBevel-20.svg'
+import ButtonList from './ButtonList'
+import FlowerLogo from '../CodeStuff/FlowerLogo'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import ExpBox from './ExpBox';
 import NewUXArea from '../UXPages/NewUXArea';
 import NewGraphicArea from '../Graphic Design Pages/NewGraphicArea';
 import NewLogoArea from '../LogoPage/NewLogoArea';
 import ContactPage from '../ContactDropdown/ContactPage';
+import SideBar from './SideBar';
+import LeftContent from './LeftContent';
+import RightContent from './RightContent';
+import UX from './UX';
+import Graphic from './Graphic';
+import Logos from './Logos';
+import StoryCarousel from '../StoryStuff/StoryCarousel';
+import ExpBox from './ExpBox';
 
 const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -27,35 +32,20 @@ const Home = () => {
     setStory(!story)
   };
 
-  const scrollToBottom = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
+  const screen = window.screen.width
+  
 
   return (
     <motion.div className="Home">
-      <Parallax className='Home' pages={3}>
+    {screen > 600 ? 
+      <Parallax className='Home' pages={2.9}>
         <div className='SplashPage'>
-          <div className='SideBar'>
-            <ParallaxLayer className='SideBar' speed={2}>
-              <FlowerLogo className="flower__container" />
-              <NoahLogo className='NoahLogo'/>
-              <ButtonList toggleStory={toggleStory} scroll={scrollToBottom} />
-              <button onClick={scrollToBottom}>hell</button>
-            </ParallaxLayer>
-          </div>
+          <SideBar toggleStory={toggleStory} />
           <ParallaxLayer speed={.75} offset={0}>
-            <div className='LeftContent'>
-              <Headline className='Headline' />
-              <ExpBox />
-            </div>
+            <LeftContent />
           </ParallaxLayer>
-          <ParallaxLayer speed={.25}>
-            <div className='RightContent'>
-              {story ? <StoryCarousel /> : null}
-            </div>
+          <ParallaxLayer className="NegativeIndex" speed={.25}>
+            <RightContent story={story} />
           </ParallaxLayer>
           <ParallaxLayer speed={3}>
             <div className='ScrollDownButton'>
@@ -71,40 +61,35 @@ const Home = () => {
             </div>
           </ParallaxLayer>
           <ParallaxLayer offset={1.15} speed={.5}>
-            <div className='PortfolioArea'>
-              <h1 className='AreaTitle'>UX</h1>
-              <div className='TitleLineDivider'></div>
-              <div className='AreaHolder'>
-                <NewUXArea />
-              </div>
-            </div>
+            <UX />
           </ParallaxLayer>
           <ParallaxLayer offset={1.5} speed={1}>
-            <div className='PortfolioArea'>
-              <h1 className='AreaTitle'>Graphic Design</h1>
-              <div className='TitleLineDivider'></div>
-              <div className='AreaHolder'>
-                <NewGraphicArea />
-              </div>
-            </div>
+            <Graphic />
           </ParallaxLayer>
           <ParallaxLayer offset={1.85} speed={1.25}>
-            <div className='PortfolioArea cream'>
-              <h1 className='AreaTitle'>Logos</h1>
-              <div className='TitleLineDivider'></div>
-              <div className='AreaHolder'>
-                <NewLogoArea />
-              </div>
-            </div>
+            <Logos />
           </ParallaxLayer>
         </div>
-        <ParallaxLayer offset={2.08} speed={1.25}>
+        <ParallaxLayer offset={2} speed={1.25}>
           <CONTACT className='NNN' />
         </ParallaxLayer>
         <ParallaxLayer offset={2.2} speed={.5}>
           <ContactPage />
         </ParallaxLayer>
-      </Parallax>
+        </Parallax> :
+        <div className='MobileHome'>
+          <div className='SplashPage'>
+            {story ? <StoryCarousel state={story} /> : <FlowerLogo className="flower__container" />}
+            <NoahLogo className='NoahLogo'/>
+            <ButtonList toggleStory={toggleStory} />
+          </div>
+          <ExpBox mobile={45} /> 
+          <UX />
+          <Graphic />
+          <Logos />
+          <ContactPage />
+        </div>  
+      }
     </motion.div>   
   )
 }

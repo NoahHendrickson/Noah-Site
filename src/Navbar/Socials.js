@@ -9,22 +9,18 @@ import { ThemeContext } from '../App';
 const Socials = () => {
   const { theme } = useContext(ThemeContext)
   
-  useEffect(() => {
-    
-  })
-
   return (
     <div className='socials__container'>
-          <a href='https://www.instagram.com/no_ahjames/' target="_bkank">
-            <Insta className={theme === 'light' ? 'socials__icon' : 'socials__icon--dark' }/>
-          </a>
-          <a href='https://github.com/NoahHendrickson' target="_blank">
-            <Github className={theme === 'light' ? 'socials__icon' : 'socials__icon--dark' } />
-          </a>
-          <a href='https://www.linkedin.com/in/noah-hendrickson-808959192/' target="_blank">
-            <LinkedIn className={theme === 'light' ? 'socials__icon' : 'socials__icon--dark' } />
-          </a>
-        </div>
+        <a href='https://www.instagram.com/no_ahjames/' target="_bkank">
+          <Insta className={theme === 'light' ? 'socials__icon' : 'socials__icon--dark' }/>
+        </a>
+        <a href='https://github.com/NoahHendrickson' target="_blank">
+          <Github className={theme === 'light' ? 'socials__icon' : 'socials__icon--dark' } />
+        </a>
+        <a href='https://www.linkedin.com/in/noah-hendrickson-808959192/' target="_blank">
+          <LinkedIn className={theme === 'light' ? 'socials__icon' : 'socials__icon--dark' } />
+        </a>
+    </div>
   )
 }
 

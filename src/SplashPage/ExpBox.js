@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer'
 const ExpBox = (props) => {
 
   const animation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: 1 })
+  const [ref, inView, entry] = useInView({ threshold: .1 })
   
   useEffect(() => {
     if (inView) {
@@ -31,17 +31,17 @@ const ExpBox = (props) => {
 
   const articles = [
     {
-      Id: 1, Title: 'Product Designer', subTitle: "", Time: "1YRs",
+      key: 1, Title: 'Product Designer', subTitle: "", Time: "1YRs",
       Desc: "contracted as Lead UX Designer for two products currently under development",
       Desc2: "learning to code and deployed 2 personal React projects (your'e exploring one of them right now)",
       Desc3: ""
     },
     {
-      Id: 2, Title: 'Designer', subTitle: "", Time: "5YRs",
+      key: 2, Title: 'Designer', subTitle: "", Time: "5YRs",
       Desc: "freelance logo & graphic design",
     },
     {
-      Id: 3, Title: 'Area Manager', subTitle: "@ Amazon", Time: "1.5YRs",
+      key: 3, Title: 'Area Manager', subTitle: "@ Amazon", Time: "1.5YRs",
       Desc: "led and collaborated with my team to increase shift productivity by 29%",
       Desc2: "promoted 3 times in 10 months",
       Desc3: "recognized as SME (subject matter expert) and selected to assist with the opening of a new building"
@@ -51,7 +51,7 @@ const ExpBox = (props) => {
   const variants = {
     visible: {
       opacity: 1,
-      x: 0,
+      x: props.mobile === 45 ? 35 : 0,
     },
     hidden: {
       opacity: 0,
@@ -64,6 +64,7 @@ const ExpBox = (props) => {
       {articles.map((articles, i) => (
       <AnimatePresence onExitComplete={true}>
           <motion.div
+            key={articles.key}
             ref={ref}
             initial="hidden"
             animate={animation}

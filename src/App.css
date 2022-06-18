@@ -14,9 +14,22 @@
 
 .SplashPage {
   width: 100%;
-  display: flex;
   height: 100vh;
+  display: flex;
   position: relative;
+}
+
+.MobileHome {
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .SplashPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .ScrollDownButton {
@@ -30,6 +43,8 @@
   width: 250px;
   font-weight: 900;
   color: var(--creamy);
+  pointer-events: none;
+  z-index: 99;
 }
 
 .CaratAnimation {
@@ -74,6 +89,8 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  position: relative;
+  z-index: 98;
 }
 
 .Headline {
@@ -187,30 +204,6 @@
   box-shadow: 0px 10px 30px rgba(0, 0, 0, .5);
 }
 
-@media (max-width: 600px) {
-
-  .AreaHolder {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ThumbnailHolder {
-    height: 20px;
-    width: 80%;
-    border-radius: 25px;
-    position: relative;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, .5);
-  }
-  .LogoHolder {
-    display: flex;
-    margin: 15px 15px;
-    padding: 25px;
-    width: 80%;
-    height: 150px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, .5);
-  }
-}
-
 .LLL {
   padding: 25px;
   border-radius: 25px;
@@ -222,6 +215,122 @@
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+@media (max-width: 600px) {
+
+  .PortfolioArea {
+    margin: 0;
+  }
+
+  .WorkTitle {
+    font-size: .25em;
+  }
+  .ThumbnailHolder {
+    width: 200px;
+    height: 200px;
+  }
+
+  .LogoHolder {
+    width: 50%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .LLL {
+    border-radius: 0;
+    padding: 10px;
+  }
+
+  .cream {
+    background-color: var(--black);
+  }
+  
+}
+
+
+
+
+
+
+
+.SocialSideBar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 101;
+}
+
+.socials__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  font-size: 1.5em;
+  position: relative;
+  z-index: 102;
+}
+
+.NegativeIndex {
+  z-index: 98;
+}
+
+.LeavesHolder {
+  position: absolute;
+  right: -200px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.leaf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.leafimg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 150px;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  animation-name: flow;
+  transform: translateX(70px);
+
+ 
+}
+
+.leafscroll {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  animation-name: flow;
+}
+
+
+
+
+@keyframes flow {
+  0% {
+    transform: translateX(70px);
+  }
+  
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(70px);
+  }
 }
 
 .inputBttn {
@@ -434,15 +543,6 @@
   flex-shrink: 0;
 }
 
-.socials__container {
-  margin-right: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 200px;
-  font-size: 1em;
-}
-
 @media (max-width: 600px) {
   
 
@@ -455,7 +555,7 @@
 .socials__icon {
   display: flex;
   justify-content: center;
-  fill: var(--darkGreen);
+  fill: var(--lightOrange);
 }
 
 .socials__icon--dark {

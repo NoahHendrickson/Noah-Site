@@ -42,12 +42,12 @@
 }
 
 .story__title {
-  color: var(--creamy);
+  color: white;
   font-size: 3em;
 }
 
 .story__text {
-  color: var(--creamy);
+  color: white;
   font-size: 1.25em;
   text-align: center;
 }
@@ -99,7 +99,7 @@
 
 .orbit__container {
   position: absolute;
-  top: 19%;
+  top: 22%;
   width: 600px;
   height: 600px;
   display: flex;

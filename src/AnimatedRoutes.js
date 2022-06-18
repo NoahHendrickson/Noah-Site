@@ -15,6 +15,7 @@ import SVGAnimations from './CodeStuff/SVGAnimations';
 import FullStory from './StoryStuff/FullStory';
 import Home from './SplashPage/Home';
 import ContactPage from './ContactDropdown/ContactPage';
+import LeavesAnimation from './SplashPage/LeavesAnimation';
 
 const AnimatedRoutes = () => {
 
@@ -41,6 +42,7 @@ const AnimatedRoutes = () => {
         <Route path='SVGAnimations' element={<SVGAnimations />} />
         <Route path='FullStory' element={<FullStory />} />
         <Route path="ContactPage" element={<ContactPage />} />
+        <Route path="Ani" element={<LeavesAnimation />} />
       </Routes>
     </AnimatePresence>
   )

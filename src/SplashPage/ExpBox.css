@@ -4,6 +4,12 @@
   font-size: 13px;
 }
 
+@media (max-width: 600px) {
+  .ExpBox {
+    width: 50%;
+  }
+}
+
 .ExpTitle {
   font-size: 1.75em;
   color: black;
