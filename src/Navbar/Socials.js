@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 import { ThemeContext } from '../App';
 
 
-const Socials = () => {
+const Socials = (props) => {
   const { theme } = useContext(ThemeContext)
   
   return (
-    <div className='socials__container'>
+    <div className={props.class ==="nav" ? 'socials__container MMM' : 'socials__container' }>
         <a href='https://www.instagram.com/no_ahjames/' target="_bkank">
           <Insta className={theme === 'light' ? 'socials__icon' : 'socials__icon--dark' }/>
         </a>

@@ -92,7 +92,7 @@ const Navbar = (props) => {
         </div>
         {screenSize > 500 ?
           <div className='nav__social'>
-            <Socials />
+            <Socials class={"nav"} />
           </div> : null}
         
           <div className='horizontal__switch'>

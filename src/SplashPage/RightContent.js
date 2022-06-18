@@ -9,8 +9,8 @@ const RightContent = ({story}) => {
     <div className='RightContent'>
       {story ? <StoryCarousel /> :
         <div className='SocialSideBar'>
-          <LeavesAnimation />
           <Socials />
+          <LeavesAnimation />
         </div>
       }
     </div>

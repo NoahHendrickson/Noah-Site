@@ -37,7 +37,7 @@
 .ScrollDownButton {
   position: absolute;
   bottom: 50px;
-  right: 50px;
+  right: 550px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +46,7 @@
   font-weight: 900;
   color: var(--creamy);
   pointer-events: none;
-  z-index: 99;
+  z-index: 105;
 }
 
 .CaratAnimation {
@@ -92,7 +92,7 @@
   justify-content: center;
   height: 100%;
   position: relative;
-  z-index: 98;
+  z-index: 100;
 }
 
 .Headline {
@@ -202,7 +202,7 @@
   padding: 25px;
   width: 20%;
   height: 350px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, .5);
+  /* box-shadow: 0px 10px 30px rgba(0, 0, 0, .5); */
 }
 
 .LLL {
@@ -266,7 +266,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  z-index: 101;
+  z-index: 100;
 }
 
 .socials__container {
@@ -274,9 +274,17 @@
   align-items: center;
   justify-content: space-between;
   width: 25%;
-  font-size: 1.5em;
+  font-size: 1.25em;
   position: relative;
   z-index: 102;
+}
+
+.nav__social {
+  width: 50%;
+}
+
+.MMM {
+  width: 50%;
 }
 
 .NegativeIndex {
@@ -285,7 +293,7 @@
 
 .LeavesHolder {
   position: absolute;
-  right: -200px;
+  right: 50px;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -560,7 +568,7 @@
 .socials__icon {
   display: flex;
   justify-content: center;
-  fill: var(--lightOrange);
+  fill: black;
 }
 
 .socials__icon--dark {
