@@ -23,6 +23,7 @@ import Graphic from './Graphic';
 import Logos from './Logos';
 import StoryCarousel from '../StoryStuff/StoryCarousel';
 import ExpBox from './ExpBox';
+import CodeBox from './CodeBox';
 
 const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -65,8 +66,17 @@ const Home = () => {
           </ParallaxLayer>
           <ParallaxLayer offset={1.55} speed={.5}>
             <Graphic />
-          </ParallaxLayer>
-          <ParallaxLayer offset={1.85} speed={.25}>
+            </ParallaxLayer>
+            <ParallaxLayer offset={1.85}>
+            <div className='PortfolioArea'>
+              <h1 className='AreaTitle'>Code</h1>
+              <div className='TitleLineDivider'></div>
+              <div className='AreaHolder'>
+                <CodeBox />
+              </div>
+            </div>
+            </ParallaxLayer>
+          <ParallaxLayer offset={2.2} speed={.25}>
             <Logos />
           </ParallaxLayer>
         </div>

@@ -172,10 +172,41 @@
   margin: 0px 50px;
 }
 
+.CodeAreaBG {
+  margin: 5px 25px;
+  background-color: var(--darkGreen);
+  outline: solid var(--forest) 4px;
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.CodeArea {
+  position: absolute;
+  margin: 0px;
+  text-align: left;
+  outline: solid var(--lime) 4px;
+  width: 100%;
+  height: 95%;
+  background-color: var(--kelly);
+  padding: 20px;
+  border-radius: 20px;
+}
+
 .WorkTitle {
   text-align: right;
   color: white;
   margin-top: 10px;
+}
+
+.CodeTitle {
+  color: black;
+  font-weight: 600;
+}
+
+.CodeTools {
+  color: var(--darkGreen);
 }
 
 .AreaHolder {
@@ -199,8 +230,7 @@
 
 .LogoHolder {
   display: flex;
-  margin: 5px 5px;
-  padding: 25px;
+  margin: 10px 10px;
   width: 20%;
   height: 300px;
   /* box-shadow: 0px 10px 30px rgba(0, 0, 0, .5); */
