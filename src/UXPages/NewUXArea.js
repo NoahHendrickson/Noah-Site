@@ -12,7 +12,7 @@ import DarkMatterTHMB from "../Assets/PortfolioThumbNails/DarkMatterStandard.svg
 const NewUXArea = () => {
 
   const animation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: .6 })
+  const [ref, inView, entry] = useInView({ threshold: .4 })
   
   useEffect(() => {
     if (inView) {

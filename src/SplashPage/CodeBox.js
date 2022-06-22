@@ -78,15 +78,13 @@ const CodeBox = () => {
               mass: 1,
               damping: 15,
         }}
-        className='CodeAreaBG'>
+        className='CodeArea'>
         <a target={article.target} href={article.path}>
-        <div className='CodeArea'>
           <h1 className='CodeTitle'>{article.title}</h1>
           <div>
             <span className='ExpDescription'>{article.description}</span>
           </div>
           <span className='CodeTools'>{article.tools}</span>
-            </div>
         </a>
       </motion.div>
     ))

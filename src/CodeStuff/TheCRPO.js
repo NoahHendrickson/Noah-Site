@@ -6,6 +6,7 @@ import "./TheCRPO.css"
 import crpo from "../Assets/CRPO/crpoPRev.jpg"
 import crpo2 from "../Assets/CRPO/crpoPRev2.svg"
 import heroImage from "../Assets/CRPO/2x/heromockup.png"
+import FooterNav from '../FooterNav'
 
 const TheCRPO = () => {
   return (
@@ -22,6 +23,7 @@ const TheCRPO = () => {
       <div className='crpo__preview'>
        
       </div>
+      <FooterNav />
     </motion.div>
   )
 }

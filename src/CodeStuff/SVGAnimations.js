@@ -7,6 +7,7 @@ import "./FlowerLogo.css"
 import ExpressiveAnimation from './ExpressiveAnimation'
 import Navbar from '../Navbar/Navbar'
 import "./SVGAnimations.css"
+import FooterNav from '../FooterNav'
 
 const SVGAnimations = () => {
   return (
@@ -22,6 +23,7 @@ const SVGAnimations = () => {
         <FlowerLogo />
         <ExpressiveAnimation />
       </div>
+      <FooterNav />
     </motion.div>
   )
 }

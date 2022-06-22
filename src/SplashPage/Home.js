@@ -67,13 +67,13 @@ const Home = () => {
               <Portfolio className='PortfolioTitle'/>
             </div>
           </ParallaxLayer>
-          <ParallaxLayer offset={1.15} speed={1.25}>
+          <ParallaxLayer offset={1.15} speed={1.5}>
             <UX />
           </ParallaxLayer>
-          <ParallaxLayer offset={1.55} speed={.5}>
+          <ParallaxLayer offset={1.55} speed={1}>
             <Graphic />
             </ParallaxLayer>
-            <ParallaxLayer offset={1.85}>
+            <ParallaxLayer offset={1.85} speed={.5}>
             <div className='PortfolioArea'>
               <h1 className='AreaTitle'>Code</h1>
               <div className='TitleLineDivider'></div>
@@ -82,7 +82,7 @@ const Home = () => {
               </div>
             </div>
             </ParallaxLayer>
-          <ParallaxLayer offset={2.2} speed={.25}>
+          <ParallaxLayer offset={2.05} speed={.35}>
             <Logos />
           </ParallaxLayer>
         </div>
