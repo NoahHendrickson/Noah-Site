@@ -76,7 +76,7 @@ const NewLogoArea = () => {
   ]
 
   const animation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: .1 })
+  const [ref, inView, entry] = useInView({ threshold: 0 })
   
   useEffect(() => {
     if (inView) {
