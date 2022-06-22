@@ -269,6 +269,7 @@
 
   .AreaHolder {
     width: 100%;
+    margin: 25px 0px;
   }
 
   .PortfolioArea {
@@ -277,11 +278,12 @@
   }
 
   .WorkTitle {
-    font-size: .25em;
+    font-size: 1em;
   }
   .ThumbnailHolder {
     width: 200px;
     height: 200px;
+    margin: 25px 0px;
   }
 
   .LogoHolder {
@@ -715,12 +717,7 @@
 }
 
 @media  (max-width: 600px) {
-  .splash__page--buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 0px;
-  }
+
   .NoahLogo {
     width: 10em;
     margin: 25px 0px 25px;
