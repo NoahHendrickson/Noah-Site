@@ -5,7 +5,7 @@ import ContactDropdown from '../ContactDropdown/ContactDropdown';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const ButtonList = ({ text, toggleStory, scrollToBottom }) => {
+const ButtonList = ({ text, toggleStory, scrollToBottom, toggleContact }) => {
 
   const [contactOpen, setContactOpen] = useState(false);
   const NavButtonImitate = useRef()
@@ -27,9 +27,6 @@ const ButtonList = ({ text, toggleStory, scrollToBottom }) => {
           </div>
         </motion.div>
       </li>
-      <a>
-        <NavButton text="Contact" />
-      </a>
     </ul>
   );
 };

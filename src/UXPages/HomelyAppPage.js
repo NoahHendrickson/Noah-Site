@@ -12,6 +12,7 @@ import Screens from "../Assets/HomelyApp/homelyNew-02.svg"
 import PitchDeck1 from "../Assets/HomelyApp/1x/copy2.png"
 import PitchDeck2 from "../Assets/HomelyApp/PitchDeck2.png"
 import { useInView } from 'react-intersection-observer'
+import FooterNav from '../FooterNav'
 
 const HomelyAppPage = () => {
 
@@ -67,6 +68,7 @@ const HomelyAppPage = () => {
       <img className="homely__95" src={StyleGuideDark} />
       <img className="homely__95" src={Mocks} />
       <img className="homely__95" src={Screens} />
+      <FooterNav />
     </motion.div>
   )
 }

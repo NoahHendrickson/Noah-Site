@@ -423,8 +423,47 @@
   border-radius: 5px;
 }
 
-.homeBttn {
-  margin-left: 50px;
+.FooterNav {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  background-color: var(--orange);
+}
+.FooterNavSection {
+  margin: 0px 0px 50px 0px;
+  width: 50%;
+}
+
+
+.FooterTitle {
+  font-weight: 700;
+  margin: 20px;
+  color: black;
+}
+
+.FooterLink {
+  color: white;
+  font-size: 1.25em;
+  margin: 0px 25px;
+}
+
+.FooterLink:hover {
+  color: #9EFF2E;
+}
+@media (max-width: 600px) {
+  .FooterNavSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .FooterLink {
+    color: black;
+    font-size: 1em;
+    margin: 5px 0px;
+  }
+  .FooterTitle {
+    font-weight: 700;
+    font-size: 1em;
+  }
 }
 
 .button__front {
@@ -898,6 +937,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .images {
@@ -906,6 +946,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .title__image {
@@ -983,7 +1024,7 @@ img {
 
 .hero__image {
   width: 100%;
-  margin: 50px 0px;
+  margin: 50px 0px 0px 0px;
 }
 
 .hero__image--fonts {
@@ -1018,6 +1059,7 @@ img {
 
 .HowToPage {
   background-color: var(--creamy);
+  height: 100%;
 }
 
 .process__images--howto {

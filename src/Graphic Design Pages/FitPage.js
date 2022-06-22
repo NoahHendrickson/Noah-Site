@@ -9,6 +9,7 @@ import fitThree from "../Assets/Fit/iconsFit-13.svg"
 import fitFour from "../Assets/Fit/iconsFit-14.svg"
 import patternBanner from "../Assets/Fit/patternFit-15.svg"
 import Mockup from "../Assets/Fit/socksmockup.jpg"
+import FooterNav from '../FooterNav'
 
 const FitPage = () => {
   return (
@@ -29,6 +30,7 @@ const FitPage = () => {
         <img className="hero__image--70" src={patternBanner} />
         <img className="hero__image--70" src={Mockup} />
       </div>
+      <FooterNav />
     </motion.div>
   )
 }

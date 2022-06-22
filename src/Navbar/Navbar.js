@@ -36,7 +36,7 @@ const Navbar = (props) => {
     <div className='Nav'>
       <div className={props.page ? `Navbar ${props.page}` : "Navbar"}>
       <div className='navbar__buttons'>
-         <NavButton text='Design'>
+         {/* <NavButton text='Design'>
             <div className="dropdownMenuDesign">
               <li className='dropdownMenuDesign__item'>
                 <Link className="path__button" to="/UXPage">UX</Link>
@@ -48,8 +48,8 @@ const Navbar = (props) => {
                 <Link className="path__button" to="/logo_design">Logo</Link>
               </li>
             </div>
-          </NavButton>
-          <NavButton text='Code'>
+          </NavButton> */}
+          {/* <NavButton text='Code'>
             <div className="dropdownMenuDesign">
               <li className='dropdownMenuDesign__item'>
                 <Link className="path__button" to="/CrpoPage">The CRPO</Link>
@@ -64,7 +64,7 @@ const Navbar = (props) => {
                 <a className="path__button" target="_blank" href='https://github.com/NoahHendrickson/Noah-Site'>This Site</a>
               </li>
             </div>
-          </NavButton>
+          </NavButton> */}
             <li className='button__list'>
               <motion.div whileHover={{scale: 1.1}} className='button__background customBttn'>
                 <div className='button__front customBttn'>
@@ -96,7 +96,6 @@ const Navbar = (props) => {
           </div> : null}
         
           <div className='horizontal__switch'>
-            <Switch />
           </div>
       </div>
     </div>

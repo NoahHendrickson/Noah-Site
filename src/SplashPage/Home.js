@@ -29,9 +29,14 @@ import LeavesAnimation from './LeavesAnimation';
 const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext)
   const [story, setStory] = useState(false);
+  const [contact, setContact] = useState(false);
 
   function toggleStory() {
     setStory(!story)
+  };
+ 
+  function toggleContact() {
+    setContact(!contact)
   };
 
   const screen = window.screen.width
@@ -42,7 +47,7 @@ const Home = () => {
     {screen > 600 ? 
       <Parallax className='Home' pages={4}>
         <div className='SplashPage'>
-          <SideBar toggleStory={toggleStory} />
+          <SideBar toggleContact={toggleContact} toggleStory={toggleStory} />
           <ParallaxLayer speed={.75} offset={0}>
             <LeftContent />
           </ParallaxLayer>
@@ -81,10 +86,10 @@ const Home = () => {
             <Logos />
           </ParallaxLayer>
         </div>
-        <ParallaxLayer offset={3.1} speed={1.25}>
+        <ParallaxLayer offset={3.25} speed={1.25}>
           <CONTACT className='NNN' />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.25} speed={.5}>
+        <ParallaxLayer offset={3.4} speed={.5}>
           <ContactPage />
         </ParallaxLayer>
         </Parallax> :

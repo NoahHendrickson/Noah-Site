@@ -4,13 +4,13 @@ import { ReactComponent as NoahLogo } from '../Assets/NoahBevel-20.svg'
 import ButtonList from './ButtonList'
 import FlowerLogo from '../CodeStuff/FlowerLogo'
 
-const SideBar = ({toggleStory}) => {
+const SideBar = ({toggleStory, toggleContact}) => {
   return (
     <div className='SideBar'>
       <ParallaxLayer className='SideBar' speed={2}>
         <FlowerLogo className="flower__container" />
         <NoahLogo className='NoahLogo'/>
-        <ButtonList toggleStory={toggleStory} />
+        <ButtonList toggleContact={toggleContact} toggleStory={toggleStory} />
       </ParallaxLayer>
     </div>
   )

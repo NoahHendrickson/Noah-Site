@@ -9,6 +9,7 @@ import icons from "../Assets/NachoBoxPics/icons-04.svg"
 import iconsBanner from "../Assets/NachoBoxPics/iconsBanner-10.svg"
 import nachoCovers from "../Assets/NachoBoxPics/nachoboxcovers-02.svg"
 import ProjectTitle from '../ProjectTitle'
+import FooterNav from '../FooterNav'
 
 const NachoBox = () => {
   const {theme} = useContext(ThemeContext)
@@ -47,6 +48,7 @@ const NachoBox = () => {
           </div>
         </div>
       </div>
+      <FooterNav />
     </motion.div>
   )
 }
