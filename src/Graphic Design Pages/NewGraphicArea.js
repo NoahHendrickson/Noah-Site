@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom'
 const NewGraphicArea = () => {
 
   const animation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: .6 })
+  const [ref, inView, entry] = useInView({ threshold: .4 })
   
   useEffect(() => {
     if (inView) {

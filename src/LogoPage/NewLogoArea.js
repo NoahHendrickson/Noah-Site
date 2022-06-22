@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import { motion, useAnimation, transform } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import LogoDesign from './LogoPage'
-import Hyperglide from "../Assets/Logos/hyperglides-25.svg"
+import Hyperglide from "../Assets/Logos/hyperglide-05.svg"
 import TLH from "../Assets/Logos/TLH.svg"
 import Beamen from "../Assets/Logos/BeamenLogo-21.svg"
 import DORO from "../Assets/Logos/Doro-02.svg"
@@ -41,7 +41,7 @@ const NewLogoArea = () => {
     {
       id: 4,
       img: TLH,
-      color: "#1F79FC",
+      color: "#ff4567",
     },
     {
       id: 3,
@@ -76,7 +76,7 @@ const NewLogoArea = () => {
   ]
 
   const animation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: 0 })
+  const [ref, inView, entry] = useInView({ threshold: .1 })
   
   useEffect(() => {
     if (inView) {
