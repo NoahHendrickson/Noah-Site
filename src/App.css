@@ -472,6 +472,15 @@
   }
 }
 
+.IconHolder {
+  width: 75px
+}
+
+.iconography {
+  width: 50%;
+  fill: black;
+}
+
 .button__front {
   display: flex;
   justify-content: center;

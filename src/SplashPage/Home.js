@@ -25,6 +25,7 @@ import StoryCarousel from '../StoryStuff/StoryCarousel';
 import ExpBox from './ExpBox';
 import CodeBox from './CodeBox';
 import LeavesAnimation from './LeavesAnimation';
+import Iconography from './Iconography';
 
 const Home = () => {
   const { theme, setTheme } = useContext(ThemeContext)
@@ -45,7 +46,7 @@ const Home = () => {
   return (
     <motion.div className="Home">
     {screen > 600 ? 
-      <Parallax className='Home' pages={4}>
+      <Parallax className='Home' pages={4.2}>
         <div className='SplashPage'>
           <SideBar toggleContact={toggleContact} toggleStory={toggleStory} />
           <ParallaxLayer speed={.75} offset={0}>
@@ -72,8 +73,8 @@ const Home = () => {
           </ParallaxLayer>
           <ParallaxLayer offset={1.55} speed={1}>
             <Graphic />
-            </ParallaxLayer>
-            <ParallaxLayer offset={1.85} speed={.5}>
+          </ParallaxLayer>
+          <ParallaxLayer offset={1.85} speed={.5}>
             <div className='PortfolioArea'>
               <h1 className='AreaTitle'>Code</h1>
               <div className='TitleLineDivider'></div>
@@ -81,15 +82,24 @@ const Home = () => {
                 <CodeBox />
               </div>
             </div>
-            </ParallaxLayer>
-          <ParallaxLayer offset={2.05} speed={.35}>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2} speed={.25}>
+            <div className='PortfolioArea'>
+              <h1 className='AreaTitle'>Iconography</h1>
+              <div className='TitleLineDivider'></div>
+              <div className='AreaHolder'>
+                <Iconography />
+              </div>
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer offset={2.25} speed={.35}>
             <Logos />
           </ParallaxLayer>
         </div>
-        <ParallaxLayer offset={3.25} speed={1.25}>
+        <ParallaxLayer offset={3.45} speed={1.25}>
           <CONTACT className='NNN' />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.4} speed={.5}>
+        <ParallaxLayer offset={3.6} speed={.5}>
           <ContactPage />
         </ParallaxLayer>
         </Parallax> :
