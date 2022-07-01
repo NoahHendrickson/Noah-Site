@@ -58,7 +58,7 @@ const CodeBox = () => {
       description: "I am building this site from scratch using React",
       toolsTitle: "Tools used",
       tools: "React, Framer Motion, Parallax React Package, React Router",
-      path: "https://noahhendrickson.github.io/calculator/",
+      path: "https://github.com/NoahHendrickson/Noah-Site",
       target: "_blank"
     },
   ]

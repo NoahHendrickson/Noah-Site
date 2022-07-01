@@ -312,7 +312,7 @@
 .SocialSideBar {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
   z-index: 100;
 }
@@ -344,11 +344,9 @@
 }
 
 .LeavesHolder {
-  position: absolute;
-  top: -600px;
-  right: -600px;
-  width: 100%;
+  width: 50%;
   height: 100vh;
+  position: relative;
 }
 
 
@@ -358,7 +356,7 @@
   height: 230px;
   position: absolute;
   top: 0;
-  left: 0;
+  /* left: 0; */
   right: 0;
   bottom: 0;
   z-index: 200;
@@ -473,12 +471,9 @@
 }
 
 .IconHolder {
-  width: 75px
-}
-
-.iconography {
-  width: 50%;
-  fill: black;
+  width: 50px;
+  height: 75px;
+  margin: 25px;
 }
 
 .button__front {

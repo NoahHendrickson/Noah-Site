@@ -46,7 +46,7 @@ const Home = () => {
   return (
     <motion.div className="Home">
     {screen > 600 ? 
-      <Parallax className='Home' pages={4.2}>
+      <Parallax className='Home' pages={4.4}>
         <div className='SplashPage'>
           <SideBar toggleContact={toggleContact} toggleStory={toggleStory} />
           <ParallaxLayer speed={.75} offset={0}>
@@ -92,14 +92,14 @@ const Home = () => {
               </div>
             </div>
           </ParallaxLayer>
-          <ParallaxLayer offset={2.25} speed={.35}>
+          <ParallaxLayer offset={2.7} speed={.35}>
             <Logos />
           </ParallaxLayer>
         </div>
-        <ParallaxLayer offset={3.45} speed={1.25}>
+        <ParallaxLayer offset={3.9} speed={1.25}>
           <CONTACT className='NNN' />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.6} speed={.5}>
+        <ParallaxLayer offset={3.9} speed={.5}>
           <ContactPage />
         </ParallaxLayer>
         </Parallax> :
