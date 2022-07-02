@@ -3,71 +3,46 @@ import { motion, useAnimation } from 'framer-motion'
 import "./HomelyAppPage.css"
 import Navbar from '../Navbar/Navbar'
 import ProjectTitle from '../ProjectTitle'
-import Wires from "../Assets/HomelyApp/HomelyImages-07.svg"
-import Styles from "../Assets/HomelyApp/FontFamily-08.svg"
-import StyleGuide from "../Assets/HomelyApp/HomelyImages-09.svg"
-import StyleGuideDark from "../Assets/HomelyApp/HomelyImages-10.svg"
-import Mocks from "../Assets/HomelyApp/homelyNew-03.svg"
-import Screens from "../Assets/HomelyApp/homelyNew-02.svg"
-import PitchDeck1 from "../Assets/HomelyApp/1x/copy2.png"
-import PitchDeck2 from "../Assets/HomelyApp/PitchDeck2.png"
 import { useInView } from 'react-intersection-observer'
 import FooterNav from '../FooterNav'
+import Homely1 from "../Assets/NewHomely/Homely1-01.svg"
+import Homely2 from "../Assets/NewHomely/Homely-02.svg"
+import Homely3 from "../Assets/NewHomely/Homely-03.svg"
+import Homely4 from "../Assets/NewHomely/Homely-04.svg"
+import Homely5 from "../Assets/NewHomely/Homely-05.svg"
+import Homely6 from "../Assets/HomelyApp/homelyNew-02.svg"
 
 const HomelyAppPage = () => {
 
-  const animation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: .5 })
-  
-  useEffect(() => {
-    if (inView) {
-      animation.start('visible')
-    } else {
-      animation.start('hidden')
-    }
-  }, [animation, inView]);
-
-  const variants = {
-    visible: {
-      y: 0,
-      scale: 1,
-      opacity: 1,
-      transition: {
-        type: 'spring',
-        damping: 70,
-        stiffness: 1000,
-      },
-    },
-    hidden: {
-      y: entry,
-      opacity: 0,
-      scale: 0,
-      transition: {
-      }
-    },
-  }
 
   return (
     <motion.div className='HomelyPage'
-      initial={{y: '100vh',}}
-      animate={{y: '0'}}
-      exit={{y: '-100vw', transition:{duration: .1}}}
     >
       <Navbar />
       <ProjectTitle page="projectText__padded" role="Principal Designer & Junior Developer" title="Homely App" subtitle="UX Design & App Development" text="Homely is property and tenant management software designed to streamline communication between the office and tenants." />
-      <img className="hero__image--full" src={PitchDeck1} />
-      <img className="hero__image--full pitchDeck" src={PitchDeck2} />
-      <motion.img
-        ref={ref}
-        animate={animation}
-        initial="hidden"
-        variants={variants}
-        className="hero__image--70 homely__margins" src={Wires} />
-      <motion.img className="hero__image--70" src={Styles} />
-      <img className="homely__95" src={StyleGuide} />
-      <img className="homely__95" src={StyleGuideDark} />
-      <img className="homely__95" src={Mocks} />
-      <img className="homely__95" src={Screens} />
+      <div>
+        <img src={Homely1} />
+        <div className='HomelyProcess'>
+          <div className='TheJourney'>
+            <h1 className='JourneyTitle'>
+            The Journey
+            </h1>
+              <h2 className='JourneyText'>It began with writing down    all the features we wanted to include and marking their priority. We decided the chat and service ticket features were the highest priority and would see the most traffic.</h2>
+              <h2 className='JourneyText'> I then took those high priorty features and made wireframes and concepts on the general shaping and vibe of the experience.
+              </h2> 
+              <h2 className='JourneyText'> This part of the process undergoes a lot of transformation and iteration trying to nail down the finalized look and style of the UI. The inspiration for the design was to be clean, lively and modern.</h2>
+          </div>
+          <div className='ProcessImages'>
+            <img className="HomelyImage" src={Homely2} />
+            <img className="HomelyImage" src={Homely3} />
+          </div>
+        </div>
+        <div>
+          <img className="HomelyImage HomelyImageSmaller" src={Homely4} />
+          <img className="HomelyImage HomelyImageSmaller" src={Homely5} />
+        </div>
+        <img className="HomelyImage" src={Homely6} />
+      </div>
       <FooterNav />
     </motion.div>
   )
