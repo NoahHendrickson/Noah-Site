@@ -44,7 +44,7 @@ const NewUXArea = () => {
     },
     {
       id: 2,
-      title: 'Dark Matter Network',
+      title: 'Dark Matter',
       image: DarkMatterTHMB,
       miniImage: DarkMatterMini,
       path: "/DarkMatter"

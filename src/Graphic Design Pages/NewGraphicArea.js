@@ -37,7 +37,7 @@ const NewGraphicArea = () => {
   const projects = [
     {
       id: 1,
-      title: 'How To',
+      title: 'PC Infograph',
       image: HowTo,
       miniImg: miniPC,
       path: "/HowToPC"
