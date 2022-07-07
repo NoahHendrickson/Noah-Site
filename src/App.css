@@ -383,6 +383,11 @@
   animation-name: flow;
 }
 
+.LeavesAbso {
+  position: absolute;
+  left: 350px;
+}
+
 @media (max-width: 600px) {
 
   .LeavesHolder {
@@ -473,6 +478,7 @@
     color: white;
     font-size: 1em;
     margin: 5px 0px;
+    text-align: left;
   }
   .FooterTitle {
     font-weight: 700;

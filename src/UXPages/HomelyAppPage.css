@@ -4,6 +4,9 @@
   height: 100%;
 }
 
+.FirstImage {
+  margin-top: 20px;
+}
 .homely {
   background-color: var(--blue);
 }
@@ -73,5 +76,44 @@
   width: 70%;
   margin: 25px 0px;
   font-weight: 600;
+}
+
+@media (max-width: 600px) {
+
+  .JourneyTitle {
+    font-size: 2em;
+    width: 80%;
+    text-align: center;
+  }
+
+  .JourneyTitle2 {
+    font-size: 1.5em;
+    width: 80%;
+  }
+
+  .HomelyImageSmaller {
+    width: 90%;
+    margin: 0;
+  }
+
+  .ProcessImages {
+    width: 100%;
+  }
+
+  .TheJourney {
+    width: 100%;
+  }
+
+  .HomelyProcess {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .JourneyText {
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    padding: 0px 25px;
+  }
 }
 

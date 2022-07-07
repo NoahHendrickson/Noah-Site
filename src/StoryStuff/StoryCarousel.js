@@ -66,9 +66,7 @@ const StoryCarousel = ({story}) => {
       className='storyCarousel'>
       {screen > 400 ?
       <NoahPFP Title="Developer" Text="I began my coding journey in January 2022. I am mostly self taught by way of Codecademy, Stack Overflow and most importantly Youtube University. I love building experiences that are beautiful and intuitive. I am currently working to become a Front End App Developer." /> : null}
-      <div className='NoahHeadShot'></div>
-      <div className='orbit__container'>
-      </div>
+      <div className='NoahHeadShot'>
       <div className='orbit__container'>
         <div className="orbit__offset orbit__offset--css" >
           <CSS className='logoIcon' />
@@ -93,6 +91,7 @@ const StoryCarousel = ({story}) => {
         </div>
         <div className="orbit__offset orbit__offset--xd" >
           <XD className='logoIcon' />
+        </div>
         </div>
       </div>
       {screen > 400 ? <NoahPFP Title="Designer" Text="I've been designing a lot longer than I've been coding. I graduated with a BA in Advertising and Graphic Design in 2019. I have found a ton of love for UX Design in the past year because it is so closely tied to developement and I love coding as well. If you like my work and need some design help please reach out!" /> : null}

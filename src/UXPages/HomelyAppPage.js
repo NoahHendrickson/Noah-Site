@@ -5,7 +5,7 @@ import Navbar from '../Navbar/Navbar'
 import ProjectTitle from '../ProjectTitle'
 import { useInView } from 'react-intersection-observer'
 import FooterNav from '../FooterNav'
-import Homely1 from "../Assets/NewHomely/Homely1-01.svg"
+import Homely1 from "../Assets/NewHomely/Homely1-01-01.svg"
 import Homely2 from "../Assets/NewHomely/Homely-02.svg"
 import Homely3 from "../Assets/NewHomely/Homely-03.svg"
 import Homely4 from "../Assets/NewHomely/Homely-04.svg"
@@ -22,14 +22,14 @@ const HomelyAppPage = () => {
       <Navbar />
       <ProjectTitle page="projectText__padded" role="Principal Designer & Junior Developer" title="Homely App" subtitle="UX Design & App Development" text="Homely is property and tenant management software designed to streamline communication between the office and tenants." />
       <div>
-        <img src={Homely1} />
+        <img className="FirstImage" src={Homely1} />
         <div className='HomelyProcess'>
           <div className='TheJourney'>
             <h1 className='JourneyTitle'>
             The Journey
             </h1>
               <h2 className='JourneyText'>It began with writing down    all the features we wanted to include and marking their priority. We decided the chat and service ticket features were the highest priority and started as the main focus.</h2>
-              <h2 className='JourneyText'> I took those high priorty features and made wireframes and concepts on the general shaping and vibe of the experience.
+              <h2 className='JourneyText'> I took those high priority features and made wireframes and concepts on the general shaping and vibe of the experience.
               </h2> 
               <h2 className='JourneyText'> This part of the process undergoes a lot of transformation and iteration trying to nail down the finalized look and style of the UI. The inspiration for the design was to be clean, lively and modern.</h2>
           </div>

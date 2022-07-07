@@ -99,7 +99,8 @@
 
 .orbit__container {
   position: absolute;
-  top: 17%;
+  top: -108%;
+  right: -108%;
   width: 600px;
   height: 600px;
   display: flex;
@@ -175,7 +176,8 @@
 @media (max-width: 600px) {
 
   .orbit__container {
-    top: -125px
+    top: -200px;
+    left: -300px;
   }
 
   .storyCarousel {

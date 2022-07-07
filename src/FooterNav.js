@@ -14,7 +14,7 @@ const FooterNav = () => {
     </div>
     <div className='FooterNavSection'>
       <h1 className='FooterTitle'>Graphic</h1>
-    <Link className='FooterLink' to="/HowToPC">How To Build a PC</Link>
+    <Link className='FooterLink' to="/HowToPC">PC Infographic</Link>
     <Link className='FooterLink' to="/NachoBox">Nacho Box</Link>
     <Link className='FooterLink' to="/FitPage">Fit</Link>
     </div>

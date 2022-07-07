@@ -105,6 +105,9 @@ const Home = () => {
         </Parallax> :
         <div className='MobileHome'>
           <div className='SplashPage'>
+            <div className='LeavesAbso'>
+            <LeavesAnimation />
+            </div>
             {story ? <StoryCarousel state={story} /> : <FlowerLogo className="flower__container" />}
             <NoahLogo className='NoahLogo'/>
             <ButtonList toggleStory={toggleStory} />
@@ -121,7 +124,6 @@ const Home = () => {
           </div>
           <Logos />
           <ContactPage />
-          <LeavesAnimation />
         </div>  
       }
     </motion.div>   
