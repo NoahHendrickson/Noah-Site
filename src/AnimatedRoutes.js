@@ -13,6 +13,7 @@ import FullStory from './StoryStuff/FullStory';
 import Home from './SplashPage/Home';
 import ContactPage from './ContactDropdown/ContactPage';
 import LeavesAnimation from './SplashPage/LeavesAnimation';
+import Runna from './UXPages/Runna';
 
 const AnimatedRoutes = () => {
 
@@ -37,6 +38,7 @@ const AnimatedRoutes = () => {
         <Route path='FullStory' element={<FullStory />} />
         <Route path="ContactPage" element={<ContactPage />} />
         <Route path="Ani" element={<LeavesAnimation />} />
+        <Route path="Runna" element={<Runna />} />
       </Routes>
     </AnimatePresence>
   )

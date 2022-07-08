@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@react-spring/parallax": "^9.4.5",
+    "@splinetool/react-spline": "^2.2.1",
+    "@splinetool/runtime": "^0.9.74",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",

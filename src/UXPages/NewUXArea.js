@@ -49,6 +49,13 @@ const NewUXArea = () => {
       miniImage: DarkMatterMini,
       path: "/DarkMatter"
     },
+    {
+      id: 3,
+      title: 'Runna',
+      image: DarkMatterTHMB,
+      miniImage: DarkMatterMini,
+      path: "/Runna"
+    },
   ]
   return (
     projects.map((article, i) => (
