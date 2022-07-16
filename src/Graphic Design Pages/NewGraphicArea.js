@@ -8,6 +8,8 @@ import miniPC from "../Assets/PortfolioThumbNails/MiniPc.svg"
 import Fit from "../Assets/PortfolioThumbNails/fitStandard.svg"
 import FitMini from "../Assets/PortfolioThumbNails/fitMini.svg"
 import { Link } from 'react-router-dom'
+import miniNoah from "../Assets/PortfolioThumbNails/miniNoah-09.svg"
+import patterNoah from "../Assets/NoahBrand/Noah-Logo-Process.png"
 
 const NewGraphicArea = () => {
 
@@ -35,6 +37,13 @@ const NewGraphicArea = () => {
   }
 
   const projects = [
+    {
+      id: 4,
+      title: 'Noah Branding',
+      image: patterNoah,
+      miniImg: miniNoah,
+      path: "/NoahBrand"
+    },
     {
       id: 1,
       title: 'PC Infograph',

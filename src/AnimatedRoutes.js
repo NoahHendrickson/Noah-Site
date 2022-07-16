@@ -14,6 +14,7 @@ import Home from './SplashPage/Home';
 import ContactPage from './ContactDropdown/ContactPage';
 import LeavesAnimation from './SplashPage/LeavesAnimation';
 import Runna from './UXPages/Runna';
+import NoahBranding from './Graphic Design Pages/NoahBranding';
 
 const AnimatedRoutes = () => {
 
@@ -39,6 +40,7 @@ const AnimatedRoutes = () => {
         <Route path="ContactPage" element={<ContactPage />} />
         <Route path="Ani" element={<LeavesAnimation />} />
         <Route path="Runna" element={<Runna />} />
+        <Route path="NoahBrand" element={<NoahBranding />} />
       </Routes>
     </AnimatePresence>
   )

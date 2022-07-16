@@ -3,27 +3,16 @@ import './NoahLogoAnimation.css'
 
 const NoahLogoAnimated = () => {
 
-  useEffect(() => {
+  window.addEventListener("scroll", (e) => {
     const rect = document.querySelectorAll('rect')
+    const delay = Math.floor(Math.random() * 3)
+
     rect.forEach(element => {
-      const num = Math.floor(Math.random() * 99);
-      const number = Math.floor(Math.random() * 99);
-      const rotate = Math.floor(Math.random() * 360);
-      const scale = Math.random() * 5;
-      const scaleY = Math.random() * 2;
-      const delay = Math.floor(Math.random() * 900)
-
-      const options = ["-", ""];
-      const selection = Math.floor(Math.random() * 2)
-      const direction = options[selection]
-      console.log(direction)
-
-      element.style.transform = `translateX(${direction}${number}%) scale(.25)`
-      // element.style.animationDelay = `${delay}ms`
+      element.style.animationDelay = `${delay}s`
+      element.style.transform = "translateY(200px)"
+      console.log("hiya")
     });
-
-    console.log(rect)
-  }, [])
+  })
     
   return (
     <div className='NoahAnimation__container'>

@@ -1,0 +1,91 @@
+.NoahBrand {
+  background-color: var(--creamy);
+}
+
+.NoahBrandImage {
+  width: 25%;
+  padding: 50px;
+}
+
+.BrandContent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--creamy);
+}
+
+.BrandText {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #231f20;
+}
+
+.BrandText > h1 {
+  color: white;
+  font-size: 1.5em;
+ font-weight: 700;
+ text-align: center;
+ width: 25%;
+ margin: 25px auto;
+}
+
+.BrandImages {
+  background-color: var(--creamy);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+
+.NoahBrandImageSquare {
+  background-color: #231f20;
+  width: 25%;
+  padding: 150px;
+}
+
+.NoahBrandImageDark {
+  background-color: #231f20;
+  width: 25%;
+}
+
+.blue {
+  background-color: #026E82;
+}
+
+.red {
+  background-color: #CD1A5B;
+}
+
+.green1 {
+  background-color: #00904C;
+}
+
+.purple {
+  background-color: #6C42E2;
+}
+
+.pink {
+  background-color: #FF1A3B;
+}
+
+.white {
+  background-color: var(--creamy);
+  height: 100%;
+}
+
+.BrandImageHalf {
+  width: 50%;
+  padding: 25px;
+}
+
+.BrandImageThirds {
+  padding: 50px;
+  width: calc(100% / 3);
+}
+
+.testing {
+  width: 100%;
+  display: flex;
+}
