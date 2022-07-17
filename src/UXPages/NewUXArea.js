@@ -6,7 +6,8 @@ import HomelyTHMB from "../Assets/PortfolioThumbNails/HomelyStandard.svg"
 import HomelyMini from "../Assets/PortfolioThumbNails/HomelyMini.svg"
 import DarkMatterMini from "../Assets/PortfolioThumbNails/DarkMatterMini.svg"
 import DarkMatterTHMB from "../Assets/PortfolioThumbNails/DarkMatterStandard.svg"
-
+import Runna from "../Assets/PortfolioThumbNails/Runna.svg"
+import RunnaMini from "../Assets/PortfolioThumbNails/RunnaMini.svg"
 
 
 const NewUXArea = () => {
@@ -43,18 +44,18 @@ const NewUXArea = () => {
       path: "/HomelyPage"
     },
     {
+      id: 3,
+      title: 'Runna',
+      image: Runna,
+      miniImage: RunnaMini,
+      path: "/Runna"
+    },
+    {
       id: 2,
       title: 'Dark Matter',
       image: DarkMatterTHMB,
       miniImage: DarkMatterMini,
       path: "/DarkMatter"
-    },
-    {
-      id: 3,
-      title: 'Runna',
-      image: DarkMatterTHMB,
-      miniImage: DarkMatterMini,
-      path: "/Runna"
     },
   ]
   return (
