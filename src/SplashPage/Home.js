@@ -46,7 +46,7 @@ const Home = () => {
   return (
     <motion.div className="Home">
     {screen > 600 ? 
-      <Parallax className='Home' pages={4.4}>
+      <Parallax className='Home' pages={5}>
         <div className='SplashPage'>
           <SideBar toggleContact={toggleContact} toggleStory={toggleStory} />
           <ParallaxLayer speed={.75} offset={0}>
@@ -74,7 +74,7 @@ const Home = () => {
           <ParallaxLayer offset={1.55} speed={1}>
             <Graphic />
           </ParallaxLayer>
-          <ParallaxLayer offset={1.85} speed={.5}>
+          <ParallaxLayer offset={1.98} speed={.25}>
             <div className='PortfolioArea'>
               <h1 className='AreaTitle'>Code</h1>
               <div className='TitleLineDivider'></div>
@@ -83,7 +83,7 @@ const Home = () => {
               </div>
             </div>
           </ParallaxLayer>
-          <ParallaxLayer offset={2} speed={.25}>
+          <ParallaxLayer offset={2.4} speed={.5}>
             <div className='PortfolioArea'>
               <h1 className='AreaTitle'>Iconography</h1>
               <div className='TitleLineDivider'></div>
@@ -92,14 +92,14 @@ const Home = () => {
               </div>
             </div>
           </ParallaxLayer>
-          <ParallaxLayer offset={2.7} speed={.35}>
+          <ParallaxLayer offset={3.1} speed={.25}>
             <Logos />
           </ParallaxLayer>
         </div>
-        <ParallaxLayer offset={3.9} speed={1.25}>
+        <ParallaxLayer offset={4} speed={1.25}>
           <CONTACT className='NNN' />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.9} speed={.5}>
+        <ParallaxLayer offset={4.25} speed={.5}>
           <ContactPage />
         </ParallaxLayer>
         </Parallax> :

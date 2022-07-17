@@ -23,7 +23,7 @@ const Runna = () => {
             <h2>Runna is an app concept I have with a goal of gamifying going for a run. I’m someone who has no problem sprinting for hours during a tennis match, soccer game etc. BUT running for fun? Thats a hard sell. Runna gives you something to run against</h2>
             <div className='GradBG'>
               <h1>Music</h1>
-            </div>
+            </div>ha
           </div>
           <img className="RunnaImage" src={PinkScreen} />
         </div>
