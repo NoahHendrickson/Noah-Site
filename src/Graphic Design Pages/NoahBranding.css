@@ -1,5 +1,8 @@
 .NoahBrand {
   background-color: var(--creamy);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .NoahBrandImage {
@@ -15,7 +18,6 @@
 }
 
 .BrandText {
-  height: 100%;
   width: 100%;
   display: flex;
   background-color: #231f20;
@@ -24,10 +26,10 @@
 .BrandText > h1 {
   color: white;
   font-size: 1.5em;
- font-weight: 700;
- text-align: center;
- width: 25%;
- margin: 25px auto;
+  font-weight: 700;
+  text-align: center;
+  width: 25%;
+  margin: 25px auto;
 }
 
 .BrandImages {
@@ -40,7 +42,6 @@
 
 
 .NoahBrandImageSquare {
-  background-color: #231f20;
   width: 25%;
   padding: 150px;
 }
@@ -59,15 +60,15 @@
 }
 
 .green1 {
-  background-color: #00904C;
+  background-color: #71f52a;
 }
 
 .purple {
-  background-color: #6C42E2;
+  background-color: #c934ff;
 }
 
 .pink {
-  background-color: #FF1A3B;
+  background-color: #ff1d8a;
 }
 
 .white {
@@ -88,4 +89,35 @@
 .testing {
   width: 100%;
   display: flex;
+}
+
+@media (max-width: 600px) {
+  .BrandContent {
+    display: flex;
+    width: 100%;
+  }
+
+  .BrandText > h1 {
+  font-size: .8em;
+   font-weight: 700;
+   text-align: center;
+   width: 50%;
+   margin: 25px auto;
+  }
+
+  .NoahBrandImageSquare {
+    width: 25%;
+    padding: 0px;
+  }
+
+  .NoahBrandImage {
+    border: solid white 4px;
+    width: 50%;
+    padding: 25px;
+  }
+
+  .BrandImageThirds {
+    padding: 15px;
+    width: calc(100% / 3);
+  }
 }

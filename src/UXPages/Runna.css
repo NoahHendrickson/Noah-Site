@@ -4,9 +4,237 @@
   display: flex;
   flex-direction: column;
   background-color: var(--creamy);
+  overflow: hidden;
 }
 
 .Spline {
   width: 100%;
   height: 1000px;
 }
+
+.RunnaContent {
+  width: 100%;
+}
+
+.RunnaImage {
+  width: 25%;
+  z-index: 1;
+  position: relative;
+}
+
+.RunnaImageLean {
+  width: 50%;
+  z-index: 2;
+  position: relative;
+}
+
+.HeroContent {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+}
+
+.HeroContent__text {
+  width: 50%;
+  text-align: left;
+  margin-top: 90px;
+}
+
+.HeroContent__text > h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  color: white;
+  z-index: 1;
+  position: relative;
+  width: 70%;
+}
+
+.GradientStripe2 > h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  color: white;
+  z-index: 1;
+  position: relative;
+  width: 40%;
+  margin-right: 5%;
+  align-items: center;
+}
+
+.HeroContent__text > h2 {
+  color: black;
+  z-index: 1;
+  position: relative;
+  width: 60%;
+  margin-top: 25px;
+
+}
+
+.GradientStripe {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: -10px;
+  width: 100%;
+  height: 250px;
+  background-image: linear-gradient(to left, #F97998, #F8AC76);
+}
+
+.GradientStripe2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  height: 250px;
+  background-image: linear-gradient(to left, #5AF5B8, #69E3D6);
+}
+
+.GradientStripe3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 200px;
+  width: 100%;
+  height: 250px;
+  background-image: linear-gradient(to left, #7F53BA, #5D36FC);
+}
+
+.GradientStripe3 > h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  color: white;
+  z-index: 1;
+  position: relative;
+  width: 40%;
+  margin-right: 5%;
+  align-items: center;
+}
+
+.HeroContent__text > div > h1 {
+  font-size: 10em;
+  font-weight: 900;
+  color: transparent;
+}
+
+.HeroContent__text--alt {
+  position: relative;
+  z-index: 2;
+  width: 30%;
+  font-weight: 700;
+  color: white;
+}
+
+.HeroContent__text--alt > h1 {
+  font-weight: 700;
+  color: white;
+  margin-top: 250px;
+}
+
+.GradBG {
+  background-image: linear-gradient(to left, #F97998, #F8AC76);
+  background-clip: text;
+}
+
+.abso {
+  width: 25%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+
+.RunnaImagePurple {
+  width: 50%;
+  margin-left: 25%;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .HeroContent {
+    display: flex;
+    margin-top: 25px;
+  }
+
+  .HeroContent__text {
+    width: 100%;
+  }
+
+  .HeroContent__text > h1 {
+    font-size: .9em;
+    z-index: 1;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .GradientStripe2 > h1 {
+    font-size: .9em;
+    z-index: 1;
+    position: relative;
+    width: 50%;
+    text-align: left;
+  }
+
+  .HeroContent__text > h2 {
+    width: 80%;
+    font-size: .8em;
+    margin: auto;
+    margin-top: 35px;
+  }
+
+  .HeroContent__text > div > h1 {
+    font-size: 3em;
+    margin: auto;
+    width: 80%;
+  }
+
+  .RunnaImage {
+    width: 40%;
+  }
+
+  .GradientStripe {
+    top: 70px;
+    height: 100px;
+  }
+
+  .GradientStripe2 {
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .GradientStripe3 {
+    top: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .GradientStripe3 > h1 {
+    font-size: 1em;
+    color: white;
+    width: 40%;
+    text-align: left;
+    margin-left: 25px;
+    font-weight: 700;
+  }
+
+  .RunnaImagePurple {
+    width: 70%;
+    position: relative;
+    z-index: 2;
+    margin-left: 200px;
+  }
+}
+

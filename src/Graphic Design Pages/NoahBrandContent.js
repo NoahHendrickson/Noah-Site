@@ -11,6 +11,7 @@ import BrandAreaOne from './BrandAreaOne'
 import BrandAreaTwo from './BrandAreaTwo'
 import BrandAreaThree from './BrandAreaThree'
 import BrandAreaFour from './BrandAreaFour'
+import BrandAreaFive from './BrandAreaFive'
 
 const NoahBrandContent = () => {
 
@@ -27,6 +28,10 @@ const NoahBrandContent = () => {
       id: 3,
       words: "My style and aesthetic is bold & minimal. I wanted my logo to be capable of adapting different styles as I love experimenting with new vibes and looks",
     },
+    {
+      id: 4,
+      words: `A lot of my favorite designs and vibes are polarlizing. I like pushing ideas as close to "ugly" as I can because I think that can produce incredibly unique results`,
+    },
   ]
 
   const variants2 = {
@@ -42,17 +47,21 @@ const NoahBrandContent = () => {
   }
 
   return (
-      <div className='BrandContent'>
-        <BrandAreaOne />
+    <div className='BrandContent'>
+      <BrandAreaOne />
         <div className='BrandText'>
           <h1>{words[0].words}</h1>
           <h1>{words[1].words}</h1>
-      </div>
+        </div>
       <BrandAreaFour />
       <div className='BrandText'>
-          <h1>{words[2].words}</h1>
+        <h1>{words[2].words}</h1>
       </div>
+      <BrandAreaFive />
       <BrandAreaThree />
+      <div className='BrandText'>
+        <h1>{words[3].words}</h1>
+      </div>
       <BrandAreaTwo />
       </div>
   )

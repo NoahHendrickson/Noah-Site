@@ -24,7 +24,7 @@ const BrandAreaOne = () => {
     {
       id: 3,
       img: logo,
-      class: "NoahBrandImage NoahBrandImageDark",
+      class: "NoahBrandImage",
     },
     {
       id: 4,
