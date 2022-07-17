@@ -30,7 +30,7 @@ const NoahBrandContent = () => {
     },
     {
       id: 4,
-      words: `A lot of my favorite designs and vibes are polarlizing. I like pushing ideas as close to "ugly" as I can because I think that can produce incredibly unique results`,
+      words: `A lot of my favorite designs and vibes are polarizing. I like pushing ideas as close to "ugly" as I can because I think that can produce incredibly unique results`,
     },
   ]
 

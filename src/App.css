@@ -267,7 +267,7 @@
   }
 
   .UXArea {
-    margin: 0px 15px;
+    margin: 0px 15px 15px 15px;
     position: relative;
     z-index: 3;
   }
@@ -286,10 +286,12 @@
     font-size: .75em;
     text-align: center;
   }
+
   .ThumbnailHolder {
     width: 130px;
     height: 130px;
     margin: 0px 0px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, .5);
   }
 
   .LogoHolder {
